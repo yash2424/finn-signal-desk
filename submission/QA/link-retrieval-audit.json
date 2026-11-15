@@ -1,0 +1,422 @@
+{
+  "generatedAt": "2026-11-15T16:49:29.759Z",
+  "auditTrail": [
+    {
+      "issue": "An earlier snapshot labeled the FY25/FY24 standalone operating cash flow values (₹4,225 crore/₹3,449.7 crore) as consolidated.",
+      "correction": "Rechecked the official FY2024-25 annual report consolidated Ind AS cash-flow statement: the operating cash flow row is on printed p. 351 (PDF p. 177), ₹46,428 million/₹45,433 million, converted to ₹4,642.8 crore/₹4,543.3 crore by dividing by 10."
+    },
+    {
+      "note": "The KPI summary on PDF p. 6 reports PBT of ₹76,784 million; the separate consolidated Ind AS Board Report table at printed pp. 92-93 reports ₹76,795 million. These are distinct source presentations, so QA records the app’s chosen metric and citation basis rather than treating one figure as universally incorrect."
+    }
+  ],
+  "baseUrl": "http://127.0.0.1:5173/",
+  "coverage": [
+    {
+      "ticker": "RELIANCE",
+      "links": [
+        {
+          "text": "Open NSE corporate-filings directory",
+          "href": "https://www.nseindia.com/companies-listing/corporate-filings-directory"
+        },
+        {
+          "text": "Open Reliance Industries · Investor relations & filings",
+          "href": "https://www.ril.com/investors/investor-relations"
+        }
+      ]
+    },
+    {
+      "ticker": "HDFCBANK",
+      "links": [
+        {
+          "text": "Open NSE corporate-filings directory",
+          "href": "https://www.nseindia.com/companies-listing/corporate-filings-directory"
+        },
+        {
+          "text": "Open HDFC Bank · Investor relations",
+          "href": "https://www.hdfc.bank.in/about-us/investor-relations"
+        }
+      ]
+    },
+    {
+      "ticker": "ICICIBANK",
+      "links": [
+        {
+          "text": "Open NSE corporate-filings directory",
+          "href": "https://www.nseindia.com/companies-listing/corporate-filings-directory"
+        },
+        {
+          "text": "Open ICICI Bank · Investor relations",
+          "href": "https://www.icici.bank.in/about-us/invest-relations"
+        }
+      ]
+    },
+    {
+      "ticker": "SBIN",
+      "links": [
+        {
+          "text": "Open NSE corporate-filings directory",
+          "href": "https://www.nseindia.com/companies-listing/corporate-filings-directory"
+        },
+        {
+          "text": "Open State Bank of India · Investor relations",
+          "href": "https://sbi.bank.in/web/investor-relations/investor-relations"
+        }
+      ]
+    },
+    {
+      "ticker": "TCS",
+      "links": [
+        {
+          "text": "Open NSE corporate-filings directory",
+          "href": "https://www.nseindia.com/companies-listing/corporate-filings-directory"
+        },
+        {
+          "text": "Open Tata Consultancy Services · Investor relations",
+          "href": "https://www.tcs.com/investor-relations"
+        }
+      ]
+    },
+    {
+      "ticker": "INFY",
+      "links": [
+        {
+          "text": "Open NSE corporate-filings directory",
+          "href": "https://www.nseindia.com/companies-listing/corporate-filings-directory"
+        },
+        {
+          "text": "Open Infosys · Investor relations",
+          "href": "https://www.infosys.com/Investors/"
+        }
+      ]
+    },
+    {
+      "ticker": "WIPRO",
+      "links": [
+        {
+          "text": "Open NSE corporate-filings directory",
+          "href": "https://www.nseindia.com/companies-listing/corporate-filings-directory"
+        },
+        {
+          "text": "Open Wipro · Investor relations",
+          "href": "https://www.wipro.com/investors/"
+        }
+      ]
+    },
+    {
+      "ticker": "BHARTIARTL",
+      "links": [
+        {
+          "text": "Open NSE corporate-filings directory",
+          "href": "https://www.nseindia.com/companies-listing/corporate-filings-directory"
+        },
+        {
+          "text": "Open Bharti Airtel · Annual results",
+          "href": "https://www.airtel.in/about-bharti/equity/results/annual-results"
+        }
+      ]
+    },
+    {
+      "ticker": "LT",
+      "links": [
+        {
+          "text": "Open NSE corporate-filings directory",
+          "href": "https://www.nseindia.com/companies-listing/corporate-filings-directory"
+        },
+        {
+          "text": "Open Larsen & Toubro · Investor relations",
+          "href": "https://investors.larsentoubro.com/"
+        }
+      ]
+    },
+    {
+      "ticker": "ITC",
+      "links": [
+        {
+          "text": "Open NSE corporate-filings directory",
+          "href": "https://www.nseindia.com/companies-listing/corporate-filings-directory"
+        },
+        {
+          "text": "Open ITC · Investor relations",
+          "href": "https://itcportal.com/investors.html"
+        }
+      ]
+    },
+    {
+      "ticker": "HINDUNILVR",
+      "links": [
+        {
+          "text": "Open NSE corporate-filings directory",
+          "href": "https://www.nseindia.com/companies-listing/corporate-filings-directory"
+        },
+        {
+          "text": "Open Hindustan Unilever · Annual reports & performance",
+          "href": "https://www.hul.co.in/investors/annual-reports-and-performance-highlights/"
+        }
+      ]
+    },
+    {
+      "ticker": "BAJAJ-AUTO",
+      "links": [
+        {
+          "text": "Open NSE corporate-filings directory",
+          "href": "https://www.nseindia.com/companies-listing/corporate-filings-directory"
+        },
+        {
+          "text": "Open Bajaj Auto · Financial & operating performance",
+          "href": "https://www.bajajauto.com/investors/financial-and-operational-performance"
+        }
+      ]
+    },
+    {
+      "ticker": "MARUTI",
+      "links": [
+        {
+          "text": "Open NSE corporate-filings directory",
+          "href": "https://www.nseindia.com/companies-listing/corporate-filings-directory"
+        },
+        {
+          "text": "Open Maruti Suzuki India · Company reports",
+          "href": "https://www.marutisuzuki.com/corporate/investors/company-reports"
+        }
+      ]
+    },
+    {
+      "ticker": "SUNPHARMA",
+      "links": [
+        {
+          "text": "Open NSE corporate-filings directory",
+          "href": "https://www.nseindia.com/companies-listing/corporate-filings-directory"
+        },
+        {
+          "text": "Open Sun Pharmaceutical Industries · Investor relations",
+          "href": "https://sunpharma.com/investors/"
+        }
+      ]
+    },
+    {
+      "ticker": "NTPC",
+      "links": [
+        {
+          "text": "Open NSE corporate-filings directory",
+          "href": "https://www.nseindia.com/companies-listing/corporate-filings-directory"
+        },
+        {
+          "text": "Open NTPC · Annual reports",
+          "href": "https://ntpc.co.in/investors/financial-performance/annual-reports"
+        }
+      ]
+    },
+    {
+      "ticker": "TATAPOWER",
+      "links": [
+        {
+          "text": "Open NSE corporate-filings directory",
+          "href": "https://www.nseindia.com/companies-listing/corporate-filings-directory"
+        },
+        {
+          "text": "Open Tata Power · Investor resource center",
+          "href": "https://www.tatapower.com/investor-resource-center"
+        }
+      ]
+    },
+    {
+      "ticker": "ASIANPAINT",
+      "links": [
+        {
+          "text": "Open NSE corporate-filings directory",
+          "href": "https://www.nseindia.com/companies-listing/corporate-filings-directory"
+        },
+        {
+          "text": "Open Asian Paints · Investor relations, results & reports",
+          "href": "https://www.asianpaints.com/more/investors/investors-landing-page.html"
+        }
+      ]
+    },
+    {
+      "ticker": "HINDALCO",
+      "links": [
+        {
+          "text": "Open NSE corporate-filings directory",
+          "href": "https://www.nseindia.com/companies-listing/corporate-filings-directory"
+        },
+        {
+          "text": "Open Hindalco Industries · Investor relations",
+          "href": "https://www.hindalco.com/investors"
+        }
+      ]
+    },
+    {
+      "ticker": "FINNUNKNOWNTEST",
+      "links": [
+        {
+          "text": "Open NSE corporate-filings directory",
+          "href": "https://www.nseindia.com/companies-listing/corporate-filings-directory"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "ril-q4fy25",
+      "title": "Reliance Industries Q4 FY2024-25 Financial and Operational Performance — Media Release",
+      "href": "https://www.ril.com/sites/default/files/2025-04/25042025_Media_Release_RIL_Q4_FY2024_25_Financial_and_Operational_Performance.pdf"
+    },
+    {
+      "id": "hdfc-q4fy25",
+      "title": "HDFC Bank Financial Results (Indian GAAP) for the Quarter and Year Ended March 31, 2025 — Press Release",
+      "href": "https://www.hdfc.bank.in/content/dam/hdfcbankpws/in/en/pdf/press-release/2025/q1-jan-mar/march/financial-results-indiangaap-for-the-quarter-and-year-ended-march-31-2025.pdf"
+    },
+    {
+      "id": "tcs-q4fy25",
+      "title": "TCS Q4 FY2025 Financial Results — Press Release",
+      "href": "https://www.tcs.com/who-we-are/newsroom/press-release/tcs-financial-results-q4-fy-2025"
+    },
+    {
+      "id": "bfl-ar25",
+      "ticker": "BAJFINANCE.NS",
+      "title": "Bajaj Finance Limited Annual Report 2024-25 — Chairman's Letter",
+      "href": "https://www.bajajfinserv.in/finance-digital-annual-report-fy25/chairman-letter.html"
+    },
+    {
+      "id": "bfl-call-q4fy25",
+      "ticker": "BAJFINANCE.NS",
+      "title": "Bajaj Finance Q4 FY25 Earnings Conference Call Transcript",
+      "href": "https://cms-assets.bajajfinserv.in/is/content/bajajfinance/bajaj-finance-q4-fy-25-earnings-conference-call-transcriptpdf?fmt=pdf&scl=1"
+    },
+    {
+      "id": "titan-ar25",
+      "ticker": "TITAN.NS",
+      "title": "Titan Company Limited Annual Report 2024-25",
+      "href": "https://www.titancompany.in/sites/default/files/2025-06/Titan%20AR%202024-25%20AR.pdf"
+    },
+    {
+      "id": "titan-call-q4fy25",
+      "ticker": "TITAN.NS",
+      "title": "Titan Company Limited Q4 & FY'25 Earnings Conference Call Transcript",
+      "href": "https://www.titancompany.in/sites/default/files/2025-05/SEinvestorcalltranscriptQ4_0.pdf"
+    },
+    {
+      "id": "dr-ar25",
+      "ticker": "DRREDDY.NS",
+      "title": "Dr. Reddy's Laboratories Integrated Annual Report FY 2024-25",
+      "href": "https://www.drreddys.com/cms/cms/sites/default/files/2025-06/Integrated%20Annual%20Report%202024-25.pdf"
+    },
+    {
+      "id": "dr-call-q4fy25",
+      "ticker": "DRREDDY.NS",
+      "title": "Dr. Reddy's Q4 and Full Year FY25 Earnings Conference Call Transcript",
+      "href": "https://www.drreddys.com/cms/cms/sites/default/files/2025-05/DRL_Q4FY25%20Earnings%20Call%20Transcript_9May2025.pdf"
+    }
+  ],
+  "claimCitations": [
+    {
+      "ticker": "BAJFINANCE.NS",
+      "side": "bull",
+      "claim": "FY25 AUM grew 26%, net total income 24%, and PAT 16%; the customer franchise reached 101.82 million.",
+      "sourceId": "bfl-ar25",
+      "href": "https://www.bajajfinserv.in/finance-digital-annual-report-fy25/chairman-letter.html"
+    },
+    {
+      "ticker": "BAJFINANCE.NS",
+      "side": "bear",
+      "claim": "Loan-loss provisions increased 72%; management cited macro deterioration, leverage in unsecured loans and rising banking-sector stress.",
+      "sourceId": "bfl-ar25",
+      "href": "https://www.bajajfinserv.in/finance-digital-annual-report-fy25/chairman-letter.html"
+    },
+    {
+      "ticker": "TITAN.NS",
+      "side": "bull",
+      "claim": "FY25 consolidated revenue rose 18.4%; the issuer EBITDA-equivalent line item rose 6.1%, while consolidated PBT fell 1.9% and PAT fell 4.6%. Standalone jewellery revenue excluding bullion was ₹46,571 crore.",
+      "sourceId": "titan-ar25",
+      "href": "https://www.titancompany.in/sites/default/files/2025-06/Titan%20AR%202024-25%20AR.pdf"
+    },
+    {
+      "ticker": "TITAN.NS",
+      "side": "bull",
+      "claim": "Management continued to target high-double-digit jewellery growth.",
+      "sourceId": "titan-call-q4fy25",
+      "href": "https://www.titancompany.in/sites/default/files/2025-05/SEinvestorcalltranscriptQ4_0.pdf"
+    },
+    {
+      "ticker": "TITAN.NS",
+      "side": "bear",
+      "claim": "Consolidated PBT fell 1.9% and PAT fell 4.6% in FY25.",
+      "sourceId": "titan-ar25",
+      "href": "https://www.titancompany.in/sites/default/files/2025-06/Titan%20AR%202024-25%20AR.pdf"
+    },
+    {
+      "ticker": "TITAN.NS",
+      "side": "bear",
+      "claim": "Management described pressure in lower jewellery price bands amid gold-price uncertainty.",
+      "sourceId": "titan-call-q4fy25",
+      "href": "https://www.titancompany.in/sites/default/files/2025-05/SEinvestorcalltranscriptQ4_0.pdf"
+    },
+    {
+      "ticker": "DRREDDY.NS",
+      "side": "bull",
+      "claim": "FY25 revenue grew 17%, EBITDA margin was 28.3%, RoCE was 27.7%, and consolidated operating cash flow increased year over year.",
+      "sourceId": "dr-ar25",
+      "href": "https://www.drreddys.com/cms/cms/sites/default/files/2025-06/Integrated%20Annual%20Report%202024-25.pdf"
+    },
+    {
+      "ticker": "DRREDDY.NS",
+      "side": "bear",
+      "claim": "PAT attributable to equity holders rose only 2%; the annual report says all three internal scorecard pillars were below plan.",
+      "sourceId": "dr-ar25",
+      "href": "https://www.drreddys.com/cms/cms/sites/default/files/2025-06/Integrated%20Annual%20Report%202024-25.pdf"
+    }
+  ],
+  "queries": {
+    "AUM": [
+      {
+        "kind": "RESEARCH PARAPHRASE · NOT A DIRECT QUOTE",
+        "text": "The shareholder letter reports FY25 AUM of ₹416,661 crore, up 26% year over year."
+      },
+      {
+        "kind": "REPORTED FIGURE",
+        "text": "Reported figure: Assets under management 4,16,661 ₹ crore · FY25 close · +26% YoY"
+      },
+      {
+        "kind": "SUPPORTED TOPIC · SOURCE INDEX",
+        "text": "AUM, customer franchise, net total income, pre-impairment operating profit, provisions, PAT, RoA and RoE"
+      }
+    ],
+    "loanLoss": [
+      {
+        "kind": "RESEARCH PARAPHRASE · NOT A DIRECT QUOTE",
+        "text": "The letter links higher provisions to macro conditions, unsecured leverage and banking-sector stress."
+      },
+      {
+        "kind": "REPORTED FIGURE",
+        "text": "Reported figure: Loan-loss provisions 7,966 ₹ crore · FY25 · +72% YoY"
+      }
+    ],
+    "aumQuestion": [
+      {
+        "kind": "RESEARCH PARAPHRASE · NOT A DIRECT QUOTE",
+        "text": "The shareholder letter reports FY25 AUM of ₹416,661 crore, up 26% year over year."
+      },
+      {
+        "kind": "REPORTED FIGURE",
+        "text": "Reported figure: Assets under management 4,16,661 ₹ crore · FY25 close · +26% YoY"
+      },
+      {
+        "kind": "SUPPORTED TOPIC · SOURCE INDEX",
+        "text": "AUM, customer franchise, net total income, pre-impairment operating profit, provisions, PAT, RoA and RoE"
+      }
+    ],
+    "stopWordsOnly": [],
+    "unsupported": [],
+    "creditCost": [
+      {
+        "kind": "REPORTED FIGURE",
+        "text": "Reported figure: Additional ECL model provision 359 ₹ crore · Q4 FY25 · Basis: Management-reported; included in the credit-cost line per the call"
+      }
+    ]
+  },
+  "pageErrors": [],
+  "topicModal": "SOURCE DETAIL\nANNUAL REPORT\nBajaj Finance Limited Annual Report 2024-25 — Chairman's Letter\nBajaj Finance\nFY2024-25; exact page publication date is not stated on this section page\n·\nChairman's Letter, FY2025 performance highlights\nSOURCE-INDEX TOPIC · NOT DOCUMENT TEXT\n\nAUM, customer franchise, net total income, pre-impairment operating profit, provisions, PAT, RoA and RoE\n\nThis matched topic is an index label associated with the cited source, not text quoted from the document.\nOpen original source\nPRIMARY-SOURCE GROUNDING\nClose",
+  "figureModal": "SOURCE DETAIL\nANNUAL REPORT\nBajaj Finance Limited Annual Report 2024-25 — Chairman's Letter\nBajaj Finance\nFY2024-25; exact page publication date is not stated on this section page\n·\nChairman's Letter, FY2025 performance highlights\nREPORTED FIGURE\n\nReported figure: Loan-loss provisions 7,966 ₹ crore · FY25 · +72% YoY\n\nThis is a reported figure from the cited source. The displayed basis and period are part of the match; confirm the original document for full context.\nOpen original source\nPRIMARY-SOURCE GROUNDING\nClose",
+  "drReddyCashflow": "SOURCE DETAIL\nANNUAL REPORT\nDr. Reddy's Laboratories Integrated Annual Report FY 2024-25\nDr. Reddy's Laboratories\nFY2024-25 report; financial statements dated 2025-05-09; publication date not stated on source PDF\n·\nConsolidated Ind AS Statement of Cash Flows, printed p. 351 (PDF p. 177)\nRESEARCH PARAPHRASE · NOT A DIRECT QUOTE\n\nThe consolidated Ind AS cash-flow statement reports ₹46,428 million (₹4,642.8 crore) of operating cash flow in FY25 and ₹45,433 million (₹4,543.3 crore) in FY24.\n\nThis is a research paraphrase, not a direct quote. Confirm its context in the original document.\nOpen original source\nPRIMARY-SOURCE GROUNDING\nClose",
+  "marketDataModal": "SOURCE DETAIL\nMARKET DATA\nNSE CM-UDiFF full-market EOD Bhavcopy\nObservation row · TATAPOWER.NS\n13 Nov 2026\nThis is the official NSE CM-UDiFF full-market session file used for the observation. It contains many securities and is not a ticker-specific document link.\nOpen original source\nPRIMARY-SOURCE GROUNDING\nClose"
+}

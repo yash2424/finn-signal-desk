@@ -11,12 +11,14 @@ export type Source = {
   sectionOrPage?: string
   excerpt?: string
   excerptType?: 'verbatim' | 'paraphrase' | string
+  matchedSnippet?: string
+  matchedType?: 'excerpt' | 'paraphrase' | 'topic' | 'figure'
   supports?: string[]
   reportingPeriod?: string
   basis?: string
 }
-export type Metric = { label?: string; value?: string | number; unit?: string; period?: string; sourceId?: string; changeYoYPct?: number; basis?: string }
-export type Claim = { claim?: string; sourceId?: string }
+export type Metric = { label?: string; value?: string | number; unit?: string; period?: string; sourceId?: string; changeYoYPct?: number; basis?: string; searchTerms?: string[]; pageOrSection?: string }
+export type Claim = { claim?: string; sourceId?: string; pageOrSection?: string }
 export type Brief = {
   ticker: string
   name?: string

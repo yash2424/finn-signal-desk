@@ -3,6 +3,7 @@ import { Activity, ChevronRight, CircleHelp, FileText, Search, ShieldCheck } fro
 import rawData from '../app/data/finn-demo.json'
 import type { FinnData, Signal, Source } from './types'
 import { formatDate, numberFrom, tickerLabel } from './helpers'
+import { searchBriefEvidence } from './retrieval'
 import PushPage from './PushPage'
 import PullPage from './PullPage'
 import SourceModal from './SourceModal'
@@ -29,7 +30,7 @@ const quoteSignals: Signal[] = (data.quotes ?? []).map((quote) => {
     whyItMatters: 'A move alongside unusually high turnover can be worth reviewing, but this market observation does not explain its cause.',
     whatToVerify: 'Confirm the session close and 20-session volume baseline, then inspect dated issuer disclosures before drawing a conclusion.',
     publishedAt: quote.asOf,
-    source: { title: quote.sourceTitle || quote.source?.title || 'NSE CM-UDiFF EOD', url: quote.sourceUrl || quote.source?.url, sourceType: 'market_data', publishedAt: quote.asOf, dateLabel: quote.source?.date, issuer: portfolio.find((company) => tickerLabel(company.ticker) === tickerLabel(quote.ticker))?.name, ticker: quote.ticker },
+    source: { title: 'NSE CM-UDiFF full-market EOD Bhavcopy', url: quote.sourceUrl || quote.source?.url, sourceType: 'market_data', publishedAt: quote.asOf, dateLabel: quote.source?.date, ticker: quote.ticker },
     metrics: { priceMovePct: change, volumeVsAverage: volumeMultiple, closeINR: quote.closeINR, prevCloseINR: quote.prevCloseINR, volumeShares: quote.volumeShares, average20SessionVolume: quote.avg20VolumeShares, period: '20-session average' },
   }
 })
@@ -57,31 +58,7 @@ export default function App() {
   const activeBrief = activeTicker ? briefByTicker.get(tickerLabel(activeTicker)) : undefined
   const activeCompany = activeTicker ? companyByTicker.get(tickerLabel(activeTicker)) : undefined
   const allSignals = useMemo(() => [...filingSignals, ...quoteSignals], [])
-  const queryMatches = useMemo(() => {
-    const tokens = query.toLowerCase().split(/\s+/).filter((token) => token.length > 1)
-    if (!tokens.length || !activeBrief) return []
-    const allowed = (activeBrief.sources ?? []).filter((source) => source.sourceType === 'annual_report' || source.sourceType === 'concall_transcript' || source.sourceType === 'concall' || source.sourceType === 'transcript')
-    const sourceById = new Map(allowed.map((source) => [source.id, source]))
-    const hits: { source: Source; score: number; snippet: string; resultType: 'excerpt' | 'paraphrase' | 'topic' | 'figure' }[] = []
-    const scoreText = (value: string) => tokens.reduce((sum, token) => sum + (value.toLowerCase().includes(token) ? 1 : 0), 0)
-    allowed.forEach((source) => {
-      if (source.excerpt && !activeBrief.evidence?.length) { const score = scoreText(`${source.title} ${source.excerpt}`); if (score) hits.push({ source, score: score + 4, snippet: source.excerpt, resultType: source.excerptType === 'verbatim' ? 'excerpt' : 'paraphrase' }) }
-      ;(source.supports ?? []).forEach((topic) => { const score = scoreText(topic); if (score) hits.push({ source, score, snippet: topic, resultType: 'topic' }) })
-    })
-    ;(activeBrief.evidence ?? []).forEach((evidence) => {
-      const source = evidence.sourceId ? sourceById.get(evidence.sourceId) : undefined
-      const snippet = evidence.excerpt || evidence.text || evidence.claim || ''
-      const score = scoreText(`${snippet} ${evidence.claim ?? ''}`)
-      if (source && snippet && score) hits.push({ source, score: score + (evidence.excerpt ? 4 : 1), snippet, resultType: evidence.excerptType === 'verbatim' ? 'excerpt' : 'paraphrase' })
-    })
-    ;(activeBrief.metrics ?? []).forEach((metric) => {
-      const source = metric.sourceId ? sourceById.get(metric.sourceId) : undefined
-      const snippet = `Reported figure: ${metric.label ?? 'Metric'} ${typeof metric.value === 'number' ? metric.value.toLocaleString('en-IN') : metric.value ?? ''} ${metric.unit ?? ''} · ${metric.period ?? 'period not supplied'}${metric.changeYoYPct === undefined ? '' : ` · ${metric.changeYoYPct > 0 ? '+' : ''}${metric.changeYoYPct}% YoY`}`
-      const score = scoreText(`${snippet} ${metric.label ?? ''} ${source?.supports?.join(' ') ?? ''}`)
-      if (source && score) hits.push({ source, score: score + 2, snippet, resultType: 'figure' })
-    })
-    return hits.sort((a, b) => b.score - a.score).slice(0, 5)
-  }, [activeBrief, query])
+  const queryMatches = useMemo(() => searchBriefEvidence(activeBrief, query), [activeBrief, query])
   const visibleSignals = useMemo(() => allSignals.filter((signal) => {
     if (kindFilter !== 'all' && signal.kind !== kindFilter) return false
     if (priorityFilter !== 'all' && signal.priority !== priorityFilter) return false
@@ -120,6 +97,7 @@ export default function App() {
   const submitTicker = (event: FormEvent) => { event.preventDefault(); selectTicker(tickerInput) }
   const submitQuery = (event: FormEvent) => { event.preventDefault(); setQuery(queryDraft.trim()) }
   const openSource = useCallback((source: Source) => {
+    if (source.sourceType === 'market_data') { setSourceDrawer({ ...source, issuer: undefined }); return }
     const ticker = source.ticker || activeTicker
     setSourceDrawer({ ...source, issuer: source.issuer || briefs.find((brief) => tickerLabel(brief.ticker) === tickerLabel(ticker))?.name || portfolio.find((company) => tickerLabel(company.ticker) === tickerLabel(ticker))?.name || ticker || undefined })
   }, [activeTicker])

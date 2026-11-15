@@ -23,4 +23,4 @@ export const numberFrom = (record: Record<string, unknown> | undefined, keys: st
   }
   return undefined
 }
-export const marketSearch = (ticker: string, suffix: string) => `https://www.google.com/search?q=${encodeURIComponent(`"${ticker}" ${suffix}`)}`
+export const NSE_DIRECTORY_URL = 'https://www.nseindia.com/companies-listing/corporate-filings-directory'

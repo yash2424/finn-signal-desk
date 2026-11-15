@@ -41,6 +41,14 @@ The task coordinator cannot reliably report its own model identity. The assigned
 - **Data role (`gpt-6-luna`, maximum effort):** Retrieved official NSE CM-UDiFF Common Bhavcopy Final files for 18 NSE EQ-series symbols across 21 sessions through 13 November 2026 (378 observations). The snapshot's source URL pattern, fetch time, and metric formulas are documented in [`app/data/eod/README.md`](../app/data/eod/README.md).
 - **Release decision:** Keep the full filtered 378-row CSV locally for evidence, but exclude it and the raw assignment/research folder from publication. Publish only the derived latest quote metrics and source attribution, plus a reproducibility script. This supports transparent evaluation without including assignment materials or the bulk historical extract.
 
+### 15 November 2026 — Link and citation review (second pass)
+
+- **Trigger:** A human review of the first release found that coverage-gap links opened Google searches instead of the relevant pages.
+- **Links:** Removed the Google-search helper. Known portfolio symbols now open the issuer's official investor-relations page (`src/issuerLinks.ts`); unknown symbols open the labeled NSE corporate-filings directory; indexed evidence opens its original document. A failing Dr Reddy's annual-report URL was replaced with a working official copy, and an outdated Asian Paints investor URL was updated.
+- **Retrieval:** Search results no longer inherit relevance from other figures in the same document, and the source drawer keeps each result's own page reference (`src/retrieval.ts`).
+- **Data corrections:** Dr Reddy's operating cash flow had been taken from the standalone statement but labeled consolidated. It now shows the consolidated Ind AS figures (₹4,642.8 crore FY25, ₹4,543.3 crore FY24; printed p. 351, PDF p. 177). Accounting-basis labels were corrected from IFRS to Ind AS, PBT is cited to the KPI summary basis (₹7,678.4 crore), and Titan bull/bear citations were split to their exact pages.
+- **Regression check:** `scripts/qa_links_retrieval.cjs` (Playwright) passes: 19 coverage states, 9 source modals, AUM relevance, unsupported-query handling, and the Dr Reddy's page citation. The report is saved in `submission/QA/link-retrieval-audit.json`.
+
 ## Validation and release
 
 - **Data validation:** 18 portfolios, 18 quote records, three historical Push filing examples, three ad-hoc Pull briefs, and six issuer annual-report/transcript source records are included. The latest NSE quotes are dated 13 November 2026. The 378-row/21-session CSV remains local and is excluded from the public release.

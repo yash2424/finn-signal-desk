@@ -251,6 +251,8 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 .metric-card strong { display: block; overflow: hidden; margin: 6px 0 5px; color: var(--pine); font: 400 23px/1.05 var(--serif); font-variant-numeric: tabular-nums; text-overflow: ellipsis; white-space: nowrap; }
 .metric-card strong small { margin-left: 4px; color: #66766d; font: 10px var(--sans); }
 .metric-period { display: flex; align-items: center; justify-content: space-between; gap: 4px; }
+.metric-basis { display: block; margin-top: 5px; color: var(--muted); font-size: 9px; line-height: 1.35; }
+.claim-uncited { display: inline-block; margin-top: 6px; color: var(--muted); font-size: 9px; }
 .citation-mini { display: inline-flex; align-items: center; gap: 3px; min-height: 26px; padding: 0 5px; border: 0; background: transparent; color: var(--link); font-size: 9px; }
 .balance-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 .balance-card { padding: 14px 16px; border: 1px solid var(--rule); border-radius: 4px; background: rgba(255,254,250,.55); }
