@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T17:21:02.416Z",
+  "generatedAt": "2026-11-15T17:24:11.332Z",
   "auditTrail": [
     {
       "issue": "An earlier snapshot labeled the FY25/FY24 standalone operating cash flow values (₹4,225 crore/₹3,449.7 crore) as consolidated.",
@@ -9,7 +9,7 @@
       "note": "The KPI summary on PDF p. 6 reports PBT of ₹76,784 million; the separate consolidated Ind AS Board Report table at printed pp. 92-93 reports ₹76,795 million. These are distinct source presentations, so QA records the app’s chosen metric and citation basis rather than treating one figure as universally incorrect."
     }
   ],
-  "baseUrl": "http://localhost:5174/",
+  "baseUrl": "https://yash2424.github.io/finn-signal-desk/",
   "coverage": [
     {
       "ticker": "RELIANCE",
