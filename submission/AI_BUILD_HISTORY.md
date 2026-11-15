@@ -1,7 +1,8 @@
 # AI build history
 
-**Project:** FINN — mobile-first investment research prototype  
-**Date:** 15 November 2026  
+**Project:** FINN — mobile-first investment research prototype
+
+**Date:** 15 November 2026
 **Record type:** factual task log, compiled from the available work records
 
 ## What this record contains
@@ -45,5 +46,8 @@ The task coordinator cannot reliably report its own model identity. The assigned
 - **Data validation:** 18 portfolios, 18 quote records, three historical Push filing examples, three ad-hoc Pull briefs, and six issuer annual-report/transcript source records are included. The latest NSE quotes are dated 13 November 2026. The 378-row/21-session CSV remains local and is excluded from the public release.
 - **Build:** `npm run build` completed successfully (TypeScript check plus Vite production build).
 - **Interaction and responsive review:** Playwright checks passed at 360, 390, and 1440 px. No horizontal overflow, page errors, or browser-console errors were observed. The checks confirmed threshold filtering and reload persistence, 30-day filing-window filtering, source drawer close button and Escape behavior, all three Pull cards, an `AUM` source-backed search, NSE ticker aliases without `.NS`, and coverage states for known-unindexed and unknown tickers.
-- **Repository and hosted demo:** URLs, commit hash, GitHub Actions run, and hosted-page verification will be recorded here after release.
+- **Source repository:** [github.com/yash2424/finn-signal-desk](https://github.com/yash2424/finn-signal-desk), `main` commit `fd749c4` (`Build FINN Signal Desk prototype`). The repository is public and contains no raw assignment PDFs, private research folder, credentials, or 378-row historical CSV.
+- **Hosted demo:** [yash2424.github.io/finn-signal-desk](https://yash2424.github.io/finn-signal-desk/). GitHub Pages is configured for the root of the `gh-pages` branch; published build commit `c168726` reached status `built` at 2026-11-15 15:19 UTC. The production HTML, JS, CSS, and favicon returned HTTP 200.
+- **Release method:** Static build output was published from a separate `gh-pages` branch. No GitHub Actions workflow is included in the public repository; source changes are refreshed by rebuilding `dist/` and updating that branch.
+- **Hosted smoke test:** Playwright passed the interaction checks against the deployed URL at 360, 390, and 1440 px, with no page or console errors. Threshold/window filtering, reload persistence, source details, AUM retrieval, ticker alias handling, and coverage-gap states were checked on the hosted app.
 

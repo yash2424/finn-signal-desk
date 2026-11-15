@@ -1,20 +1,18 @@
 # Covering email draft
 
-**To:** assessment@enam.com  
+**To:** assessment@enam.com
+
 **Subject:** IIT Delhi – AI Engineer - 2027
 
 Hello ENAM team,
 
-I built **FINN Signal Desk**, a mobile-first responsive prototype for the Push/Pull investment-agent workflow.
+I built **FINN Signal Desk**, a mobile-first prototype for the Push/Pull investment-research workflow. Push combines dated NSE close/volume observations with a small set of issuer results releases, and lets users filter the snapshot and adjust local attention thresholds. Pull provides three source-linked company briefs and deterministic search over annual-report and earnings-call evidence.
 
-- **Push** brings company filings and end-of-day price/volume signals into a concise digest, with a selectable window and locally configurable thresholds.
-- **Pull** searches a dated index of annual reports and earnings-call transcript excerpts, with claims linked to their supporting source passages.
+I chose a keyless, static snapshot so the demo is immediately usable and every signal can be checked against its source. The trade-off is that it has no live exchange or filing feed, live model answers, background alert delivery, or portfolio-wide QoQ/YoY results engine. The filing examples and Pull briefs are historical FY25 records, and the Push window defaults to all snapshot dates. A next step would connect approved issuer/exchange feeds, add scheduled alerts and fuller quarterly comparisons, and expand source coverage while preserving citation-level traceability.
 
-I kept the build keyless and snapshot-based so the evaluator can try it immediately. That means the prototype does not fetch live market data or filings, make live model calls, or send background notifications. The next step would be connecting licensed/official exchange and issuer feeds, then adding monitored retrieval and scheduled alert delivery.
-
-**Try FINN:** [DEPLOYED_APP_URL]  
-**Source:** [GITHUB_REPOSITORY_URL]  
-**AI build history:** [`submission/AI_BUILD_HISTORY.md`](../submission/AI_BUILD_HISTORY.md)
+- **Demo:** [FINN Signal Desk](https://yash2424.github.io/finn-signal-desk/)
+- **GitHub repository:** [yash2424/finn-signal-desk](https://github.com/yash2424/finn-signal-desk)
+- **AI build history:** [summary](https://github.com/yash2424/finn-signal-desk/blob/main/submission/AI_BUILD_HISTORY.md) · [conversation export](https://github.com/yash2424/finn-signal-desk/blob/main/submission/AI_CONVERSATION_EXPORT.md)
 
 Thank you for reviewing it.
 

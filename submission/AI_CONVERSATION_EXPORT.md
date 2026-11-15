@@ -1,6 +1,6 @@
 # AI conversation export — FINN assignment
 
-This is a verbatim export of the relevant user and assistant text messages found in the local Codex session for this FINN assignment on 15 November 2026. It is selected by the exact task session and captured through **2026-11-15T15:14:10Z**. Timestamps shown below are UTC.
+This is a verbatim export of the relevant user and assistant text messages found in the local Codex session for this FINN assignment on 15 November 2026. It is selected by the exact task session and captured through **2026-11-15T15:21:03Z**. Timestamps shown below are UTC.
 
 For privacy and relevance, this export omits system/developer instructions, machine-specific environment context, tool calls/results, all other sessions, and Drive document contents. It does not include subagent transcripts; their work is summarized in [`AI_BUILD_HISTORY.md`](./AI_BUILD_HISTORY.md). No unobserved or missing messages have been reconstructed.
 
@@ -154,3 +154,14 @@ The final local checks now pass with zero page or console errors. The release ag
 
 I’m waiting for publication to finish, then the release agent will check the hosted app and insert its verified links into the email draft. The local app has already passed its build, visual, and interaction checks.
 
+## Assistant — 2026-11-15T15:15:45.356Z
+
+The pre-publication scan passed: no credential patterns or private Drive links were found in the 29 staged files. Original assignment material and raw research files are excluded. Repository creation and deployment are proceeding now.
+
+## Assistant — 2026-11-15T15:17:00.348Z
+
+The repository was created, but the current GitHub token cannot push workflow files. I’ve directed the release agent to use branch-based GitHub Pages deployment, which avoids requesting broader permissions.
+
+## Assistant — 2026-11-15T15:19:21.092Z
+
+The source and built app are now on GitHub, and GitHub Pages is building the site. The release agent will verify the hosted app before finalizing the ZIP and email draft.
