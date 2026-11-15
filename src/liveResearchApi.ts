@@ -3,18 +3,20 @@
  * Google Gemini API from the visitor's browser with the visitor's own key
  * (the site is static, so there is no server to hold one).
  *
- * Flow, designed to work on a free Gemini key:
- *  1. Read the company's Screener page with the URL-context tool and pick out
- *     its latest annual report and earnings-call transcript links (BSE filings).
- *     If none are found, try Google Search grounding, which needs a key with
- *     billing enabled.
- *  2. Read those PDFs with the URL-context tool and write a cited overview.
- *     Follow-up questions re-send the same documents.
- * If no filing can be reached, the answer is labelled as based on Screener's
- * compiled company page only.
+ * Flow:
+ *  1. With a billing-enabled key, Google Search grounding finds the latest
+ *     annual report and earnings-call transcript PDFs, which the URL-context
+ *     tool then reads; figures link to their PDF pages.
+ *  2. On a free key (no Google Search), the URL-context tool reads the
+ *     company's Screener page, which compiles figures from its filings, and the
+ *     answer is labelled as Screener-based.
+ * Follow-up questions re-send the same documents.
  */
 export const LIVE_MODEL = 'gemini-3.8-flash'
-const ENDPOINT = `https://generativelanguage.googleapis.com/v1beta/models/${LIVE_MODEL}:generateContent`
+// Stable models tried in order when one is overloaded (503) or unavailable to the key (404).
+const MODELS = [LIVE_MODEL, 'gemini-3.6-flash', 'gemini-3.5-flash-lite']
+const endpoint = (model: string) => `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`
+const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms))
 
 const SYSTEM = `You are FINN, a research assistant for Indian listed companies.
 Answer only from the documents you are given and can read: annual reports, results filings and earnings-call transcripts. Do not use news, broker research or your own background knowledge for facts or figures. If the documents do not support an answer, say so plainly.
@@ -44,14 +46,37 @@ export type LiveDocs = { companyName?: string; annualReport?: string; transcript
 export type LiveTurn = { role: 'user' | 'assistant'; text: string; citations: LiveCitation[] }
 export type LiveSession = { symbol: string; docs: LiveDocs; history: Content[]; turns: LiveTurn[]; sources: LiveCitation[] }
 
-async function generate(apiKey: string, contents: Content[], tools: Record<string, object>[], system = SYSTEM) {
-  const response = await fetch(ENDPOINT, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json', 'x-goog-api-key': apiKey },
-    body: JSON.stringify({ systemInstruction: { parts: [{ text: system }] }, contents, tools }),
-  })
+async function callModel(model: string, apiKey: string, body: string) {
+  const controller = new AbortController()
+  const timer = setTimeout(() => controller.abort(), 75_000)
+  let response: Response
+  try {
+    response = await fetch(endpoint(model), { method: 'POST', headers: { 'Content-Type': 'application/json', 'x-goog-api-key': apiKey }, body, signal: controller.signal })
+  } catch (error) {
+    throw controller.signal.aborted ? new GeminiError(`${model} took too long to respond.`, 504) : error
+  } finally { clearTimeout(timer) }
   const data = (await response.json().catch(() => ({}))) as GeminiResponse
   if (!response.ok || data.error) throw new GeminiError(data.error?.message || `HTTP ${response.status}`, data.error?.code ?? response.status, data.error?.status)
+  return data
+}
+
+async function generate(apiKey: string, contents: Content[], tools: Record<string, object>[], system = SYSTEM) {
+  const body = JSON.stringify({ systemInstruction: { parts: [{ text: system }] }, contents, tools })
+  let data: GeminiResponse | undefined
+  let lastError: unknown
+  outer: for (const model of MODELS) {
+    for (let attempt = 0; attempt < 2; attempt++) {
+      try { data = await callModel(model, apiKey, body); break outer } catch (error) {
+        lastError = error
+        const status = error instanceof GeminiError ? error.status : undefined
+        if (status === 404) continue outer // model not offered to this key: try the next one
+        if (status === 504) continue outer // too slow: move to the next model
+        if (status !== 503 && status !== 500 && !(error instanceof TypeError)) throw error
+        await sleep(1500 * (attempt + 1)) // overloaded: brief retry, then the next model
+      }
+    }
+  }
+  if (!data) throw lastError
   if (data.promptFeedback?.blockReason) throw new GeminiError(`The request was blocked (${data.promptFeedback.blockReason}).`)
   const candidate = data.candidates?.[0]
   const text = (candidate?.content?.parts ?? []).filter((part) => !part.thought).map((part) => part.text ?? '').join('').trim()
@@ -65,26 +90,20 @@ async function generate(apiKey: string, contents: Content[], tools: Record<strin
 const isPdf = (url?: string) => !!url && /^https:\/\/[^\s"'<>]+\.pdf(\?[^\s"'<>]*)?$/i.test(url)
 const pickJson = (text: string) => { try { return JSON.parse(text.match(/\{[\s\S]*\}/)?.[0] ?? '{}') as Record<string, string> } catch { return {} } }
 
-const FIND_PROMPT = (symbol: string, screener: string) => `Read ${screener}
-It is Screener's page for the NSE-listed company with symbol ${symbol}. From its "Documents" section, find the link to the latest annual report and the latest earnings-call transcript (these usually point to bseindia.com PDFs).
-Reply with JSON only, no other text:
-{"companyName": "...", "annualReportUrl": "https://...pdf or empty", "transcriptUrl": "https://...pdf or empty", "transcriptPeriod": "for example Q2 FY27, or empty"}`
-
 const SEARCH_PROMPT = (symbol: string, name: string) => `Find the latest annual report PDF and the latest earnings-call transcript PDF for ${name || symbol} (NSE: ${symbol}), as filed on bseindia.com or nseindia.com or published on the company's own investor-relations site.
 Reply with JSON only: {"companyName": "...", "annualReportUrl": "...", "transcriptUrl": "...", "transcriptPeriod": "..."}`
 
 async function locateDocuments(apiKey: string, symbol: string, onStatus: (s: string) => void): Promise<LiveDocs> {
   const screener = `https://www.screener.in/company/${encodeURIComponent(symbol)}/consolidated/`
-  onStatus('Reading the company’s Screener page for filing links…')
-  const first = await generate(apiKey, [{ role: 'user', parts: [{ text: FIND_PROMPT(symbol, screener) }] }], [{ url_context: {} }], 'Reply with JSON only.')
-  let found = pickJson(first.text)
-  if (!isPdf(found.annualReportUrl) && !isPdf(found.transcriptUrl)) {
-    onStatus('Searching for the filings…')
-    try {
-      const second = await generate(apiKey, [{ role: 'user', parts: [{ text: SEARCH_PROMPT(symbol, found.companyName ?? '') }] }], [{ google_search: {} }], 'Reply with JSON only.')
-      found = { ...found, ...pickJson(second.text) }
-    } catch { /* Google Search grounding needs a key with billing enabled; fall back to Screener */ }
-  }
+  // Google Search grounding finds the filing PDFs, but it needs a key with billing enabled;
+  // free keys get an immediate error here and fall back to Screener's company page.
+  // (The URL-context tool returns page text without link targets, so it cannot read PDF links off Screener.)
+  onStatus('Looking for the latest annual report and call transcript…')
+  let found: Record<string, string> = {}
+  try {
+    const search = await generate(apiKey, [{ role: 'user', parts: [{ text: SEARCH_PROMPT(symbol, '') }] }], [{ google_search: {} }], 'Reply with JSON only.')
+    found = pickJson(search.text)
+  } catch { /* free-tier key: no Google Search */ }
   const annualReport = isPdf(found.annualReportUrl) ? found.annualReportUrl : undefined
   const transcript = isPdf(found.transcriptUrl) ? found.transcriptUrl : undefined
   return { companyName: found.companyName || undefined, annualReport, transcript, transcriptPeriod: found.transcriptPeriod || undefined, screener, basis: annualReport || transcript ? 'filings' : 'screener' }
@@ -99,12 +118,12 @@ const docList = (docs: LiveDocs) => [
 const OVERVIEW_PROMPT = (symbol: string, docs: LiveDocs) => `Company: ${docs.companyName || symbol} (NSE: ${symbol}).
 Read these documents:
 ${docList(docs)}
-Write a brief overview with these sections:
+Write a brief overview using exactly these four headings:
 ## Company
-## Latest reported numbers (revenue, profit and one or two business-specific measures, with periods and growth)
+## Latest reported numbers
 ## What management said
 ## What to watch
-Keep it under 300 words. Tag every figure with its source page.`
+Under "Latest reported numbers", give revenue, profit and one or two business-specific measures, with periods and growth. If the documents have no management commentary, say so in one line. Keep it under 300 words. Tag every figure with its source page.`
 
 const QUESTION_PROMPT = (question: string, docs: LiveDocs) => `Using the same documents:
 ${docList(docs)}
@@ -163,7 +182,9 @@ export function describeError(error: unknown) {
     if (error.status === 400 && /API_KEY_INVALID|API key not valid/i.test(error.message + (error.reason ?? ''))) return 'That Gemini API key was not accepted. Check it and try again.'
     if (error.status === 403) return 'This key is not allowed to call the Gemini API. Check the key’s API restrictions in Google AI Studio or Cloud Console.'
     if (error.status === 429) return 'Gemini rate limit or free-tier quota reached. Wait a minute and try again.'
-    if (error.status === 404) return `The model ${LIVE_MODEL} is not available to this key.`
+    if (error.status === 404) return 'None of the Gemini models FINN uses are available to this key.'
+    if (error.status === 504) return 'Gemini took too long to respond on every model. Try again in a minute.'
+    if (error.status === 503 || error.status === 500) return 'Gemini is overloaded right now (all fallback models too). Wait a minute and try again.'
     return `Gemini API error${error.status ? ` ${error.status}` : ''}: ${error.message}`
   }
   if (error instanceof TypeError) return 'Could not reach the Gemini API. Check your connection.'

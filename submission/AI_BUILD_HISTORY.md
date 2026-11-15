@@ -62,7 +62,7 @@ The task coordinator cannot reliably report its own model identity. The assigned
 
 - **Trigger:** The user asked to use a Google Gemini API key instead of an Anthropic key.
 - **Change:** `src/liveResearchApi.ts` now calls the Gemini `generateContent` endpoint (`gemini-3.8-flash`) with the URL-context tool. It reads the company's Screener page to find its latest BSE annual report and transcript, then reads those PDFs. Google Search grounding is a fallback only, because Google's pricing page lists it as unavailable on the free tier. The model tags figures with PDF pages, and the app turns the tags into links that open each PDF at the cited page. The Anthropic SDK was removed, which cut the lazy-loaded panel from 393 KB to 13 KB.
-- **Testing:** An invalid key returns Gemini's `API_KEY_INVALID` error in the browser, which confirms the endpoint is reachable from the page. A successful run was not tested because no Gemini key was available in the build environment.
+- **Testing with the user's free key:** The first design, which pulled PDF links off Screener's page, failed: the URL-context tool returns page text without link targets. Google Search returned 429 (not on the free tier), and BSE's JSON feeds returned 403. The flow was changed: billing-enabled keys use Google Search to find and read the filing PDFs, and free keys get a clearly labelled overview from Screener's company page. Retries, a 75-second per-request limit, and model fallback were added after 503 "high demand" errors. Final run (`scripts/test_live_gemini.mjs`, TRENT, free key): an overview plus one follow-up answer in about 85 seconds. The billing-key PDF path was not tested.
 
 ## Validation and release
 

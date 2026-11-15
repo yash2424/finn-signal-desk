@@ -38,11 +38,13 @@ Search over the bundled briefs is deterministic and local: it removes common que
 
 For symbols outside the snapshot, `src/liveResearchApi.ts` calls Google Gemini (`gemini-3.8-flash`, `generateContent`) directly from the browser with the visitor's own Gemini API key, because the site is static and has no server to hold one. The key is kept in session storage for that tab and sent only to `generativelanguage.googleapis.com`.
 
-1. Gemini reads the company's Screener page with the URL-context tool and returns the links to its latest annual report and earnings-call transcript (BSE PDFs). If it finds none, it tries Google Search grounding, which works only on keys with billing enabled.
-2. Gemini reads those PDFs with the URL-context tool and writes an overview. It tags each figure with `[AR p. N]` or `[CALL p. N]`, and the app turns each tag into a numbered link that opens the PDF at that page. Follow-up questions re-send the same documents.
-3. If no filing can be reached, the answer is shown with a warning that it uses Screener's compiled page only.
+1. If the key has billing enabled, Google Search grounding finds the company's latest annual report and earnings-call transcript PDFs, and the URL-context tool reads them. Gemini tags each figure with `[AR p. N]` or `[CALL p. N]`, and the app turns each tag into a numbered link that opens the PDF at that page.
+2. On a free key, Google Search is not available, so Gemini reads the company's Screener page (figures compiled from its filings). The answer carries a visible "Screener-based" note. The URL-context tool returns page text without link targets, so it cannot follow Screener's links to the PDFs.
+3. Follow-up questions re-send the same documents. Each request has a 75-second limit, and overloaded or slow models fall back from `gemini-3.8-flash` to `gemini-3.6-flash` and `gemini-3.5-flash-lite`.
 
-Get a key at [aistudio.google.com/apikey](https://aistudio.google.com/apikey). The design avoids Google Search so it can run on a free key. On the free tier, Google may use requests to improve its products. Page numbers are reported by the model and should be checked in the document.
+`scripts/test_live_gemini.mjs` runs the same flow from Node with a key in `.env.local` (git-ignored). On 15 Nov 2026 a free key produced a Screener-based TRENT overview and a follow-up answer in about 85 seconds.
+
+Get a key at [aistudio.google.com/apikey](https://aistudio.google.com/apikey). On the free tier, Google may use requests to improve its products. Page numbers are reported by the model and should be checked in the document.
 
 ## Data and behavior
 
