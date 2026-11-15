@@ -1,0 +1,17 @@
+node_modules/
+dist/
+coverage/
+.env
+.env.*
+!.env.example
+*.log
+*.tsbuildinfo
+.DS_Store
+Thumbs.db
+.vercel/
+.netlify/
+.openai/
+.github/workflows/pages.yml
+/research/
+app/data/eod/NSE_EQ_EOD_21_sessions_through_2026-11-13.csv
+FINN-Signal-Desk.zip

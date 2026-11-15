@@ -1,0 +1,1220 @@
+{
+  "meta": {
+    "asOf": "2026-11-13",
+    "snapshotLabel": "NSE close · 13 Nov 2026; issuer research and filing examples are FY25 archive",
+    "coverage": "18 NSE EQ portfolio names, 21 available EOD sessions, 3 ad-hoc Pull briefs outside the portfolio, and 3 historical issuer results signals. This is a cited demo snapshot, not a live filing feed.",
+    "updatedAt": "2026-11-15",
+    "marketSource": "NSE India CM-UDiFF Common Bhavcopy Final (zip); exact per-session URLs are attached to each quote.",
+    "marketMethod": "Close, prior close and traded volume are read from NSE EQ rows; changePct=(close/previous close-1)*100; avg20VolumeShares is the arithmetic mean of the prior 20 available EQ sessions.",
+    "historicalDisclosure": "Issuer results signals and Pull briefs are from FY25 publications dated Apr–May 2025. Their dates are preserved and are not presented as Nov 2026 news.",
+    "defaultThresholds": {
+      "priceMovePct": 2.0,
+      "volumeMultiple": 1.5
+    },
+    "researchMethod": "Pull briefs link only issuer annual reports and management earnings-call transcripts. Historical Push result signals use issuer results releases; no broker notes or news sources are used."
+  },
+  "portfolio": [
+    {
+      "ticker": "RELIANCE.NS",
+      "name": "Reliance Industries",
+      "exchange": "NSE",
+      "series": "EQ",
+      "sector": "Energy & diversified retail / digital"
+    },
+    {
+      "ticker": "HDFCBANK.NS",
+      "name": "HDFC Bank",
+      "exchange": "NSE",
+      "series": "EQ",
+      "sector": "Banking"
+    },
+    {
+      "ticker": "ICICIBANK.NS",
+      "name": "ICICI Bank",
+      "exchange": "NSE",
+      "series": "EQ",
+      "sector": "Banking"
+    },
+    {
+      "ticker": "SBIN.NS",
+      "name": "State Bank of India",
+      "exchange": "NSE",
+      "series": "EQ",
+      "sector": "Banking"
+    },
+    {
+      "ticker": "TCS.NS",
+      "name": "Tata Consultancy Services",
+      "exchange": "NSE",
+      "series": "EQ",
+      "sector": "IT services"
+    },
+    {
+      "ticker": "INFY.NS",
+      "name": "Infosys",
+      "exchange": "NSE",
+      "series": "EQ",
+      "sector": "IT services"
+    },
+    {
+      "ticker": "WIPRO.NS",
+      "name": "Wipro",
+      "exchange": "NSE",
+      "series": "EQ",
+      "sector": "IT services"
+    },
+    {
+      "ticker": "BHARTIARTL.NS",
+      "name": "Bharti Airtel",
+      "exchange": "NSE",
+      "series": "EQ",
+      "sector": "Telecom"
+    },
+    {
+      "ticker": "LT.NS",
+      "name": "Larsen & Toubro",
+      "exchange": "NSE",
+      "series": "EQ",
+      "sector": "Engineering & infrastructure"
+    },
+    {
+      "ticker": "ITC.NS",
+      "name": "ITC",
+      "exchange": "NSE",
+      "series": "EQ",
+      "sector": "FMCG & hotels"
+    },
+    {
+      "ticker": "HINDUNILVR.NS",
+      "name": "Hindustan Unilever",
+      "exchange": "NSE",
+      "series": "EQ",
+      "sector": "FMCG"
+    },
+    {
+      "ticker": "BAJAJ-AUTO.NS",
+      "name": "Bajaj Auto",
+      "exchange": "NSE",
+      "series": "EQ",
+      "sector": "Automobiles"
+    },
+    {
+      "ticker": "MARUTI.NS",
+      "name": "Maruti Suzuki India",
+      "exchange": "NSE",
+      "series": "EQ",
+      "sector": "Automobiles"
+    },
+    {
+      "ticker": "SUNPHARMA.NS",
+      "name": "Sun Pharmaceutical Industries",
+      "exchange": "NSE",
+      "series": "EQ",
+      "sector": "Pharmaceuticals"
+    },
+    {
+      "ticker": "NTPC.NS",
+      "name": "NTPC",
+      "exchange": "NSE",
+      "series": "EQ",
+      "sector": "Power generation"
+    },
+    {
+      "ticker": "TATAPOWER.NS",
+      "name": "Tata Power",
+      "exchange": "NSE",
+      "series": "EQ",
+      "sector": "Power & utilities"
+    },
+    {
+      "ticker": "ASIANPAINT.NS",
+      "name": "Asian Paints",
+      "exchange": "NSE",
+      "series": "EQ",
+      "sector": "Paints & coatings"
+    },
+    {
+      "ticker": "HINDALCO.NS",
+      "name": "Hindalco Industries",
+      "exchange": "NSE",
+      "series": "EQ",
+      "sector": "Metals & mining"
+    }
+  ],
+  "quotes": [
+    {
+      "ticker": "RELIANCE.NS",
+      "asOf": "2026-11-13",
+      "closeINR": 1339.7,
+      "prevCloseINR": 1339.7,
+      "changePct": 0.0,
+      "volumeShares": 13756247,
+      "avg20VolumeShares": 21800882.6,
+      "volumeMultiple": 0.631,
+      "recentSessions": 21,
+      "sourceTitle": "CM-UDiFF Common Bhavcopy Final (zip)",
+      "sourceUrl": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261113_F_0000.csv.zip",
+      "provider": "NSE India",
+      "priceBasis": "NSE cash market close, EQ series; INR per share",
+      "volumeBasis": "shares traded; baseline is the prior 20 available sessions",
+      "volume": 13756247,
+      "avg20Volume": 21800882.6,
+      "volumeUnit": "shares",
+      "source": {
+        "title": "CM-UDiFF Common Bhavcopy Final (zip)",
+        "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261113_F_0000.csv.zip",
+        "provider": "NSE India",
+        "date": "2026-11-13"
+      }
+    },
+    {
+      "ticker": "HDFCBANK.NS",
+      "asOf": "2026-11-13",
+      "closeINR": 804.0,
+      "prevCloseINR": 812.3,
+      "changePct": -1.022,
+      "volumeShares": 23442886,
+      "avg20VolumeShares": 39414072.05,
+      "volumeMultiple": 0.595,
+      "recentSessions": 21,
+      "sourceTitle": "CM-UDiFF Common Bhavcopy Final (zip)",
+      "sourceUrl": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261113_F_0000.csv.zip",
+      "provider": "NSE India",
+      "priceBasis": "NSE cash market close, EQ series; INR per share",
+      "volumeBasis": "shares traded; baseline is the prior 20 available sessions",
+      "volume": 23442886,
+      "avg20Volume": 39414072.05,
+      "volumeUnit": "shares",
+      "source": {
+        "title": "CM-UDiFF Common Bhavcopy Final (zip)",
+        "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261113_F_0000.csv.zip",
+        "provider": "NSE India",
+        "date": "2026-11-13"
+      }
+    },
+    {
+      "ticker": "ICICIBANK.NS",
+      "asOf": "2026-11-13",
+      "closeINR": 1583.6,
+      "prevCloseINR": 1590.0,
+      "changePct": -0.403,
+      "volumeShares": 11440109,
+      "avg20VolumeShares": 17784827.6,
+      "volumeMultiple": 0.643,
+      "recentSessions": 21,
+      "sourceTitle": "CM-UDiFF Common Bhavcopy Final (zip)",
+      "sourceUrl": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261113_F_0000.csv.zip",
+      "provider": "NSE India",
+      "priceBasis": "NSE cash market close, EQ series; INR per share",
+      "volumeBasis": "shares traded; baseline is the prior 20 available sessions",
+      "volume": 11440109,
+      "avg20Volume": 17784827.6,
+      "volumeUnit": "shares",
+      "source": {
+        "title": "CM-UDiFF Common Bhavcopy Final (zip)",
+        "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261113_F_0000.csv.zip",
+        "provider": "NSE India",
+        "date": "2026-11-13"
+      }
+    },
+    {
+      "ticker": "SBIN.NS",
+      "asOf": "2026-11-13",
+      "closeINR": 1080.0,
+      "prevCloseINR": 1086.5,
+      "changePct": -0.598,
+      "volumeShares": 15886106,
+      "avg20VolumeShares": 14119693.55,
+      "volumeMultiple": 1.125,
+      "recentSessions": 21,
+      "sourceTitle": "CM-UDiFF Common Bhavcopy Final (zip)",
+      "sourceUrl": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261113_F_0000.csv.zip",
+      "provider": "NSE India",
+      "priceBasis": "NSE cash market close, EQ series; INR per share",
+      "volumeBasis": "shares traded; baseline is the prior 20 available sessions",
+      "volume": 15886106,
+      "avg20Volume": 14119693.55,
+      "volumeUnit": "shares",
+      "source": {
+        "title": "CM-UDiFF Common Bhavcopy Final (zip)",
+        "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261113_F_0000.csv.zip",
+        "provider": "NSE India",
+        "date": "2026-11-13"
+      }
+    },
+    {
+      "ticker": "TCS.NS",
+      "asOf": "2026-11-13",
+      "closeINR": 2407.5,
+      "prevCloseINR": 2442.4,
+      "changePct": -1.429,
+      "volumeShares": 3344738,
+      "avg20VolumeShares": 5335733.65,
+      "volumeMultiple": 0.627,
+      "recentSessions": 21,
+      "sourceTitle": "CM-UDiFF Common Bhavcopy Final (zip)",
+      "sourceUrl": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261113_F_0000.csv.zip",
+      "provider": "NSE India",
+      "priceBasis": "NSE cash market close, EQ series; INR per share",
+      "volumeBasis": "shares traded; baseline is the prior 20 available sessions",
+      "volume": 3344738,
+      "avg20Volume": 5335733.65,
+      "volumeUnit": "shares",
+      "source": {
+        "title": "CM-UDiFF Common Bhavcopy Final (zip)",
+        "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261113_F_0000.csv.zip",
+        "provider": "NSE India",
+        "date": "2026-11-13"
+      }
+    },
+    {
+      "ticker": "INFY.NS",
+      "asOf": "2026-11-13",
+      "closeINR": 1141.5,
+      "prevCloseINR": 1151.2,
+      "changePct": -0.843,
+      "volumeShares": 5936229,
+      "avg20VolumeShares": 15971643.5,
+      "volumeMultiple": 0.372,
+      "recentSessions": 21,
+      "sourceTitle": "CM-UDiFF Common Bhavcopy Final (zip)",
+      "sourceUrl": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261113_F_0000.csv.zip",
+      "provider": "NSE India",
+      "priceBasis": "NSE cash market close, EQ series; INR per share",
+      "volumeBasis": "shares traded; baseline is the prior 20 available sessions",
+      "volume": 5936229,
+      "avg20Volume": 15971643.5,
+      "volumeUnit": "shares",
+      "source": {
+        "title": "CM-UDiFF Common Bhavcopy Final (zip)",
+        "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261113_F_0000.csv.zip",
+        "provider": "NSE India",
+        "date": "2026-11-13"
+      }
+    },
+    {
+      "ticker": "WIPRO.NS",
+      "asOf": "2026-11-13",
+      "closeINR": 194.6,
+      "prevCloseINR": 196.2,
+      "changePct": -0.815,
+      "volumeShares": 4918972,
+      "avg20VolumeShares": 20731619.05,
+      "volumeMultiple": 0.237,
+      "recentSessions": 21,
+      "sourceTitle": "CM-UDiFF Common Bhavcopy Final (zip)",
+      "sourceUrl": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261113_F_0000.csv.zip",
+      "provider": "NSE India",
+      "priceBasis": "NSE cash market close, EQ series; INR per share",
+      "volumeBasis": "shares traded; baseline is the prior 20 available sessions",
+      "volume": 4918972,
+      "avg20Volume": 20731619.05,
+      "volumeUnit": "shares",
+      "source": {
+        "title": "CM-UDiFF Common Bhavcopy Final (zip)",
+        "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261113_F_0000.csv.zip",
+        "provider": "NSE India",
+        "date": "2026-11-13"
+      }
+    },
+    {
+      "ticker": "BHARTIARTL.NS",
+      "asOf": "2026-11-13",
+      "closeINR": 2106.0,
+      "prevCloseINR": 2096.0,
+      "changePct": 0.477,
+      "volumeShares": 6106256,
+      "avg20VolumeShares": 10648066.35,
+      "volumeMultiple": 0.573,
+      "recentSessions": 21,
+      "sourceTitle": "CM-UDiFF Common Bhavcopy Final (zip)",
+      "sourceUrl": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261113_F_0000.csv.zip",
+      "provider": "NSE India",
+      "priceBasis": "NSE cash market close, EQ series; INR per share",
+      "volumeBasis": "shares traded; baseline is the prior 20 available sessions",
+      "volume": 6106256,
+      "avg20Volume": 10648066.35,
+      "volumeUnit": "shares",
+      "source": {
+        "title": "CM-UDiFF Common Bhavcopy Final (zip)",
+        "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261113_F_0000.csv.zip",
+        "provider": "NSE India",
+        "date": "2026-11-13"
+      }
+    },
+    {
+      "ticker": "LT.NS",
+      "asOf": "2026-11-13",
+      "closeINR": 4143.8,
+      "prevCloseINR": 4159.2,
+      "changePct": -0.37,
+      "volumeShares": 1585695,
+      "avg20VolumeShares": 2492970.8,
+      "volumeMultiple": 0.636,
+      "recentSessions": 21,
+      "sourceTitle": "CM-UDiFF Common Bhavcopy Final (zip)",
+      "sourceUrl": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261113_F_0000.csv.zip",
+      "provider": "NSE India",
+      "priceBasis": "NSE cash market close, EQ series; INR per share",
+      "volumeBasis": "shares traded; baseline is the prior 20 available sessions",
+      "volume": 1585695,
+      "avg20Volume": 2492970.8,
+      "volumeUnit": "shares",
+      "source": {
+        "title": "CM-UDiFF Common Bhavcopy Final (zip)",
+        "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261113_F_0000.csv.zip",
+        "provider": "NSE India",
+        "date": "2026-11-13"
+      }
+    },
+    {
+      "ticker": "ITC.NS",
+      "asOf": "2026-11-13",
+      "closeINR": 285.0,
+      "prevCloseINR": 284.05,
+      "changePct": 0.334,
+      "volumeShares": 8329401,
+      "avg20VolumeShares": 20290813.7,
+      "volumeMultiple": 0.411,
+      "recentSessions": 21,
+      "sourceTitle": "CM-UDiFF Common Bhavcopy Final (zip)",
+      "sourceUrl": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261113_F_0000.csv.zip",
+      "provider": "NSE India",
+      "priceBasis": "NSE cash market close, EQ series; INR per share",
+      "volumeBasis": "shares traded; baseline is the prior 20 available sessions",
+      "volume": 8329401,
+      "avg20Volume": 20290813.7,
+      "volumeUnit": "shares",
+      "source": {
+        "title": "CM-UDiFF Common Bhavcopy Final (zip)",
+        "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261113_F_0000.csv.zip",
+        "provider": "NSE India",
+        "date": "2026-11-13"
+      }
+    },
+    {
+      "ticker": "HINDUNILVR.NS",
+      "asOf": "2026-11-13",
+      "closeINR": 1992.9,
+      "prevCloseINR": 1974.0,
+      "changePct": 0.957,
+      "volumeShares": 1268888,
+      "avg20VolumeShares": 1706087.15,
+      "volumeMultiple": 0.744,
+      "recentSessions": 21,
+      "sourceTitle": "CM-UDiFF Common Bhavcopy Final (zip)",
+      "sourceUrl": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261113_F_0000.csv.zip",
+      "provider": "NSE India",
+      "priceBasis": "NSE cash market close, EQ series; INR per share",
+      "volumeBasis": "shares traded; baseline is the prior 20 available sessions",
+      "volume": 1268888,
+      "avg20Volume": 1706087.15,
+      "volumeUnit": "shares",
+      "source": {
+        "title": "CM-UDiFF Common Bhavcopy Final (zip)",
+        "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261113_F_0000.csv.zip",
+        "provider": "NSE India",
+        "date": "2026-11-13"
+      }
+    },
+    {
+      "ticker": "BAJAJ-AUTO.NS",
+      "asOf": "2026-11-13",
+      "closeINR": 10850.0,
+      "prevCloseINR": 10945.0,
+      "changePct": -0.868,
+      "volumeShares": 256208,
+      "avg20VolumeShares": 346997.35,
+      "volumeMultiple": 0.738,
+      "recentSessions": 21,
+      "sourceTitle": "CM-UDiFF Common Bhavcopy Final (zip)",
+      "sourceUrl": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261113_F_0000.csv.zip",
+      "provider": "NSE India",
+      "priceBasis": "NSE cash market close, EQ series; INR per share",
+      "volumeBasis": "shares traded; baseline is the prior 20 available sessions",
+      "volume": 256208,
+      "avg20Volume": 346997.35,
+      "volumeUnit": "shares",
+      "source": {
+        "title": "CM-UDiFF Common Bhavcopy Final (zip)",
+        "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261113_F_0000.csv.zip",
+        "provider": "NSE India",
+        "date": "2026-11-13"
+      }
+    },
+    {
+      "ticker": "MARUTI.NS",
+      "asOf": "2026-11-13",
+      "closeINR": 12854.0,
+      "prevCloseINR": 13024.0,
+      "changePct": -1.305,
+      "volumeShares": 492029,
+      "avg20VolumeShares": 557772,
+      "volumeMultiple": 0.882,
+      "recentSessions": 21,
+      "sourceTitle": "CM-UDiFF Common Bhavcopy Final (zip)",
+      "sourceUrl": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261113_F_0000.csv.zip",
+      "provider": "NSE India",
+      "priceBasis": "NSE cash market close, EQ series; INR per share",
+      "volumeBasis": "shares traded; baseline is the prior 20 available sessions",
+      "volume": 492029,
+      "avg20Volume": 557772,
+      "volumeUnit": "shares",
+      "source": {
+        "title": "CM-UDiFF Common Bhavcopy Final (zip)",
+        "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261113_F_0000.csv.zip",
+        "provider": "NSE India",
+        "date": "2026-11-13"
+      }
+    },
+    {
+      "ticker": "SUNPHARMA.NS",
+      "asOf": "2026-11-13",
+      "closeINR": 1880.0,
+      "prevCloseINR": 1885.0,
+      "changePct": -0.265,
+      "volumeShares": 2037762,
+      "avg20VolumeShares": 2315868.3,
+      "volumeMultiple": 0.88,
+      "recentSessions": 21,
+      "sourceTitle": "CM-UDiFF Common Bhavcopy Final (zip)",
+      "sourceUrl": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261113_F_0000.csv.zip",
+      "provider": "NSE India",
+      "priceBasis": "NSE cash market close, EQ series; INR per share",
+      "volumeBasis": "shares traded; baseline is the prior 20 available sessions",
+      "volume": 2037762,
+      "avg20Volume": 2315868.3,
+      "volumeUnit": "shares",
+      "source": {
+        "title": "CM-UDiFF Common Bhavcopy Final (zip)",
+        "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261113_F_0000.csv.zip",
+        "provider": "NSE India",
+        "date": "2026-11-13"
+      }
+    },
+    {
+      "ticker": "NTPC.NS",
+      "asOf": "2026-11-13",
+      "closeINR": 319.1,
+      "prevCloseINR": 323.0,
+      "changePct": -1.207,
+      "volumeShares": 4877275,
+      "avg20VolumeShares": 9842871.9,
+      "volumeMultiple": 0.496,
+      "recentSessions": 21,
+      "sourceTitle": "CM-UDiFF Common Bhavcopy Final (zip)",
+      "sourceUrl": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261113_F_0000.csv.zip",
+      "provider": "NSE India",
+      "priceBasis": "NSE cash market close, EQ series; INR per share",
+      "volumeBasis": "shares traded; baseline is the prior 20 available sessions",
+      "volume": 4877275,
+      "avg20Volume": 9842871.9,
+      "volumeUnit": "shares",
+      "source": {
+        "title": "CM-UDiFF Common Bhavcopy Final (zip)",
+        "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261113_F_0000.csv.zip",
+        "provider": "NSE India",
+        "date": "2026-11-13"
+      }
+    },
+    {
+      "ticker": "TATAPOWER.NS",
+      "asOf": "2026-11-13",
+      "closeINR": 348.0,
+      "prevCloseINR": 357.0,
+      "changePct": -2.521,
+      "volumeShares": 10965923,
+      "avg20VolumeShares": 5703248.85,
+      "volumeMultiple": 1.923,
+      "recentSessions": 21,
+      "sourceTitle": "CM-UDiFF Common Bhavcopy Final (zip)",
+      "sourceUrl": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261113_F_0000.csv.zip",
+      "provider": "NSE India",
+      "priceBasis": "NSE cash market close, EQ series; INR per share",
+      "volumeBasis": "shares traded; baseline is the prior 20 available sessions",
+      "volume": 10965923,
+      "avg20Volume": 5703248.85,
+      "volumeUnit": "shares",
+      "source": {
+        "title": "CM-UDiFF Common Bhavcopy Final (zip)",
+        "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261113_F_0000.csv.zip",
+        "provider": "NSE India",
+        "date": "2026-11-13"
+      }
+    },
+    {
+      "ticker": "ASIANPAINT.NS",
+      "asOf": "2026-11-13",
+      "closeINR": 2550.0,
+      "prevCloseINR": 2536.5,
+      "changePct": 0.532,
+      "volumeShares": 613905,
+      "avg20VolumeShares": 1088359.7,
+      "volumeMultiple": 0.564,
+      "recentSessions": 21,
+      "sourceTitle": "CM-UDiFF Common Bhavcopy Final (zip)",
+      "sourceUrl": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261113_F_0000.csv.zip",
+      "provider": "NSE India",
+      "priceBasis": "NSE cash market close, EQ series; INR per share",
+      "volumeBasis": "shares traded; baseline is the prior 20 available sessions",
+      "volume": 613905,
+      "avg20Volume": 1088359.7,
+      "volumeUnit": "shares",
+      "source": {
+        "title": "CM-UDiFF Common Bhavcopy Final (zip)",
+        "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261113_F_0000.csv.zip",
+        "provider": "NSE India",
+        "date": "2026-11-13"
+      }
+    },
+    {
+      "ticker": "HINDALCO.NS",
+      "asOf": "2026-11-13",
+      "closeINR": 943.6,
+      "prevCloseINR": 964.0,
+      "changePct": -2.116,
+      "volumeShares": 8856292,
+      "avg20VolumeShares": 5557924,
+      "volumeMultiple": 1.593,
+      "recentSessions": 21,
+      "sourceTitle": "CM-UDiFF Common Bhavcopy Final (zip)",
+      "sourceUrl": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261113_F_0000.csv.zip",
+      "provider": "NSE India",
+      "priceBasis": "NSE cash market close, EQ series; INR per share",
+      "volumeBasis": "shares traded; baseline is the prior 20 available sessions",
+      "volume": 8856292,
+      "avg20Volume": 5557924,
+      "volumeUnit": "shares",
+      "source": {
+        "title": "CM-UDiFF Common Bhavcopy Final (zip)",
+        "url": "https://nsearchives.nseindia.com/content/cm/BhavCopy_NSE_CM_0_0_0_20261113_F_0000.csv.zip",
+        "provider": "NSE India",
+        "date": "2026-11-13"
+      }
+    }
+  ],
+  "signals": [
+    {
+      "id": "ril-fy25-results",
+      "kind": "filing",
+      "ticker": "RELIANCE.NS",
+      "category": "results",
+      "title": "FY25 revenue +7.1%; EBITDA and PAT each +2.9%",
+      "priority": "high",
+      "publishedAt": "2025-04-25",
+      "historical": true,
+      "summary": "Consolidated revenue grew 7.1% to ₹10,71,174 crore; EBITDA and PAT each rose 2.9%. The Board recommended a ₹5.50/share dividend.",
+      "whatChanged": "FY25 revenue growth outpaced EBITDA and PAT growth; the Board recommended a ₹5.50/share dividend.",
+      "whyItMatters": "The earnings mix is a more restrained signal than the top-line growth headline; segment trends matter for the next read-through.",
+      "whatToVerify": "Compare the next quarter's O2C, Digital Services and Retail operating updates with this consolidated picture.",
+      "metrics": [
+        {
+          "label": "Revenue",
+          "value": 1071174,
+          "unit": "₹ crore",
+          "period": "FY25",
+          "changeYoYPct": 7.1,
+          "basis": "Consolidated",
+          "sourceId": "ril-q4fy25"
+        },
+        {
+          "label": "EBITDA",
+          "value": 183422,
+          "unit": "₹ crore",
+          "period": "FY25",
+          "changeYoYPct": 2.9,
+          "basis": "Consolidated",
+          "sourceId": "ril-q4fy25"
+        },
+        {
+          "label": "PAT",
+          "value": 81309,
+          "unit": "₹ crore",
+          "period": "FY25",
+          "changeYoYPct": 2.9,
+          "basis": "Consolidated",
+          "sourceId": "ril-q4fy25"
+        }
+      ],
+      "sourceId": "ril-q4fy25",
+      "source": {
+        "id": "ril-q4fy25",
+        "title": "Reliance Industries Q4 FY2024-25 Financial and Operational Performance — Media Release",
+        "url": "https://www.ril.com/sites/default/files/2025-04/25042025_Media_Release_RIL_Q4_FY2024_25_Financial_and_Operational_Performance.pdf",
+        "sourceType": "results_release",
+        "publishedAt": "2025-04-25",
+        "dateLabel": "Results announced 2025-04-25",
+        "reportingPeriod": "Q4 FY2024-25 and year ended 2025-03-31",
+        "pageOrSection": "Consolidated results and financial highlights, pp. 1-2",
+        "basis": "Consolidated, ₹ crore",
+        "supports": [
+          "FY25 revenue, EBITDA, PBT, PAT and dividend recommendation"
+        ],
+        "excerpt": "Record Annual Consolidated Revenue at ₹1,071,174 crore ($125.3 billion), up 7.1% Y-o-Y.",
+        "excerptType": "verbatim"
+      }
+    },
+    {
+      "id": "hdfc-fy25-results",
+      "kind": "filing",
+      "ticker": "HDFCBANK.NS",
+      "category": "results",
+      "title": "Q4 consolidated PAT ₹188.3bn; FY25 PAT ₹707.9bn",
+      "priority": "high",
+      "publishedAt": "2025-04-19",
+      "historical": true,
+      "summary": "HDFC Bank reported consolidated Q4 PAT of ₹188.3bn and FY25 PAT of ₹707.9bn. The release also reports standalone Q4 net revenue of ₹440.9bn and NII of ₹320.7bn, up 10.3% YoY.",
+      "whatChanged": "The FY25 release gives separate consolidated and standalone views; standalone Q4 NII grew 10.3% YoY.",
+      "whyItMatters": "The merger makes like-for-like comparisons delicate; the release notes prior-year standalone revenue included a subsidiary stake-sale gain.",
+      "whatToVerify": "Keep consolidated and standalone series separate and check the bank's next disclosure for normalized NII and deposit growth.",
+      "metrics": [
+        {
+          "label": "Consolidated PAT",
+          "value": 707.9,
+          "unit": "₹ billion",
+          "period": "FY25",
+          "basis": "Consolidated Indian GAAP",
+          "sourceId": "hdfc-q4fy25"
+        },
+        {
+          "label": "Consolidated PAT",
+          "value": 188.3,
+          "unit": "₹ billion",
+          "period": "Q4 FY25",
+          "basis": "Consolidated Indian GAAP",
+          "sourceId": "hdfc-q4fy25"
+        },
+        {
+          "label": "Net interest income",
+          "value": 320.7,
+          "unit": "₹ billion",
+          "period": "Q4 FY25",
+          "changeYoYPct": 10.3,
+          "basis": "Standalone Indian GAAP",
+          "sourceId": "hdfc-q4fy25"
+        }
+      ],
+      "sourceId": "hdfc-q4fy25",
+      "source": {
+        "id": "hdfc-q4fy25",
+        "title": "HDFC Bank Financial Results (Indian GAAP) for the Quarter and Year Ended March 31, 2025 — Press Release",
+        "url": "https://www.hdfc.bank.in/content/dam/hdfcbankpws/in/en/pdf/press-release/2025/q1-jan-mar/march/financial-results-indiangaap-for-the-quarter-and-year-ended-march-31-2025.pdf",
+        "sourceType": "results_release",
+        "publishedAt": "2025-04-19",
+        "dateLabel": "Results approved 2025-04-19",
+        "reportingPeriod": "Q4 FY2025 and year ended 2025-03-31",
+        "pageOrSection": "Consolidated and standalone financial results",
+        "basis": "Indian GAAP; ₹ billion in some release text; consolidated and standalone values kept distinct",
+        "supports": [
+          "Consolidated revenue/PAT and standalone Q4 net revenue/NII"
+        ],
+        "excerpt": "The consolidated profit after tax for the year ended March 31, 2025 was ₹707.9 billion.",
+        "excerptType": "verbatim"
+      }
+    },
+    {
+      "id": "tcs-fy25-results",
+      "kind": "filing",
+      "ticker": "TCS.NS",
+      "category": "results",
+      "title": "FY25 revenue +3.8%; operating margin 24.3%",
+      "priority": "medium",
+      "publishedAt": "2025-04-10",
+      "historical": true,
+      "summary": "TCS reported FY25 revenue of US$30.18bn, up 3.8% YoY; operating margin was 24.3%, net margin 19.0%, and FY25 TCV was US$39.4bn.",
+      "whatChanged": "FY25 revenue growth was 3.8%; the company also reported US$39.4bn of total contract value for the year.",
+      "whyItMatters": "TCV is a forward work indicator, while revenue growth shows realized conversion; the gap is worth tracking alongside margin.",
+      "whatToVerify": "Compare the next constant-currency revenue update and operating margin with the reported TCV conversion.",
+      "metrics": [
+        {
+          "label": "Revenue",
+          "value": 30.18,
+          "unit": "US$ billion",
+          "period": "FY25",
+          "changeYoYPct": 3.8,
+          "basis": "Consolidated",
+          "sourceId": "tcs-q4fy25"
+        },
+        {
+          "label": "Operating margin",
+          "value": 24.3,
+          "unit": "%",
+          "period": "FY25",
+          "basis": "Consolidated",
+          "sourceId": "tcs-q4fy25"
+        },
+        {
+          "label": "Total contract value",
+          "value": 39.4,
+          "unit": "US$ billion",
+          "period": "FY25",
+          "basis": "Consolidated",
+          "sourceId": "tcs-q4fy25"
+        }
+      ],
+      "sourceId": "tcs-q4fy25",
+      "source": {
+        "id": "tcs-q4fy25",
+        "title": "TCS Q4 FY2025 Financial Results — Press Release",
+        "url": "https://www.tcs.com/who-we-are/newsroom/press-release/tcs-financial-results-q4-fy-2025",
+        "sourceType": "results_release",
+        "publishedAt": "2025-04-10",
+        "dateLabel": "Results announced 2025-04-10",
+        "reportingPeriod": "Q4 FY2025 and year ended 2025-03-31",
+        "pageOrSection": "Annual highlights and quarterly results tables",
+        "basis": "Consolidated; headline revenue and TCV in USD, margins in percent",
+        "supports": [
+          "FY25 revenue growth, operating/net margins, order TCV and free cash flow"
+        ],
+        "excerpt": "FY 25 Revenue $30.18 Bn, Growth +3.8% YoY, + 4.2% in CC.",
+        "excerptType": "verbatim"
+      }
+    }
+  ],
+  "briefs": [
+    {
+      "ticker": "BAJFINANCE.NS",
+      "name": "Bajaj Finance",
+      "adHoc": true,
+      "type": "on_demand",
+      "asOf": "FY2025",
+      "period": "Year ended 2025-03-31; Q4 call held 2025-04-29",
+      "basis": "Company-reported annual figures; not a live estimate",
+      "businessSnapshot": "Consumer, MSME, commercial and rural financial services; the annual report describes a diversified lending and customer-acquisition model.",
+      "thesis": "FY25 growth stayed strong across AUM, income and profit, while the sharp rise in loan-loss provisions makes unsecured-credit quality the central counter-signal.",
+      "metrics": [
+        {
+          "label": "Assets under management",
+          "value": 416661,
+          "unit": "₹ crore",
+          "period": "FY25 close",
+          "changeYoYPct": 26,
+          "sourceId": "bfl-ar25"
+        },
+        {
+          "label": "Net total income",
+          "value": 44954,
+          "unit": "₹ crore",
+          "period": "FY25",
+          "changeYoYPct": 24,
+          "sourceId": "bfl-ar25"
+        },
+        {
+          "label": "Pre-impairment operating profit",
+          "value": 30028,
+          "unit": "₹ crore",
+          "period": "FY25",
+          "changeYoYPct": 25,
+          "sourceId": "bfl-ar25"
+        },
+        {
+          "label": "Profit after tax",
+          "value": 16779,
+          "unit": "₹ crore",
+          "period": "FY25",
+          "changeYoYPct": 16,
+          "sourceId": "bfl-ar25"
+        },
+        {
+          "label": "Loan-loss provisions",
+          "value": 7966,
+          "unit": "₹ crore",
+          "period": "FY25",
+          "changeYoYPct": 72,
+          "sourceId": "bfl-ar25"
+        },
+        {
+          "label": "Return on average assets",
+          "value": 4.57,
+          "unit": "%",
+          "period": "FY25",
+          "sourceId": "bfl-ar25"
+        },
+        {
+          "label": "Return on average equity",
+          "value": 19.19,
+          "unit": "%",
+          "period": "FY25",
+          "sourceId": "bfl-ar25"
+        },
+        {
+          "label": "Additional ECL model provision",
+          "value": 359,
+          "unit": "₹ crore",
+          "period": "Q4 FY25",
+          "sourceId": "bfl-call-q4fy25"
+        },
+        {
+          "label": "Tax expense reduction",
+          "value": 348,
+          "unit": "₹ crore",
+          "period": "Q4 FY25",
+          "sourceId": "bfl-call-q4fy25"
+        }
+      ],
+      "narrativeVsNumbers": "AUM grew 26% and PAT 16% for FY25, but loan-loss provisions rose 72%. In Q4, management separately identified an additional ₹359 crore ECL provision and a ₹348 crore tax reduction; reported Q4 PAT growth therefore needs those one-offs in view.",
+      "cashQuality": null,
+      "bull": {
+        "claim": "FY25 AUM grew 26%, net total income 24%, and PAT 16%; the customer franchise reached 101.82 million.",
+        "sourceId": "bfl-ar25"
+      },
+      "bear": {
+        "claim": "Loan-loss provisions increased 72%; management cited macro deterioration, leverage in unsecured loans and rising banking-sector stress.",
+        "sourceId": "bfl-ar25"
+      },
+      "evidence": [
+        {
+          "claim": "AUM increased 26% to ₹416,661 crore in FY25.",
+          "sourceId": "bfl-ar25",
+          "pageOrSection": "Chairman's Letter, FY2025 performance highlights",
+          "excerpt": "The shareholder letter reports FY25 AUM of ₹416,661 crore, up 26% year over year.",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "Loan-loss provisions rose 72% to ₹7,966 crore; the letter cites macro deterioration, unsecured leverage and banking-sector stress.",
+          "sourceId": "bfl-ar25",
+          "pageOrSection": "Chairman's Letter, FY2025 performance highlights",
+          "excerpt": "The letter links higher provisions to macro conditions, unsecured leverage and banking-sector stress.",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "Management reported Q4 PBT growth of 11% and PAT growth of 19%, alongside additional ECL provision and lower tax expense.",
+          "sourceId": "bfl-call-q4fy25",
+          "pageOrSection": "Opening financial highlights and one-off provisions, p. 2",
+          "excerpt": "The call separates a ₹359 crore additional ECL provision from a ₹348 crore tax expense reduction.",
+          "excerptType": "paraphrase"
+        }
+      ],
+      "watchItems": [
+        "Loan-loss provisions versus AUM growth",
+        "Unsecured portfolio credit costs",
+        "Reported versus one-off-adjusted quarterly PAT"
+      ],
+      "sources": [
+        {
+          "id": "bfl-ar25",
+          "title": "Bajaj Finance Limited Annual Report 2024-25 — Chairman's Letter",
+          "url": "https://www.bajajfinserv.in/finance-digital-annual-report-fy25/chairman-letter.html",
+          "sourceType": "annual_report",
+          "publishedAt": null,
+          "dateLabel": "FY2024-25; exact page publication date is not stated on this section page",
+          "reportingPeriod": "Year ended 2025-03-31",
+          "pageOrSection": "Chairman's Letter, FY2025 performance highlights",
+          "basis": "Company-reported annual figures; as presented in the shareholder letter",
+          "supports": [
+            "AUM, customer franchise, net total income, pre-impairment operating profit, provisions, PAT, RoA and RoE"
+          ],
+          "excerpt": "FY25 shareholder letter reports AUM at ₹416,661 crore, up 26% from FY2024.",
+          "excerptType": "paraphrase"
+        },
+        {
+          "id": "bfl-call-q4fy25",
+          "title": "Bajaj Finance Q4 FY25 Earnings Conference Call Transcript",
+          "url": "https://cms-assets.bajajfinserv.in/is/content/bajajfinance/bajaj-finance-q4-fy-25-earnings-conference-call-transcriptpdf?fmt=pdf&scl=1",
+          "sourceType": "concall_transcript",
+          "publishedAt": "2025-04-29",
+          "dateLabel": "Call held 2025-04-29",
+          "reportingPeriod": "Q4 FY2024-25 and year ended 2025-03-31",
+          "pageOrSection": "Opening financial highlights and one-off provisions, p. 2",
+          "basis": "Management commentary",
+          "supports": [
+            "Q4 PBT/PAT growth, additional ECL model provision, and tax expense reversal"
+          ],
+          "excerpt": "The Q4 transcript reports PBT and PAT growth and identifies an additional ECL provision and a tax expense reduction.",
+          "excerptType": "paraphrase"
+        }
+      ]
+    },
+    {
+      "ticker": "TITAN.NS",
+      "name": "Titan Company",
+      "adHoc": true,
+      "type": "on_demand",
+      "asOf": "FY2025",
+      "period": "Year ended 2025-03-31; Q4 call held 2025-05-08",
+      "basis": "Audited consolidated figures unless noted; ₹ crore",
+      "businessSnapshot": "Jewellery is the largest business, with watches and wearables, eyecare, international and newer consumer businesses alongside it.",
+      "thesis": "Revenue advanced strongly, but consolidated PBT and PAT declined; the annual report points to gold-price and customs-duty effects while management also described pressure at lower jewellery price points.",
+      "metrics": [
+        {
+          "label": "Revenue from operations",
+          "value": 60456,
+          "unit": "₹ crore",
+          "period": "FY25",
+          "changeYoYPct": 18.4,
+          "basis": "Consolidated",
+          "sourceId": "titan-ar25"
+        },
+        {
+          "label": "EBITDA-equivalent line item",
+          "value": 6180,
+          "unit": "₹ crore",
+          "period": "FY25",
+          "changeYoYPct": 6.1,
+          "basis": "Consolidated; issuer line item is profit before exceptional items, finance costs, depreciation and taxes",
+          "sourceId": "titan-ar25"
+        },
+        {
+          "label": "Profit before tax",
+          "value": 4535,
+          "unit": "₹ crore",
+          "period": "FY25",
+          "changeYoYPct": -1.9,
+          "basis": "Consolidated",
+          "sourceId": "titan-ar25"
+        },
+        {
+          "label": "Profit for the year",
+          "value": 3337,
+          "unit": "₹ crore",
+          "period": "FY25",
+          "changeYoYPct": -4.6,
+          "basis": "Consolidated",
+          "sourceId": "titan-ar25"
+        },
+        {
+          "label": "Jewellery revenue",
+          "value": 46571,
+          "unit": "₹ crore",
+          "period": "FY25",
+          "changeYoYPct": 21,
+          "basis": "Standalone division; excludes bullion sales",
+          "sourceId": "titan-ar25"
+        }
+      ],
+      "narrativeVsNumbers": "Management described the Q4 performance as satisfying despite gold-rate and discretionary-consumption pressure, and targeted high-double-digit jewellery growth. FY25 consolidated revenue grew about 18%, but PBT fell 1.9% and PAT 4.6%; the annual report attributes profitability pressure partly to the customs-duty change.",
+      "cashQuality": null,
+      "bull": {
+        "claim": "FY25 consolidated revenue rose about 18%; the jewellery division reported 21% growth, and management continued to target high-double-digit jewellery growth.",
+        "sourceId": "titan-ar25"
+      },
+      "bear": {
+        "claim": "Consolidated PBT fell 1.9% and PAT fell 4.6%; management described pressure in lower jewellery price bands amid gold-price uncertainty.",
+        "sourceId": "titan-ar25"
+      },
+      "evidence": [
+        {
+          "claim": "Consolidated FY25 revenue was ₹60,456 crore; PBT was ₹4,535 crore and profit for the year ₹3,337 crore.",
+          "sourceId": "titan-ar25",
+          "pageOrSection": "Statutory Reports, Board's Report, Financial Results, p. 118",
+          "excerpt": "The audited consolidated results table reports revenue of ₹60,456 crore, PBT of ₹4,535 crore and profit of ₹3,337 crore.",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "Standalone jewellery division revenue, excluding bullion sales, was ₹46,571 crore, up 21%.",
+          "sourceId": "titan-ar25",
+          "pageOrSection": "Statutory Reports, Board's Report, business review, p. 119",
+          "excerpt": "The report presents jewellery revenue separately from bullion sales and reports 21% growth.",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "Management held its jewellery margin outlook at 11%-11.5% while describing uncertainty in gold prices.",
+          "sourceId": "titan-call-q4fy25",
+          "pageOrSection": "Opening remarks and Q&A on gold-price sensitivity and margin expectations, pp. 2-5",
+          "excerpt": "Management described the 11%-11.5% jewellery margin range as a more reasonable outlook amid uncertainty.",
+          "excerptType": "paraphrase"
+        }
+      ],
+      "watchItems": [
+        "Buyer growth versus average ticket size",
+        "Jewellery EBIT margin versus the 11%-11.5% range discussed on the call",
+        "Gold-price and customs-duty effects on reported profit"
+      ],
+      "sources": [
+        {
+          "id": "titan-ar25",
+          "title": "Titan Company Limited Annual Report 2024-25",
+          "url": "https://www.titancompany.in/sites/default/files/2025-06/Titan%20AR%202024-25%20AR.pdf",
+          "sourceType": "annual_report",
+          "publishedAt": null,
+          "dateLabel": "FY2024-25; official PDF path indicates June 2025",
+          "reportingPeriod": "Year ended 2025-03-31",
+          "pageOrSection": "Statutory Reports, Board's Report, Financial Results, p. 118; discussion on p. 119",
+          "basis": "Audited consolidated figures unless a metric explicitly says otherwise",
+          "supports": [
+            "Consolidated revenue, issuer EBITDA-equivalent line item, PBT, PAT, business lines and reported gold-price/customs-duty pressures"
+          ],
+          "excerpt": "The audited FY25 consolidated table reports revenue of ₹60,456 crore, PBT of ₹4,535 crore and profit of ₹3,337 crore.",
+          "excerptType": "paraphrase"
+        },
+        {
+          "id": "titan-call-q4fy25",
+          "title": "Titan Company Limited Q4 & FY'25 Earnings Conference Call Transcript",
+          "url": "https://www.titancompany.in/sites/default/files/2025-05/SEinvestorcalltranscriptQ4_0.pdf",
+          "sourceType": "concall_transcript",
+          "publishedAt": "2025-05-12",
+          "dateLabel": "Call held 2025-05-08; transcript filed 2025-05-12",
+          "reportingPeriod": "Q4 FY2024-25 and year ended 2025-03-31",
+          "pageOrSection": "Opening remarks and Q&A on gold-price sensitivity, jewellery demand and margin expectations, pp. 2-5",
+          "basis": "Management commentary",
+          "supports": [
+            "Gold-price sensitivity, consumer demand at lower price points, competitive intensity, and management's margin/growth outlook"
+          ],
+          "excerpt": "Management held its jewellery margin range at 11%-11.5%, citing uncertainty in gold prices and other conditions.",
+          "excerptType": "paraphrase"
+        }
+      ]
+    },
+    {
+      "ticker": "DRREDDY.NS",
+      "name": "Dr. Reddy's Laboratories",
+      "adHoc": true,
+      "type": "on_demand",
+      "asOf": "FY2025",
+      "period": "Year ended 2025-03-31; Q4 call held 2025-05-09",
+      "basis": "Consolidated IFRS, ₹ crore unless stated; reported figures converted from ₹ million by ÷10",
+      "businessSnapshot": "The annual report describes development, manufacturing and sale of pharmaceutical products and services, with generics as the core and Consumer Health, Innovation and Biosimilars as strategic growth areas.",
+      "thesis": "FY25 delivered record revenue and EBITDA with positive operating cash flow; the annual report says NRT contributed to growth, while its internal scorecard remained below stretch plans.",
+      "metrics": [
+        {
+          "label": "Revenue",
+          "value": 32553.5,
+          "unit": "₹ crore",
+          "period": "FY25",
+          "changeYoYPct": 17,
+          "basis": "Consolidated IFRS",
+          "sourceId": "dr-ar25"
+        },
+        {
+          "label": "EBITDA",
+          "value": 9213.3,
+          "unit": "₹ crore",
+          "period": "FY25",
+          "marginPct": 28.3,
+          "basis": "Consolidated IFRS",
+          "sourceId": "dr-ar25"
+        },
+        {
+          "label": "Profit before tax",
+          "value": 7679.5,
+          "unit": "₹ crore",
+          "period": "FY25",
+          "changeYoYPct": 7,
+          "basis": "Consolidated IFRS",
+          "sourceId": "dr-ar25"
+        },
+        {
+          "label": "PAT attributable to equity holders",
+          "value": 5654.4,
+          "unit": "₹ crore",
+          "period": "FY25",
+          "changeYoYPct": 2,
+          "basis": "Consolidated IFRS",
+          "sourceId": "dr-ar25"
+        },
+        {
+          "label": "Net cash flows from operating activities",
+          "value": 4225,
+          "unit": "₹ crore",
+          "period": "FY25",
+          "basis": "Consolidated cash flow statement",
+          "sourceId": "dr-ar25"
+        },
+        {
+          "label": "Net cash flows from operating activities",
+          "value": 3449.7,
+          "unit": "₹ crore",
+          "period": "FY24",
+          "basis": "Consolidated cash flow statement",
+          "sourceId": "dr-ar25"
+        },
+        {
+          "label": "Free cash flow before acquisition-related payments",
+          "value": 1332,
+          "unit": "₹ crore",
+          "period": "FY25",
+          "basis": "Management-reported on the earnings call",
+          "sourceId": "dr-call-q4fy25"
+        },
+        {
+          "label": "Net surplus cash after NRT acquisition payout",
+          "value": 2454,
+          "unit": "₹ crore",
+          "period": "2025-03-31",
+          "basis": "Management-reported on the earnings call",
+          "sourceId": "dr-call-q4fy25"
+        }
+      ],
+      "narrativeVsNumbers": "The annual report reports 17% revenue growth, 28.3% EBITDA margin and 27.7% RoCE, and notes NRT's contribution to growth. Its scorecard marked Current Business Performance, Building the Future and Health of the Business below plan, with overall performance marginally below stretch targets.",
+      "cashQuality": "Consolidated net cash from operating activities rose to ₹4,225 crore from ₹3,449.7 crore. Management separately reported FY25 free cash flow of ₹1,332 crore before acquisition-related payments and ₹2,454 crore of net surplus cash after the NRT payout; these are distinct measures and periods.",
+      "bull": {
+        "claim": "FY25 revenue grew 17%, EBITDA margin was 28.3%, RoCE was 27.7%, and consolidated operating cash flow increased year over year.",
+        "sourceId": "dr-ar25"
+      },
+      "bear": {
+        "claim": "PAT attributable to equity holders rose only 2%; the annual report says all three internal scorecard pillars were below plan.",
+        "sourceId": "dr-ar25"
+      },
+      "evidence": [
+        {
+          "claim": "FY25 revenue was ₹32,553.5 crore, EBITDA ₹9,213.3 crore, EBITDA margin 28.3%, and RoCE 27.7%.",
+          "sourceId": "dr-ar25",
+          "pageOrSection": "Company Performance, pp. 96-97",
+          "excerpt": "The annual report records 17% revenue growth, a 28.3% EBITDA margin and 27.7% RoCE.",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "The report identifies NRT as a contributor to FY25 growth and marks three scorecard pillars below plan.",
+          "sourceId": "dr-ar25",
+          "pageOrSection": "Company Performance and strategic scorecard, pp. 96-97",
+          "excerpt": "The report says NRT contributed to growth; the three scorecard pillars were below plan.",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "Consolidated operating cash flow was ₹4,225 crore in FY25 versus ₹3,449.7 crore in FY24.",
+          "sourceId": "dr-ar25",
+          "pageOrSection": "Consolidated Statement of Cash Flows, pp. 248-249",
+          "excerpt": "Consolidated net cash from operating activities increased year over year.",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "Management reported FY25 free cash flow of ₹1,332 crore before acquisition-related payments.",
+          "sourceId": "dr-call-q4fy25",
+          "pageOrSection": "FY25 financial overview and cash flows, pp. 2-5",
+          "excerpt": "Management reported free cash flow of ₹1,332 crore before acquisition-related payments.",
+          "excerptType": "paraphrase"
+        }
+      ],
+      "watchItems": [
+        "Organic growth excluding acquired NRT",
+        "PAT growth versus revenue and EBITDA",
+        "Operating cash flow after working-capital changes",
+        "Progress against the company's strategic scorecard"
+      ],
+      "sources": [
+        {
+          "id": "dr-ar25",
+          "title": "Dr. Reddy's Laboratories Integrated Annual Report FY 2024-25",
+          "url": "https://api.drreddys.com/images/Integrated-Annual-Report-2024-25.pdf",
+          "sourceType": "annual_report",
+          "publishedAt": null,
+          "dateLabel": "FY2024-25 report; financial statements dated 2025-05-09; publication date not stated on source PDF",
+          "reportingPeriod": "Year ended 2025-03-31",
+          "pageOrSection": "Company Performance, pp. 96-97; Consolidated Statement of Cash Flows, pp. 248-249",
+          "basis": "Consolidated IFRS financial statements; cash flow values in the report are ₹ million",
+          "supports": [
+            "FY25 revenue/EBITDA/RoCE, management scorecard, consolidated operating cash flow, and NRT acquisition contribution"
+          ],
+          "excerpt": "The FY25 report records revenue growth of 17%, EBITDA above US$1bn, a 28.3% EBITDA margin and 27.7% RoCE.",
+          "excerptType": "paraphrase"
+        },
+        {
+          "id": "dr-call-q4fy25",
+          "title": "Dr. Reddy's Q4 and Full Year FY25 Earnings Conference Call Transcript",
+          "url": "https://www.drreddys.com/cms/cms/sites/default/files/2025-05/DRL_Q4FY25%20Earnings%20Call%20Transcript_9May2025.pdf",
+          "sourceType": "concall_transcript",
+          "publishedAt": "2025-05-09",
+          "dateLabel": "Call held 2025-05-09",
+          "reportingPeriod": "Q4 FY2024-25 and year ended 2025-03-31",
+          "pageOrSection": "FY25 financial overview, cash flows and balance sheet, pp. 2-5",
+          "basis": "Management commentary; figures for FCF and net cash are management-reported",
+          "supports": [
+            "FY25 financial outlook and management-reported FCF/net cash position"
+          ],
+          "excerpt": "Management reported FY25 free cash flow of ₹1,332 crore before acquisition-related payments and a ₹2,454 crore net surplus cash position.",
+          "excerptType": "paraphrase"
+        }
+      ]
+    }
+  ]
+}
