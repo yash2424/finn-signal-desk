@@ -1,12 +1,12 @@
 {
   "meta": {
     "asOf": "2026-11-13",
-    "snapshotLabel": "NSE close · 13 Nov 2026; issuer research and filing examples are FY25 archive",
-    "coverage": "18 NSE EQ portfolio names, 21 available EOD sessions, 3 ad-hoc Pull briefs outside the portfolio, and 3 historical issuer results signals. This is a cited demo snapshot, not a live filing feed.",
+    "snapshotLabel": "NSE close · 13 Nov 2026; watchlist research from FY26 annual reports and latest calls",
+    "coverage": "18 NSE EQ portfolio names with cited Pull briefs from FY2025-26 annual reports and the latest earnings calls, 21 available EOD sessions, 3 ad-hoc FY25 Pull briefs outside the portfolio, and 3 historical issuer results signals. This is a cited demo snapshot, not a live filing feed.",
     "updatedAt": "2026-11-15",
     "marketSource": "NSE India CM-UDiFF Common Bhavcopy Final (zip); exact per-session URLs are attached to each quote.",
     "marketMethod": "Close, prior close and traded volume are read from NSE EQ rows; changePct=(close/previous close-1)*100; avg20VolumeShares is the arithmetic mean of the prior 20 available EQ sessions.",
-    "historicalDisclosure": "Issuer results signals and Pull briefs are from FY25 publications dated Apr–May 2025. Their dates are preserved and are not presented as Nov 2026 news.",
+    "historicalDisclosure": "Watchlist Pull briefs use FY2025-26 annual reports and earnings calls held Jul–Nov 2026. The three ad-hoc briefs and the Push results signals are from FY25 publications dated Apr–May 2025; all dates are preserved.",
     "defaultThresholds": {
       "priceMovePct": 2.0,
       "volumeMultiple": 1.5
@@ -772,6 +772,3027 @@
     }
   ],
   "briefs": [
+    {
+      "ticker": "RELIANCE.NS",
+      "name": "Reliance Industries",
+      "adHoc": false,
+      "type": "portfolio",
+      "asOf": "FY2025-26",
+      "period": "Year ended 2026-03-31; latest call 2026-10-30",
+      "basis": "Company-reported figures; ₹ crore unless stated. Where a document states figures but not the growth rate, the YoY % shown is computed from the two reported years; ₹ million figures are converted to ₹ crore (÷10).",
+      "businessSnapshot": "Conglomerate spanning oil-to-chemicals (O2C), retail, and Jio digital services, plus a new energy business.",
+      "thesis": "FY26 profit grew faster than revenue as Digital Services and O2C drove EBITDA up 13.4%; the latest quarter set an EBITDA record, but management flagged consumer demand and quick-commerce pressure in Retail.",
+      "metrics": [
+        {
+          "label": "Revenue (value of sales & services)",
+          "value": 1175919,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "reliance-ar26",
+          "pageOrSection": "Ten-year financial summary, PDF p. 44",
+          "changeYoYPct": 9.8,
+          "basis": "Consolidated",
+          "searchTerms": [
+            "revenue",
+            "sales"
+          ]
+        },
+        {
+          "label": "EBITDA",
+          "value": 207911,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "reliance-ar26",
+          "pageOrSection": "Financial performance review, PDF p. 44",
+          "changeYoYPct": 13.4,
+          "basis": "Consolidated"
+        },
+        {
+          "label": "Profit before tax",
+          "value": 123162,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "reliance-ar26",
+          "pageOrSection": "Board's Report financial results, PDF p. 80",
+          "changeYoYPct": 16.2,
+          "basis": "Consolidated"
+        },
+        {
+          "label": "Profit after tax",
+          "value": 95754,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "reliance-ar26",
+          "pageOrSection": "Financial performance review, PDF p. 44",
+          "changeYoYPct": 17.8,
+          "basis": "Consolidated; after share of associates and JVs"
+        },
+        {
+          "label": "Net cash from operating activities",
+          "value": 192113,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "reliance-ar26",
+          "pageOrSection": "Consolidated cash flow statement, PDF p. 142",
+          "changeYoYPct": 7.5,
+          "basis": "Consolidated",
+          "searchTerms": [
+            "cash flow",
+            "operating cash"
+          ]
+        },
+        {
+          "label": "Digital Services EBITDA margin",
+          "value": 51.1,
+          "unit": "%",
+          "period": "FY26",
+          "sourceId": "reliance-ar26",
+          "pageOrSection": "Digital Services performance, PDF p. 48",
+          "basis": "Segment; on revenue from operations",
+          "searchTerms": [
+            "Jio",
+            "digital",
+            "margin"
+          ]
+        },
+        {
+          "label": "Consolidated EBITDA",
+          "value": 62409,
+          "unit": "₹ crore",
+          "period": "Q2 FY27",
+          "sourceId": "reliance-call",
+          "pageOrSection": "CFO opening remarks, PDF p. 3",
+          "changeYoYPct": 24,
+          "basis": "Management-reported",
+          "searchTerms": [
+            "quarter",
+            "EBITDA"
+          ]
+        }
+      ],
+      "narrativeVsNumbers": "The annual report shows PAT up 17.8% on revenue up 9.8%, and Retail EBITDA margin slipped to 8.2% from 8.6% while Digital Services margin rose to 51.1%. On the Q2 FY27 call, management called it the strongest quarter yet, with EBITDA up 24%, while describing weaker discretionary demand in Retail.",
+      "cashQuality": "Consolidated operating cash flow rose to ₹1,92,113 crore in FY26 from ₹1,78,703 crore (PDF p. 142), while capex on property, plant, spectrum and intangibles was ₹1,22,916 crore.",
+      "bull": [
+        {
+          "claim": "FY26 EBITDA rose 13.4% to ₹2,07,911 crore and PAT 17.8% to ₹95,754 crore, led by Digital Services and O2C.",
+          "sourceId": "reliance-ar26",
+          "pageOrSection": "PDF p. 44"
+        },
+        {
+          "claim": "Q2 FY27 consolidated EBITDA was a record ₹62,409 crore, up 24% year on year, with PAT up 34%.",
+          "sourceId": "reliance-call",
+          "pageOrSection": "PDF p. 3"
+        }
+      ],
+      "bear": [
+        {
+          "claim": "Retail EBITDA margin fell to 8.2% from 8.6% in FY26.",
+          "sourceId": "reliance-ar26",
+          "pageOrSection": "PDF p. 46"
+        },
+        {
+          "claim": "Management cited currency depreciation, a monsoon deficit and food inflation weighing on discretionary demand, and margin pressure from matching quick-commerce prices.",
+          "sourceId": "reliance-call",
+          "pageOrSection": "PDF pp. 7, 9"
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "FY26 consolidated revenue was ₹11,75,919 crore versus ₹10,71,174 crore in FY25.",
+          "sourceId": "reliance-ar26",
+          "pageOrSection": "Ten-year financial summary, PDF p. 44",
+          "excerpt": "FY26 consolidated revenue was ₹11,75,919 crore versus ₹10,71,174 crore in FY25.",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "Consolidated PBT was ₹1,23,162 crore versus ₹1,06,017 crore; PAT attributable to owners was ₹80,775 crore.",
+          "sourceId": "reliance-ar26",
+          "pageOrSection": "Board's Report financial results, PDF p. 80",
+          "excerpt": "Consolidated PBT was ₹1,23,162 crore versus ₹1,06,017 crore; PAT attributable to owners was ₹80,775 crore.",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "Retail revenue grew 12.1% to ₹3,71,085 crore with EBITDA of ₹27,034 crore; EBITDA margin was 8.2% versus 8.6%.",
+          "sourceId": "reliance-ar26",
+          "pageOrSection": "Retail performance, PDF p. 46",
+          "excerpt": "Retail revenue grew 12.1% to ₹3,71,085 crore with EBITDA of ₹27,034 crore; EBITDA margin was 8.2% versus 8.6%.",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "Digital Services revenue grew 14.3% and EBITDA 17.8%, with margin of 51.1%.",
+          "sourceId": "reliance-ar26",
+          "pageOrSection": "Digital Services performance, PDF p. 48",
+          "excerpt": "Digital Services revenue grew 14.3% and EBITDA 17.8%, with margin of 51.1%.",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "Management said demand pressure came from currency depreciation, the monsoon deficit and rising food prices, and that Retail is matching quick-commerce prices in metros to protect market share.",
+          "sourceId": "reliance-call",
+          "pageOrSection": "Retail commentary, PDF pp. 7, 9",
+          "excerpt": "Management said demand pressure came from currency depreciation, the monsoon deficit and rising food prices, and that Retail is matching quick-commerce prices in metros to protect market share.",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "Jio reported 15.1 million fixed wireless connections and over 78% fixed wireless market share.",
+          "sourceId": "reliance-call",
+          "pageOrSection": "Jio commentary, PDF p. 5",
+          "excerpt": "Jio reported 15.1 million fixed wireless connections and over 78% fixed wireless market share.",
+          "excerptType": "paraphrase"
+        }
+      ],
+      "watchItems": [
+        "Retail margin versus quick-commerce price matching",
+        "O2C earnings sustainability after a record quarter",
+        "Capex intensity versus operating cash flow"
+      ],
+      "sources": [
+        {
+          "id": "reliance-ar26",
+          "title": "Reliance Industries Annual Report 2025-26",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/cc08294f-ec68-4f15-aaa4-c14a3c4bdfb2.pdf",
+          "sourceType": "annual_report",
+          "publishedAt": null,
+          "dateLabel": "FY2025-26 report as filed with BSE",
+          "reportingPeriod": "Year ended 2026-03-31",
+          "pageOrSection": "Annual report (BSE filing)",
+          "basis": "Company-reported audited figures; page numbers are PDF pages of the linked BSE file",
+          "supports": [
+            "Consolidated revenue, EBITDA, PBT, PAT and operating cash flow",
+            "Retail and Digital Services segment revenue, EBITDA and margins"
+          ]
+        },
+        {
+          "id": "reliance-call",
+          "title": "Reliance Industries Q2 FY2026-27 Media & Analyst Meet Transcript",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/8e997741-4d35-4188-933a-cf020fb9c816.pdf",
+          "sourceType": "concall_transcript",
+          "publishedAt": "2026-10-30",
+          "dateLabel": "Call transcript dated 2026-10-30",
+          "reportingPeriod": "Quarter ended 2026-09-30",
+          "pageOrSection": "Earnings-call transcript",
+          "basis": "Management commentary; page numbers are PDF pages of the linked transcript",
+          "supports": [
+            "Q2 FY27 consolidated EBITDA and PAT",
+            "Retail demand, quick-commerce margin pressure, O2C performance, Jio fixed wireless"
+          ]
+        }
+      ]
+    },
+    {
+      "ticker": "HDFCBANK.NS",
+      "name": "HDFC Bank",
+      "adHoc": false,
+      "type": "portfolio",
+      "asOf": "FY2025-26",
+      "period": "Year ended 2026-03-31; latest call 2026-10-23",
+      "basis": "Company-reported figures; ₹ crore unless stated. Where a document states figures but not the growth rate, the YoY % shown is computed from the two reported years; ₹ million figures are converted to ₹ crore (÷10).",
+      "businessSnapshot": "Private-sector bank with retail, wholesale and treasury businesses, merged with HDFC Ltd.",
+      "thesis": "FY26 profit grew 10.9% with lower bad loans and a better cost ratio, but net interest income grew only 4.9%; the latest call pointed to a margin recovery as rates turn, under new leadership.",
+      "metrics": [
+        {
+          "label": "Net interest income",
+          "value": 128686.03,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "hdfcbank-ar26",
+          "pageOrSection": "Financial highlights table, PDF p. 259",
+          "changeYoYPct": 4.9,
+          "basis": "Standalone",
+          "searchTerms": [
+            "NII",
+            "interest"
+          ]
+        },
+        {
+          "label": "Net revenues",
+          "value": 191218.6,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "hdfcbank-ar26",
+          "pageOrSection": "Financial highlights table, PDF p. 259",
+          "changeYoYPct": 13.6,
+          "basis": "Standalone"
+        },
+        {
+          "label": "Profit after tax",
+          "value": 74671.3,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "hdfcbank-ar26",
+          "pageOrSection": "Directors' Report, PDF p. 41",
+          "changeYoYPct": 10.9,
+          "basis": "Standalone"
+        },
+        {
+          "label": "Net interest margin",
+          "value": 3.34,
+          "unit": "%",
+          "period": "FY26",
+          "sourceId": "hdfcbank-ar26",
+          "pageOrSection": "Directors' Report, PDF p. 41",
+          "basis": "On average assets",
+          "searchTerms": [
+            "NIM",
+            "margin"
+          ]
+        },
+        {
+          "label": "Deposits",
+          "value": 3105250,
+          "unit": "₹ crore",
+          "period": "2026-03-31",
+          "sourceId": "hdfcbank-ar26",
+          "pageOrSection": "Financial performance summary, PDF p. 69",
+          "changeYoYPct": 14.4,
+          "basis": "Standalone"
+        },
+        {
+          "label": "Gross NPA ratio",
+          "value": 1.15,
+          "unit": "%",
+          "period": "2026-03-31",
+          "sourceId": "hdfcbank-ar26",
+          "pageOrSection": "Financial performance summary, PDF p. 69",
+          "basis": "Versus 1.33% at 2025-03-31",
+          "searchTerms": [
+            "GNPA",
+            "asset quality",
+            "NPA"
+          ]
+        },
+        {
+          "label": "Cost-to-income ratio",
+          "value": 38.0,
+          "unit": "%",
+          "period": "FY26",
+          "sourceId": "hdfcbank-ar26",
+          "pageOrSection": "Financial performance summary, PDF p. 69",
+          "basis": "Versus 40.5% in FY25",
+          "searchTerms": [
+            "cost"
+          ]
+        }
+      ],
+      "narrativeVsNumbers": "Net revenues grew 13.6%, helped by other income rising to ₹62,533 crore from ₹45,632 crore, while core net interest income grew 4.9%. On the Q2 FY27 call, management said margins had borne the brunt of assets repricing faster than deposits and were positioned to recover in a rising-rate cycle.",
+      "cashQuality": null,
+      "bull": [
+        {
+          "claim": "Gross NPA ratio improved to 1.15% from 1.33%, and cost-to-income fell to 38.0% from 40.5%.",
+          "sourceId": "hdfcbank-ar26",
+          "pageOrSection": "PDF p. 69"
+        },
+        {
+          "claim": "Q2 FY27 deposits grew 18.8% year on year, about 4 points of it from a special FCNR(B) window; CASA grew about 10.8%.",
+          "sourceId": "hdfcbank-call",
+          "pageOrSection": "PDF p. 3"
+        }
+      ],
+      "bear": [
+        {
+          "claim": "Net interest income grew only 4.9% in FY26, much slower than net revenues, which were lifted by other income.",
+          "sourceId": "hdfcbank-ar26",
+          "pageOrSection": "PDF p. 259"
+        },
+        {
+          "claim": "Management said margins had absorbed faster asset repricing and a lag in funding costs; a new leader is yet to set out strategy.",
+          "sourceId": "hdfcbank-call",
+          "pageOrSection": "PDF pp. 5, 7"
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Net interest income was ₹1,28,686 crore in FY26 versus ₹1,22,670 crore; other income was ₹62,533 crore versus ₹45,632 crore.",
+          "sourceId": "hdfcbank-ar26",
+          "pageOrSection": "Financial highlights table, PDF p. 259",
+          "excerpt": "Net interest income was ₹1,28,686 crore in FY26 versus ₹1,22,670 crore; other income was ₹62,533 crore versus ₹45,632 crore.",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "PAT rose 10.9% to ₹74,671 crore; NIM was 3.34% of average assets; the balance sheet grew 11.6% to ₹43,64,886 crore.",
+          "sourceId": "hdfcbank-ar26",
+          "pageOrSection": "Directors' Report, PDF p. 41",
+          "excerpt": "PAT rose 10.9% to ₹74,671 crore; NIM was 3.34% of average assets; the balance sheet grew 11.6% to ₹43,64,886 crore.",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "Deposits were ₹31,05,250 crore at March 2026 versus ₹27,14,715 crore; GNPA 1.15% versus 1.33%.",
+          "sourceId": "hdfcbank-ar26",
+          "pageOrSection": "Financial performance summary, PDF p. 69",
+          "excerpt": "Deposits were ₹31,05,250 crore at March 2026 versus ₹27,14,715 crore; GNPA 1.15% versus 1.33%.",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "Q2 FY27 deposits grew 18.8% year on year including about 4 percentage points from a special FCNR(B) window.",
+          "sourceId": "hdfcbank-call",
+          "pageOrSection": "Opening remarks, PDF p. 3",
+          "excerpt": "Q2 FY27 deposits grew 18.8% year on year including about 4 percentage points from a special FCNR(B) window.",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "Management said margins were positioned for a reversal as the rate cycle turns upward and retail and MSME assets grow as a share of the book.",
+          "sourceId": "hdfcbank-call",
+          "pageOrSection": "Opening remarks, PDF p. 5",
+          "excerpt": "Management said margins were positioned for a reversal as the rate cycle turns upward and retail and MSME assets grow as a share of the book.",
+          "excerptType": "paraphrase"
+        }
+      ],
+      "watchItems": [
+        "NIM recovery versus deposit costs",
+        "Deposit growth excluding the FCNR(B) window",
+        "Strategy update from the new leadership"
+      ],
+      "sources": [
+        {
+          "id": "hdfcbank-ar26",
+          "title": "HDFC Bank Annual Report 2025-26",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/7d621500-082a-4342-b98d-ba677d3890c5.pdf",
+          "sourceType": "annual_report",
+          "publishedAt": "2026-07-10",
+          "dateLabel": "FY2025-26 report; filed with BSE 2026-07-10",
+          "reportingPeriod": "Year ended 2026-03-31",
+          "pageOrSection": "Annual report (BSE filing)",
+          "basis": "Company-reported audited figures; page numbers are PDF pages of the linked BSE file",
+          "supports": [
+            "Net interest income, other income, net revenues, PAT, NIM, deposits, GNPA and cost-to-income ratio"
+          ]
+        },
+        {
+          "id": "hdfcbank-call",
+          "title": "HDFC Bank Q2 FY2027 Earnings Call Transcript",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/d7e45614-ae12-4bb9-b92d-623b3a63f166.pdf",
+          "sourceType": "concall_transcript",
+          "publishedAt": "2026-10-23",
+          "dateLabel": "Call transcript dated 2026-10-23",
+          "reportingPeriod": "Quarter ended 2026-09-30",
+          "pageOrSection": "Earnings-call transcript",
+          "basis": "Management commentary; page numbers are PDF pages of the linked transcript",
+          "supports": [
+            "Q2 FY27 deposit and CASA growth, margin outlook, leadership transition"
+          ]
+        }
+      ]
+    },
+    {
+      "ticker": "ICICIBANK.NS",
+      "name": "ICICI Bank",
+      "adHoc": false,
+      "type": "portfolio",
+      "asOf": "FY2025-26",
+      "period": "Year ended 2026-03-31; latest call 2026-07-18",
+      "basis": "Company-reported figures; ₹ crore unless stated. Where a document states figures but not the growth rate, the YoY % shown is computed from the two reported years; ₹ million figures are converted to ₹ crore (÷10).",
+      "businessSnapshot": "Large private-sector bank with retail, business and corporate banking, plus insurance, asset management and securities subsidiaries.",
+      "thesis": "FY26 net interest income grew 8.5% with NIM steady at 4.32%; Q1 FY27 profit grew 15.9% and deposits 14%, though the credit-card book shrank.",
+      "metrics": [
+        {
+          "label": "Net interest income",
+          "value": 880.75,
+          "unit": "₹ billion",
+          "period": "FY26",
+          "sourceId": "icicibank-ar26",
+          "pageOrSection": "Management discussion, PDF p. 218",
+          "changeYoYPct": 8.5,
+          "basis": "Standalone",
+          "searchTerms": [
+            "NII",
+            "interest"
+          ]
+        },
+        {
+          "label": "Net interest margin",
+          "value": 4.32,
+          "unit": "%",
+          "period": "FY26",
+          "sourceId": "icicibank-ar26",
+          "pageOrSection": "Management discussion, PDF p. 218",
+          "basis": "Stable versus FY25",
+          "searchTerms": [
+            "NIM",
+            "margin"
+          ]
+        },
+        {
+          "label": "Profit after tax",
+          "value": 501.47,
+          "unit": "₹ billion",
+          "period": "FY26",
+          "sourceId": "icicibank-ar26",
+          "pageOrSection": "Management discussion, PDF p. 218",
+          "changeYoYPct": 6.2,
+          "basis": "Standalone"
+        },
+        {
+          "label": "Consolidated profit after tax",
+          "value": 542.08,
+          "unit": "₹ billion",
+          "period": "FY26",
+          "sourceId": "icicibank-ar26",
+          "pageOrSection": "Consolidated financials, PDF p. 234",
+          "changeYoYPct": 6.2,
+          "basis": "Consolidated, Indian GAAP"
+        },
+        {
+          "label": "Total deposits",
+          "value": 17946.25,
+          "unit": "₹ billion",
+          "period": "2026-03-31",
+          "sourceId": "icicibank-ar26",
+          "pageOrSection": "Key highlights, PDF p. 103"
+        },
+        {
+          "label": "Capital adequacy ratio",
+          "value": 17.18,
+          "unit": "%",
+          "period": "2026-03-31",
+          "sourceId": "icicibank-ar26",
+          "pageOrSection": "Key highlights, PDF p. 103",
+          "searchTerms": [
+            "capital",
+            "CAR"
+          ]
+        },
+        {
+          "label": "Profit after tax",
+          "value": 148.05,
+          "unit": "₹ billion",
+          "period": "Q1 FY27",
+          "sourceId": "icicibank-call",
+          "pageOrSection": "Opening remarks, PDF p. 3",
+          "changeYoYPct": 15.9,
+          "basis": "Standalone, management-reported",
+          "searchTerms": [
+            "quarter"
+          ]
+        }
+      ],
+      "narrativeVsNumbers": "The annual report attributes NII growth to higher average interest-earning assets, with NIM unchanged at 4.32%. PAT grew 6.2% for the year, then accelerated to 15.9% in Q1 FY27.",
+      "cashQuality": null,
+      "bull": [
+        {
+          "claim": "NII grew 8.5% to ₹880.75 billion with NIM stable at 4.32%.",
+          "sourceId": "icicibank-ar26",
+          "pageOrSection": "PDF p. 218"
+        },
+        {
+          "claim": "Q1 FY27 PAT grew 15.9% to ₹148.05 billion and deposits 14.0% year on year.",
+          "sourceId": "icicibank-call",
+          "pageOrSection": "PDF p. 3"
+        }
+      ],
+      "bear": [
+        {
+          "claim": "FY26 standalone PAT grew 6.2%, slower than NII.",
+          "sourceId": "icicibank-ar26",
+          "pageOrSection": "PDF p. 218"
+        },
+        {
+          "claim": "The credit-card portfolio declined 1.9% year on year and 1.7% sequentially in Q1 FY27.",
+          "sourceId": "icicibank-call",
+          "pageOrSection": "PDF p. 5"
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Profit after tax rose from ₹472.27 billion to ₹501.47 billion; NII rose 8.5% to ₹880.75 billion; NIM was 4.32% in both years.",
+          "sourceId": "icicibank-ar26",
+          "pageOrSection": "Management discussion, PDF p. 218",
+          "excerpt": "Profit after tax rose from ₹472.27 billion to ₹501.47 billion; NII rose 8.5% to ₹880.75 billion; NIM was 4.32% in both years.",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "Consolidated PAT rose from ₹510.29 billion to ₹542.08 billion.",
+          "sourceId": "icicibank-ar26",
+          "pageOrSection": "Consolidated financials, PDF p. 234",
+          "excerpt": "Consolidated PAT rose from ₹510.29 billion to ₹542.08 billion.",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "At March 2026 the bank reported capital adequacy of 17.18% and total deposits of ₹17,946.25 billion.",
+          "sourceId": "icicibank-ar26",
+          "pageOrSection": "Key highlights, PDF p. 103",
+          "excerpt": "At March 2026 the bank reported capital adequacy of 17.18% and total deposits of ₹17,946.25 billion.",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "Q1 FY27 PAT grew 15.9% to ₹148.05 billion; deposits grew 14.0% year on year and 2.2% sequentially.",
+          "sourceId": "icicibank-call",
+          "pageOrSection": "Opening remarks, PDF p. 3",
+          "excerpt": "Q1 FY27 PAT grew 15.9% to ₹148.05 billion; deposits grew 14.0% year on year and 2.2% sequentially.",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "The credit-card portfolio declined 1.9% year on year; personal loans grew 12.9%.",
+          "sourceId": "icicibank-call",
+          "pageOrSection": "Loan portfolio, PDF p. 5",
+          "excerpt": "The credit-card portfolio declined 1.9% year on year; personal loans grew 12.9%.",
+          "excerptType": "paraphrase"
+        }
+      ],
+      "watchItems": [
+        "Loan growth sustainability (analysts asked about high-teens growth)",
+        "Credit-card book trend",
+        "NIM as rates move"
+      ],
+      "sources": [
+        {
+          "id": "icicibank-ar26",
+          "title": "ICICI Bank Annual Report 2025-26",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/01c30537-c969-4503-bbae-a07d51eb09a5.pdf",
+          "sourceType": "annual_report",
+          "publishedAt": "2026-07-18",
+          "dateLabel": "FY2025-26 report; filed with BSE 2026-07-18",
+          "reportingPeriod": "Year ended 2026-03-31",
+          "pageOrSection": "Annual report (BSE filing)",
+          "basis": "Company-reported audited figures; page numbers are PDF pages of the linked BSE file",
+          "supports": [
+            "Standalone and consolidated PAT, NII, NIM, deposits, loans and capital adequacy"
+          ]
+        },
+        {
+          "id": "icicibank-call",
+          "title": "ICICI Bank Q1 FY2027 Earnings Call Transcript",
+          "url": "https://www.icici.bank.in/content/dam/icicibank/india/managed-assets/docs/about-us/2027/transcript-for-earnings-call-held-on-july-18-2026.pdf",
+          "sourceType": "concall_transcript",
+          "publishedAt": "2026-07-18",
+          "dateLabel": "Call transcript dated 2026-07-18",
+          "reportingPeriod": "Quarter ended 2026-06-30",
+          "pageOrSection": "Earnings-call transcript",
+          "basis": "Management commentary; page numbers are PDF pages of the linked transcript",
+          "supports": [
+            "Q1 FY27 PAT and deposit growth, retail loan mix, credit cards"
+          ]
+        }
+      ]
+    },
+    {
+      "ticker": "SBIN.NS",
+      "name": "State Bank of India",
+      "adHoc": false,
+      "type": "portfolio",
+      "asOf": "FY2025-26",
+      "period": "Year ended 2026-03-31; latest call 2026-11-03",
+      "basis": "Company-reported figures; ₹ crore unless stated. Where a document states figures but not the growth rate, the YoY % shown is computed from the two reported years; ₹ million figures are converted to ₹ crore (÷10).",
+      "businessSnapshot": "Government-controlled bank with a nationwide branch network and subsidiaries in insurance, cards and asset management.",
+      "thesis": "FY26 net profit grew 12.9% to ₹80,032 crore on cost control and better returns, while net interest income grew only 4.1%; the Q2 FY27 domestic NIM was 3.11%.",
+      "metrics": [
+        {
+          "label": "Net profit",
+          "value": 80032,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "sbin-ar26",
+          "pageOrSection": "Financial performance, PDF p. 49",
+          "changeYoYPct": 12.88,
+          "basis": "Standalone"
+        },
+        {
+          "label": "Operating profit",
+          "value": 123015,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "sbin-ar26",
+          "pageOrSection": "Financial performance, PDF p. 49",
+          "changeYoYPct": 11.25,
+          "basis": "Standalone"
+        },
+        {
+          "label": "Net interest income",
+          "value": 1.73,
+          "unit": "₹ lakh crore",
+          "period": "FY26",
+          "sourceId": "sbin-ar26",
+          "pageOrSection": "Chairman's message, PDF p. 18",
+          "changeYoYPct": 4.08,
+          "basis": "Standalone",
+          "searchTerms": [
+            "NII",
+            "interest"
+          ]
+        },
+        {
+          "label": "Cost-to-income ratio",
+          "value": 50.11,
+          "unit": "%",
+          "period": "FY26",
+          "sourceId": "sbin-ar26",
+          "pageOrSection": "Chairman's message, PDF p. 18",
+          "basis": "Versus 51.64% in FY25",
+          "searchTerms": [
+            "cost"
+          ]
+        },
+        {
+          "label": "Return on equity",
+          "value": 18.57,
+          "unit": "%",
+          "period": "FY26",
+          "sourceId": "sbin-ar26",
+          "pageOrSection": "Chairman's message, PDF p. 18",
+          "basis": "RoA 1.12%",
+          "searchTerms": [
+            "RoE",
+            "RoA",
+            "return"
+          ]
+        },
+        {
+          "label": "Provision coverage ratio",
+          "value": 91.97,
+          "unit": "%",
+          "period": "2026-03-31",
+          "sourceId": "sbin-ar26",
+          "pageOrSection": "Financial performance, PDF p. 49",
+          "basis": "Including AUCA",
+          "searchTerms": [
+            "NPA",
+            "provision",
+            "asset quality"
+          ]
+        },
+        {
+          "label": "Net profit",
+          "value": 23038,
+          "unit": "₹ crore",
+          "period": "Q2 FY27",
+          "sourceId": "sbin-call",
+          "pageOrSection": "Opening remarks, PDF p. 5",
+          "basis": "Management-reported",
+          "searchTerms": [
+            "quarter"
+          ]
+        }
+      ],
+      "narrativeVsNumbers": "Profit growth of 12.9% outpaced NII growth of 4.1%, helped by a lower cost-to-income ratio (50.11% from 51.64%). In Q2 FY27, operating profit grew 7.28% and domestic NIM improved to 3.11%.",
+      "cashQuality": null,
+      "bull": [
+        {
+          "claim": "FY26 net profit rose 12.88% to ₹80,032 crore; RoA improved to 1.12% and RoE was 18.57%.",
+          "sourceId": "sbin-ar26",
+          "pageOrSection": "PDF pp. 18, 49"
+        },
+        {
+          "claim": "Q2 FY27 net profit was ₹23,038 crore and domestic NIM improved to 3.11%; H1 RoE was 18.68%.",
+          "sourceId": "sbin-call",
+          "pageOrSection": "PDF p. 5"
+        }
+      ],
+      "bear": [
+        {
+          "claim": "Net interest income grew only 4.08% in FY26.",
+          "sourceId": "sbin-ar26",
+          "pageOrSection": "PDF p. 18"
+        },
+        {
+          "claim": "Q2 FY27 operating profit growth slowed to 7.28% year on year.",
+          "sourceId": "sbin-call",
+          "pageOrSection": "PDF p. 5"
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Net profit increased 12.88% to ₹80,032 crore from ₹70,901 crore; operating profit rose 11.25% to ₹1,23,015 crore.",
+          "sourceId": "sbin-ar26",
+          "pageOrSection": "Financial performance, PDF p. 49",
+          "excerpt": "Net profit increased 12.88% to ₹80,032 crore from ₹70,901 crore; operating profit rose 11.25% to ₹1,23,015 crore.",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "NII grew 4.08% to ₹1.73 lakh crore; cost-to-income improved to 50.11%; RoA was 1.12% and RoE 18.57%.",
+          "sourceId": "sbin-ar26",
+          "pageOrSection": "Chairman's message, PDF p. 18",
+          "excerpt": "NII grew 4.08% to ₹1.73 lakh crore; cost-to-income improved to 50.11%; RoA was 1.12% and RoE 18.57%.",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "Total assets increased 14.18% to ₹76,23,012 crore; provision coverage was 91.97%.",
+          "sourceId": "sbin-ar26",
+          "pageOrSection": "Financial performance, PDF p. 49",
+          "excerpt": "Total assets increased 14.18% to ₹76,23,012 crore; provision coverage was 91.97%.",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "Q2 FY27 net profit was ₹23,038 crore, operating profit ₹34,226 crore (+7.28%), and domestic NIM 3.11%.",
+          "sourceId": "sbin-call",
+          "pageOrSection": "Opening remarks, PDF p. 5",
+          "excerpt": "Q2 FY27 net profit was ₹23,038 crore, operating profit ₹34,226 crore (+7.28%), and domestic NIM 3.11%.",
+          "excerptType": "paraphrase"
+        }
+      ],
+      "watchItems": [
+        "NII growth versus loan growth",
+        "Operating profit trend after Q2's 7.3%",
+        "Asset quality and provision coverage"
+      ],
+      "sources": [
+        {
+          "id": "sbin-ar26",
+          "title": "State Bank of India Annual Report 2025-26",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/faa17496-838f-432d-a39f-32d82156799c.pdf",
+          "sourceType": "annual_report",
+          "publishedAt": null,
+          "dateLabel": "FY2025-26 report as filed with BSE",
+          "reportingPeriod": "Year ended 2026-03-31",
+          "pageOrSection": "Annual report (BSE filing)",
+          "basis": "Company-reported audited figures; page numbers are PDF pages of the linked BSE file",
+          "supports": [
+            "Net profit, operating profit, NII, cost-to-income, RoA, RoE, total assets and provision coverage"
+          ]
+        },
+        {
+          "id": "sbin-call",
+          "title": "State Bank of India Q2 FY2027 Analyst Meet Transcript",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/91e92b69-f201-4d3b-9060-9f75feee9a58.pdf",
+          "sourceType": "concall_transcript",
+          "publishedAt": "2026-11-03",
+          "dateLabel": "Call transcript dated 2026-11-03",
+          "reportingPeriod": "Quarter ended 2026-09-30",
+          "pageOrSection": "Earnings-call transcript",
+          "basis": "Management commentary; page numbers are PDF pages of the linked transcript",
+          "supports": [
+            "Q2 FY27 net profit, operating profit, domestic NIM and H1 returns"
+          ]
+        }
+      ]
+    },
+    {
+      "ticker": "TCS.NS",
+      "name": "Tata Consultancy Services",
+      "adHoc": false,
+      "type": "portfolio",
+      "asOf": "FY2025-26",
+      "period": "Year ended 2026-03-31; latest call 2026-10-14",
+      "basis": "Company-reported figures; ₹ crore unless stated. Where a document states figures but not the growth rate, the YoY % shown is computed from the two reported years; ₹ million figures are converted to ₹ crore (÷10).",
+      "businessSnapshot": "IT services company serving global enterprises across banking, retail, manufacturing and other industries.",
+      "thesis": "FY26 revenue grew 4.6% but margins reached a four-year high (operating 25.0%, net 19.8%); Q2 FY27 growth stayed low at 2.8% in constant currency as management described demand as selective and uneven.",
+      "metrics": [
+        {
+          "label": "Revenue",
+          "value": 267021,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "tcs-ar26",
+          "pageOrSection": "Chairman's letter, PDF p. 9",
+          "changeYoYPct": 4.6,
+          "basis": "Consolidated"
+        },
+        {
+          "label": "Operating income",
+          "value": 66838,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "tcs-ar26",
+          "pageOrSection": "Chairman's letter, PDF p. 9",
+          "basis": "Consolidated",
+          "searchTerms": [
+            "EBIT",
+            "operating profit"
+          ]
+        },
+        {
+          "label": "Operating margin",
+          "value": 25.0,
+          "unit": "%",
+          "period": "FY26",
+          "sourceId": "tcs-ar26",
+          "pageOrSection": "Chairman's letter, PDF p. 9",
+          "basis": "Highest in four years",
+          "searchTerms": [
+            "margin"
+          ]
+        },
+        {
+          "label": "Net income",
+          "value": 52820,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "tcs-ar26",
+          "pageOrSection": "Chairman's letter, PDF p. 9",
+          "changeYoYPct": 8.8,
+          "basis": "Consolidated",
+          "searchTerms": [
+            "PAT",
+            "profit"
+          ]
+        },
+        {
+          "label": "Revenue",
+          "value": 73188,
+          "unit": "₹ crore",
+          "period": "Q2 FY27",
+          "sourceId": "tcs-call",
+          "pageOrSection": "Opening remarks, PDF p. 3",
+          "changeYoYPct": 2.8,
+          "basis": "YoY growth in constant currency",
+          "searchTerms": [
+            "quarter"
+          ]
+        }
+      ],
+      "narrativeVsNumbers": "Net income grew 8.8%, nearly twice revenue growth of 4.6%, as margins improved. In Q2 FY27, revenue grew 0.5% sequentially in constant currency; management cited a higher bench and subcontractor costs as margin headwinds, partly offset by currency gains.",
+      "cashQuality": null,
+      "bull": [
+        {
+          "claim": "FY26 operating margin of 25.0% and net margin of 19.8% were the highest in four years; net income grew 8.8%.",
+          "sourceId": "tcs-ar26",
+          "pageOrSection": "PDF p. 9"
+        },
+        {
+          "claim": "All international markets grew sequentially in Q2 FY27, led by the UK at 3.5%.",
+          "sourceId": "tcs-call",
+          "pageOrSection": "PDF p. 3"
+        }
+      ],
+      "bear": [
+        {
+          "claim": "FY26 revenue grew only 4.6%.",
+          "sourceId": "tcs-ar26",
+          "pageOrSection": "PDF p. 9"
+        },
+        {
+          "claim": "Management described the environment as selective and uneven, and cited bench and subcontractor costs as headwinds; it gives no guidance.",
+          "sourceId": "tcs-call",
+          "pageOrSection": "PDF pp. 3, 5"
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "FY26 consolidated revenue was ₹2,67,021 crore, up 4.6%; operating income ₹66,838 crore at a 25.0% margin; net income ₹52,820 crore, up 8.8%, at a 19.8% margin.",
+          "sourceId": "tcs-ar26",
+          "pageOrSection": "Chairman's letter, PDF p. 9",
+          "excerpt": "FY26 consolidated revenue was ₹2,67,021 crore, up 4.6%; operating income ₹66,838 crore at a 25.0% margin; net income ₹52,820 crore, up 8.8%, at a 19.8% margin.",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "Q2 FY27 revenue was ₹73,188 crore, up 0.5% sequentially and 2.8% year on year in constant currency.",
+          "sourceId": "tcs-call",
+          "pageOrSection": "Opening remarks, PDF p. 3",
+          "excerpt": "Q2 FY27 revenue was ₹73,188 crore, up 0.5% sequentially and 2.8% year on year in constant currency.",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "Management said it invested in a higher bench and more subcontractors, partly offset by currency gains and operating leverage.",
+          "sourceId": "tcs-call",
+          "pageOrSection": "Margin commentary, PDF p. 5",
+          "excerpt": "Management said it invested in a higher bench and more subcontractors, partly offset by currency gains and operating leverage.",
+          "excerptType": "paraphrase"
+        }
+      ],
+      "watchItems": [
+        "Constant-currency growth versus peers",
+        "Margin after bench and subcontractor investment",
+        "Demand in North America and BFSI"
+      ],
+      "sources": [
+        {
+          "id": "tcs-ar26",
+          "title": "Tata Consultancy Services Annual Report 2025-26",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/ad42e748-d73c-4c79-8c52-bcf1b1399bc1.pdf",
+          "sourceType": "annual_report",
+          "publishedAt": null,
+          "dateLabel": "FY2025-26 report as filed with BSE",
+          "reportingPeriod": "Year ended 2026-03-31",
+          "pageOrSection": "Annual report (BSE filing)",
+          "basis": "Company-reported audited figures; page numbers are PDF pages of the linked BSE file",
+          "supports": [
+            "Consolidated revenue, operating income and margin, net income and net margin"
+          ]
+        },
+        {
+          "id": "tcs-call",
+          "title": "TCS Q2 FY2027 Earnings Call Transcript",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/7dc14216-f892-46f1-bf82-5c7b387a83b9.pdf",
+          "sourceType": "concall_transcript",
+          "publishedAt": "2026-10-14",
+          "dateLabel": "Call transcript dated 2026-10-14",
+          "reportingPeriod": "Quarter ended 2026-09-30",
+          "pageOrSection": "Earnings-call transcript",
+          "basis": "Management commentary; page numbers are PDF pages of the linked transcript",
+          "supports": [
+            "Q2 FY27 revenue and constant-currency growth, demand environment, bench and subcontractor costs"
+          ]
+        }
+      ]
+    },
+    {
+      "ticker": "INFY.NS",
+      "name": "Infosys",
+      "adHoc": false,
+      "type": "portfolio",
+      "asOf": "FY2025-26",
+      "period": "Year ended 2026-03-31; latest call 2026-10-28",
+      "basis": "Company-reported figures; ₹ crore unless stated. Where a document states figures but not the growth rate, the YoY % shown is computed from the two reported years; ₹ million figures are converted to ₹ crore (÷10).",
+      "businessSnapshot": "Global IT services and consulting company, with digital, cloud and AI services for enterprise clients.",
+      "thesis": "FY26 revenue grew 9.6% but PBT only 6.3% after a ₹1,289 crore labour-code charge; FY27 guidance of 1-2% constant-currency growth signals a much slower year.",
+      "metrics": [
+        {
+          "label": "Revenue from operations",
+          "value": 178650,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "infy-ar26",
+          "pageOrSection": "Board's Report financial performance, PDF p. 34",
+          "changeYoYPct": 9.6,
+          "basis": "Consolidated"
+        },
+        {
+          "label": "Profit before tax",
+          "value": 39995,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "infy-ar26",
+          "pageOrSection": "Board's Report financial performance, PDF p. 34",
+          "changeYoYPct": 6.3,
+          "basis": "Consolidated; after labour-code exceptional item",
+          "searchTerms": [
+            "PBT",
+            "profit"
+          ]
+        },
+        {
+          "label": "Exceptional item: impact of Labour Codes",
+          "value": 1289,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "infy-ar26",
+          "pageOrSection": "Board's Report financial performance, PDF p. 34",
+          "basis": "Consolidated",
+          "searchTerms": [
+            "labour",
+            "exceptional"
+          ]
+        },
+        {
+          "label": "Operating margin",
+          "value": 21,
+          "unit": "%",
+          "period": "Q2 FY27",
+          "sourceId": "infy-call",
+          "pageOrSection": "Press conference remarks, PDF p. 4",
+          "basis": "Management-reported",
+          "searchTerms": [
+            "margin"
+          ]
+        },
+        {
+          "label": "Free cash flow",
+          "value": 928,
+          "unit": "US$ million",
+          "period": "Q2 FY27",
+          "sourceId": "infy-call",
+          "pageOrSection": "Press conference remarks, PDF p. 4",
+          "basis": "Management-reported",
+          "searchTerms": [
+            "cash flow",
+            "FCF"
+          ]
+        },
+        {
+          "label": "FY27 revenue growth guidance",
+          "value": "1% to 2%",
+          "unit": "",
+          "period": "FY27",
+          "sourceId": "infy-call",
+          "pageOrSection": "Press conference remarks, PDF p. 4",
+          "basis": "Constant currency; margin guidance 20%-22%",
+          "searchTerms": [
+            "guidance",
+            "outlook"
+          ]
+        }
+      ],
+      "narrativeVsNumbers": "Revenue grew 9.6% in rupees, while expenses grew 9.9% and a labour-code charge cut PBT growth to 6.3%. For FY27, management guided to 1%-2% constant-currency growth and a 20%-22% operating margin, citing strength in financial services and weakness in retail and hi-tech.",
+      "cashQuality": "Management reported Q2 FY27 free cash flow of US$928 million.",
+      "bull": [
+        {
+          "claim": "FY26 consolidated revenue grew 9.6% to ₹1,78,650 crore.",
+          "sourceId": "infy-ar26",
+          "pageOrSection": "PDF p. 34"
+        },
+        {
+          "claim": "Q2 FY27 operating margin was stable at 21% with free cash flow of US$928 million.",
+          "sourceId": "infy-call",
+          "pageOrSection": "PDF p. 4"
+        }
+      ],
+      "bear": [
+        {
+          "claim": "PBT grew only 6.3% after a ₹1,289 crore labour-code exceptional charge.",
+          "sourceId": "infy-ar26",
+          "pageOrSection": "PDF p. 34"
+        },
+        {
+          "claim": "FY27 revenue guidance is 1%-2% in constant currency; management saw weakness in retail and hi-tech.",
+          "sourceId": "infy-call",
+          "pageOrSection": "PDF pp. 4-5"
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Consolidated revenue was ₹1,78,650 crore versus ₹1,62,990 crore; PBT was ₹39,995 crore versus ₹37,608 crore after a ₹1,289 crore labour-code charge.",
+          "sourceId": "infy-ar26",
+          "pageOrSection": "Board's Report financial performance, PDF p. 34",
+          "excerpt": "Consolidated revenue was ₹1,78,650 crore versus ₹1,62,990 crore; PBT was ₹39,995 crore versus ₹37,608 crore after a ₹1,289 crore labour-code charge.",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "FY27 revenue growth guidance is 1%-2% in constant currency, and operating margin guidance remains 20%-22%.",
+          "sourceId": "infy-call",
+          "pageOrSection": "Press conference remarks, PDF p. 4",
+          "excerpt": "FY27 revenue growth guidance is 1%-2% in constant currency, and operating margin guidance remains 20%-22%.",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "Management saw strength in financial services, energy utilities and manufacturing, and weakness in retail and hi-tech.",
+          "sourceId": "infy-call",
+          "pageOrSection": "Q&A, PDF p. 5",
+          "excerpt": "Management saw strength in financial services, energy utilities and manufacturing, and weakness in retail and hi-tech.",
+          "excerptType": "paraphrase"
+        }
+      ],
+      "watchItems": [
+        "Delivery against the 1%-2% FY27 guidance",
+        "Margin within the 20%-22% band",
+        "Retail and hi-tech demand"
+      ],
+      "sources": [
+        {
+          "id": "infy-ar26",
+          "title": "Infosys Annual Report 2025-26",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/19dd605c-2b6b-4084-8dca-9d578a3eb7a0.pdf",
+          "sourceType": "annual_report",
+          "publishedAt": "2026-05-29",
+          "dateLabel": "FY2025-26 report; filed with BSE 2026-05-29",
+          "reportingPeriod": "Year ended 2026-03-31",
+          "pageOrSection": "Annual report (BSE filing)",
+          "basis": "Company-reported audited figures; page numbers are PDF pages of the linked BSE file",
+          "supports": [
+            "Consolidated and standalone revenue, expenses, PBT and labour-code exceptional item"
+          ]
+        },
+        {
+          "id": "infy-call",
+          "title": "Infosys Q2 FY2027 Press Conference and Earnings Call Transcripts",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/7982fc61-7765-4981-ab3d-6aec36ba2137.pdf",
+          "sourceType": "concall_transcript",
+          "publishedAt": "2026-10-28",
+          "dateLabel": "Call transcript dated 2026-10-28",
+          "reportingPeriod": "Quarter ended 2026-09-30",
+          "pageOrSection": "Earnings-call transcript",
+          "basis": "Management commentary; page numbers are PDF pages of the linked transcript",
+          "supports": [
+            "Q2 FY27 operating margin, free cash flow, FY27 revenue and margin guidance, vertical demand"
+          ]
+        }
+      ]
+    },
+    {
+      "ticker": "WIPRO.NS",
+      "name": "Wipro",
+      "adHoc": false,
+      "type": "portfolio",
+      "asOf": "FY2025-26",
+      "period": "Year ended 2026-03-31; latest call 2026-10-16",
+      "basis": "Company-reported figures; ₹ crore unless stated. Where a document states figures but not the growth rate, the YoY % shown is computed from the two reported years; ₹ million figures are converted to ₹ crore (÷10).",
+      "businessSnapshot": "IT services and consulting company serving global clients, with strategic market units across the Americas, Europe and APMEA.",
+      "thesis": "Growth is flat: FY26 sales grew 4.0% and net profit 0.4%, Q2 FY27 IT services revenue was flat sequentially, and Q3 guidance allows for a decline.",
+      "metrics": [
+        {
+          "label": "Sales",
+          "value": 92624,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "wipro-ar26",
+          "pageOrSection": "Board's Report financial performance, PDF p. 109",
+          "changeYoYPct": 3.97,
+          "basis": "Consolidated; reported as ₹926,240 million",
+          "searchTerms": [
+            "revenue"
+          ]
+        },
+        {
+          "label": "Net profit",
+          "value": 13265.5,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "wipro-ar26",
+          "pageOrSection": "Board's Report financial performance, PDF p. 109",
+          "changeYoYPct": 0.36,
+          "basis": "Consolidated; reported as ₹132,655 million",
+          "searchTerms": [
+            "PAT",
+            "profit"
+          ]
+        },
+        {
+          "label": "IT services revenue",
+          "value": 2.61,
+          "unit": "US$ billion",
+          "period": "Q2 FY27",
+          "sourceId": "wipro-call",
+          "pageOrSection": "CFO remarks, PDF p. 4",
+          "changeYoYPct": 0.6,
+          "basis": "YoY growth in constant currency",
+          "searchTerms": [
+            "quarter"
+          ]
+        },
+        {
+          "label": "Operating margin",
+          "value": 16.5,
+          "unit": "%",
+          "period": "Q2 FY27",
+          "sourceId": "wipro-call",
+          "pageOrSection": "CFO remarks, PDF p. 4",
+          "basis": "Up 0.5 points sequentially",
+          "searchTerms": [
+            "margin"
+          ]
+        },
+        {
+          "label": "Q3 FY27 revenue guidance",
+          "value": "-1.5% to +0.5%",
+          "unit": "",
+          "period": "Q3 FY27",
+          "sourceId": "wipro-call",
+          "pageOrSection": "Guidance, PDF p. 5",
+          "basis": "Sequential, constant currency",
+          "searchTerms": [
+            "guidance",
+            "outlook"
+          ]
+        }
+      ],
+      "narrativeVsNumbers": "Consolidated sales grew 3.97% and net profit 0.36% in FY26. In Q2 FY27 revenue was flat sequentially; management said US healthcare is affected by policy changes and guided Q3 to between -1.5% and +0.5% sequentially, citing seasonal furloughs.",
+      "cashQuality": null,
+      "bull": [
+        {
+          "claim": "Q2 FY27 operating margin improved 0.5 points to 16.5%, and three of four market units grew sequentially.",
+          "sourceId": "wipro-call",
+          "pageOrSection": "PDF p. 4"
+        },
+        {
+          "claim": "Standalone net profit grew 11.15% in FY26.",
+          "sourceId": "wipro-ar26",
+          "pageOrSection": "PDF p. 109"
+        }
+      ],
+      "bear": [
+        {
+          "claim": "Consolidated net profit grew only 0.36% in FY26 on 3.97% sales growth.",
+          "sourceId": "wipro-ar26",
+          "pageOrSection": "PDF p. 109"
+        },
+        {
+          "claim": "Q3 FY27 guidance is -1.5% to +0.5% sequential growth; US healthcare is affected by policy changes.",
+          "sourceId": "wipro-call",
+          "pageOrSection": "PDF pp. 4-5"
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Consolidated sales rose to ₹926,240 million from ₹890,884 million (+3.97%); net profit to ₹132,655 million from ₹132,180 million (+0.36%).",
+          "sourceId": "wipro-ar26",
+          "pageOrSection": "Board's Report financial performance, PDF p. 109",
+          "excerpt": "Consolidated sales rose to ₹926,240 million from ₹890,884 million (+3.97%); net profit to ₹132,655 million from ₹132,180 million (+0.36%).",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "Q2 FY27 IT services revenue was US$2.61 billion, flat sequentially and up 0.6% year on year in constant currency; operating margin 16.5%.",
+          "sourceId": "wipro-call",
+          "pageOrSection": "CFO remarks, PDF p. 4",
+          "excerpt": "Q2 FY27 IT services revenue was US$2.61 billion, flat sequentially and up 0.6% year on year in constant currency; operating margin 16.5%.",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "Wipro guided Q3 FY27 IT services revenue growth of -1.5% to +0.5% sequentially in constant currency.",
+          "sourceId": "wipro-call",
+          "pageOrSection": "Guidance, PDF p. 5",
+          "excerpt": "Wipro guided Q3 FY27 IT services revenue growth of -1.5% to +0.5% sequentially in constant currency.",
+          "excerptType": "paraphrase"
+        }
+      ],
+      "watchItems": [
+        "Return to sequential growth",
+        "US healthcare policy impact",
+        "Margin after the Q2 improvement"
+      ],
+      "sources": [
+        {
+          "id": "wipro-ar26",
+          "title": "Wipro Annual Report 2025-26",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/d4ffaa08-a47a-487b-b136-eb4f26c1bace.pdf",
+          "sourceType": "annual_report",
+          "publishedAt": "2026-06-22",
+          "dateLabel": "FY2025-26 report; filed with BSE 2026-06-22",
+          "reportingPeriod": "Year ended 2026-03-31",
+          "pageOrSection": "Annual report (BSE filing)",
+          "basis": "Company-reported audited figures; page numbers are PDF pages of the linked BSE file",
+          "supports": [
+            "Consolidated and standalone sales and net profit"
+          ]
+        },
+        {
+          "id": "wipro-call",
+          "title": "Wipro Q2 FY2027 Earnings Call Transcript",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/6b741bc5-7ed0-4223-900a-412aaf529820.pdf",
+          "sourceType": "concall_transcript",
+          "publishedAt": "2026-10-16",
+          "dateLabel": "Call transcript dated 2026-10-16",
+          "reportingPeriod": "Quarter ended 2026-09-30",
+          "pageOrSection": "Earnings-call transcript",
+          "basis": "Management commentary; page numbers are PDF pages of the linked transcript",
+          "supports": [
+            "Q2 FY27 IT services revenue, operating margin, Q3 guidance, US healthcare"
+          ]
+        }
+      ]
+    },
+    {
+      "ticker": "BHARTIARTL.NS",
+      "name": "Bharti Airtel",
+      "adHoc": false,
+      "type": "portfolio",
+      "asOf": "FY2025-26",
+      "period": "Year ended 2026-03-31; latest call 2026-11-12",
+      "basis": "Company-reported figures; ₹ crore unless stated. Where a document states figures but not the growth rate, the YoY % shown is computed from the two reported years; ₹ million figures are converted to ₹ crore (÷10).",
+      "businessSnapshot": "Telecom operator in India and Africa offering mobile, home broadband, enterprise and digital services.",
+      "thesis": "FY26 consolidated revenue rose 16.2% and EBITDAaL 15.7%, with India ARPU up to ₹257; reported PBT grew only 2% because FY25 included one-time gains.",
+      "metrics": [
+        {
+          "label": "Gross revenue",
+          "value": 210972.8,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "bhartiartl-ar26",
+          "pageOrSection": "MD&A financial review, PDF p. 91",
+          "changeYoYPct": 16.2,
+          "basis": "Consolidated; reported as ₹2,109,728 million",
+          "searchTerms": [
+            "revenue"
+          ]
+        },
+        {
+          "label": "EBITDAaL",
+          "value": 107946,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "bhartiartl-ar26",
+          "pageOrSection": "MD&A financial review, PDF p. 91",
+          "changeYoYPct": 15.7,
+          "basis": "Consolidated; EBITDA after leases",
+          "searchTerms": [
+            "EBITDA"
+          ]
+        },
+        {
+          "label": "Profit before exceptional items and tax",
+          "value": 48590.2,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "bhartiartl-ar26",
+          "pageOrSection": "MD&A financial review, PDF p. 91",
+          "changeYoYPct": 31.4,
+          "basis": "Consolidated",
+          "searchTerms": [
+            "PBT",
+            "profit"
+          ]
+        },
+        {
+          "label": "Profit before tax",
+          "value": 45172.7,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "bhartiartl-ar26",
+          "pageOrSection": "MD&A financial review, PDF p. 91",
+          "changeYoYPct": 2.1,
+          "basis": "Consolidated; FY25 included one-time exceptional gains"
+        },
+        {
+          "label": "ARPU",
+          "value": 257,
+          "unit": "₹",
+          "period": "FY26 exit",
+          "sourceId": "bhartiartl-ar26",
+          "pageOrSection": "Standalone highlights, PDF p. 50",
+          "basis": "Standalone; up ₹12 year on year",
+          "searchTerms": [
+            "ARPU",
+            "pricing"
+          ]
+        },
+        {
+          "label": "EBITDAaL margin",
+          "value": 51.7,
+          "unit": "%",
+          "period": "Q2 FY27",
+          "sourceId": "bhartiartl-call",
+          "pageOrSection": "Opening remarks, PDF p. 3",
+          "basis": "Consolidated, management-reported",
+          "searchTerms": [
+            "margin"
+          ]
+        }
+      ],
+      "narrativeVsNumbers": "Profit before exceptional items rose 31% to ₹48,590 crore, but reported PBT rose only 2.1% because FY25 included one-time gains. In Q2 FY27, revenue grew 4% sequentially to about ₹60,900 crore, and management flagged building cost pressures.",
+      "cashQuality": null,
+      "bull": [
+        {
+          "claim": "FY26 consolidated revenue grew 16.2% and EBITDAaL 15.7%; India ARPU rose ₹12 to ₹257.",
+          "sourceId": "bhartiartl-ar26",
+          "pageOrSection": "PDF pp. 4, 50"
+        },
+        {
+          "claim": "Q2 FY27 revenue grew 4% sequentially, Africa 6.7% in constant currency, with a 51.7% EBITDAaL margin.",
+          "sourceId": "bhartiartl-call",
+          "pageOrSection": "PDF p. 3"
+        }
+      ],
+      "bear": [
+        {
+          "claim": "Reported PBT grew only 2.1% because FY25 included exceptional gains; tax expense rose sharply to ₹11,350 crore.",
+          "sourceId": "bhartiartl-ar26",
+          "pageOrSection": "PDF p. 91"
+        },
+        {
+          "claim": "Management said cost pressures are building and growth funding depends on its War on Waste cost programme.",
+          "sourceId": "bhartiartl-call",
+          "pageOrSection": "PDF p. 5"
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Consolidated gross revenue was ₹2,109,728 million versus ₹1,815,110 million; EBITDAaL ₹1,079,460 million versus ₹932,961 million; PBT ₹451,727 million versus ₹442,580 million.",
+          "sourceId": "bhartiartl-ar26",
+          "pageOrSection": "MD&A financial review, PDF p. 91",
+          "excerpt": "Consolidated gross revenue was ₹2,109,728 million versus ₹1,815,110 million; EBITDAaL ₹1,079,460 million versus ₹932,961 million; PBT ₹451,727 million versus ₹442,580 million.",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "The standalone business ended the year with ARPU of ₹257, up ₹12, and net debt of 1.3x EBITDAaL.",
+          "sourceId": "bhartiartl-ar26",
+          "pageOrSection": "Standalone highlights, PDF p. 50",
+          "excerpt": "The standalone business ended the year with ARPU of ₹257, up ₹12, and net debt of 1.3x EBITDAaL.",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "Q2 FY27 consolidated revenue was about ₹60,900 crore, up 4% sequentially; EBITDAaL about ₹31,500 crore at a 51.7% margin.",
+          "sourceId": "bhartiartl-call",
+          "pageOrSection": "Opening remarks, PDF p. 3",
+          "excerpt": "Q2 FY27 consolidated revenue was about ₹60,900 crore, up 4% sequentially; EBITDAaL about ₹31,500 crore at a 51.7% margin.",
+          "excerptType": "paraphrase"
+        }
+      ],
+      "watchItems": [
+        "ARPU progression",
+        "Africa constant-currency growth versus currency moves",
+        "Capex and cost pressure"
+      ],
+      "sources": [
+        {
+          "id": "bhartiartl-ar26",
+          "title": "Bharti Airtel Annual Report 2025-26",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/f8f6a174-8601-4747-9d0d-bd6b85fe53fc.pdf",
+          "sourceType": "annual_report",
+          "publishedAt": null,
+          "dateLabel": "FY2025-26 report as filed with BSE",
+          "reportingPeriod": "Year ended 2026-03-31",
+          "pageOrSection": "Annual report (BSE filing)",
+          "basis": "Company-reported audited figures; page numbers are PDF pages of the linked BSE file",
+          "supports": [
+            "Consolidated revenue, EBITDAaL, PBT, net profit; ARPU and leverage"
+          ]
+        },
+        {
+          "id": "bhartiartl-call",
+          "title": "Bharti Airtel Q2 FY2027 Earnings Call Transcript",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/1ff3e14f-7e97-4074-89c7-049408721c5e.pdf",
+          "sourceType": "concall_transcript",
+          "publishedAt": "2026-11-12",
+          "dateLabel": "Call transcript dated 2026-11-12",
+          "reportingPeriod": "Quarter ended 2026-09-30",
+          "pageOrSection": "Earnings-call transcript",
+          "basis": "Management commentary; page numbers are PDF pages of the linked transcript",
+          "supports": [
+            "Q2 FY27 consolidated revenue and EBITDAaL, Africa and India growth, cost pressures"
+          ]
+        }
+      ]
+    },
+    {
+      "ticker": "LT.NS",
+      "name": "Larsen & Toubro",
+      "adHoc": false,
+      "type": "portfolio",
+      "asOf": "FY2025-26",
+      "period": "Year ended 2026-03-31; latest call 2026-07-28",
+      "basis": "Company-reported figures; ₹ crore unless stated. Where a document states figures but not the growth rate, the YoY % shown is computed from the two reported years; ₹ million figures are converted to ₹ crore (÷10).",
+      "businessSnapshot": "Engineering and construction group spanning infrastructure, energy, heavy engineering, defence, IT services and financial services.",
+      "thesis": "A record ₹7.40 lakh crore order book (+28%) gives multi-year visibility, but it is increasingly international: domestic Q1 FY27 inflows grew just 1%.",
+      "metrics": [
+        {
+          "label": "Order book",
+          "value": 740000,
+          "unit": "₹ crore",
+          "period": "2026-03-31",
+          "sourceId": "lt-ar26",
+          "pageOrSection": "Chairman's message, PDF p. 10",
+          "changeYoYPct": 28,
+          "basis": "Group; reported as ₹7.40 lakh crore; 52% international",
+          "searchTerms": [
+            "orders",
+            "order book"
+          ]
+        },
+        {
+          "label": "Order inflow",
+          "value": 436000,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "lt-ar26",
+          "pageOrSection": "Chairman's message, PDF p. 10",
+          "changeYoYPct": 22,
+          "basis": "Group; reported as ₹4.36 lakh crore",
+          "searchTerms": [
+            "orders"
+          ]
+        },
+        {
+          "label": "Revenue",
+          "value": 286000,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "lt-ar26",
+          "pageOrSection": "Chairman's message, PDF p. 10",
+          "changeYoYPct": 12,
+          "basis": "Group; reported as ₹2.86 lakh crore"
+        },
+        {
+          "label": "Consolidated profit after tax",
+          "value": 16084,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "lt-ar26",
+          "pageOrSection": "Directors' Report, PDF p. 46",
+          "changeYoYPct": 7.0,
+          "basis": "Consolidated",
+          "searchTerms": [
+            "PAT",
+            "profit"
+          ]
+        },
+        {
+          "label": "Recurring profit after tax",
+          "value": 17238,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "lt-ar26",
+          "pageOrSection": "Chairman's message, PDF p. 10",
+          "changeYoYPct": 18,
+          "basis": "Group; company-defined measure"
+        },
+        {
+          "label": "Group order inflow",
+          "value": 108000,
+          "unit": "₹ crore",
+          "period": "Q1 FY27",
+          "sourceId": "lt-call",
+          "pageOrSection": "Opening remarks, PDF p. 4",
+          "changeYoYPct": 14,
+          "basis": "Reported as ₹1,080 billion",
+          "searchTerms": [
+            "quarter",
+            "orders"
+          ]
+        }
+      ],
+      "narrativeVsNumbers": "Revenue grew 12% and recurring PAT 18%, while reported consolidated PAT grew 7.0%. International orders made up 52% of the order book; in Q1 FY27, international inflows grew 27% and domestic 1%.",
+      "cashQuality": null,
+      "bull": [
+        {
+          "claim": "FY26 order inflow rose 22% to ₹4.36 lakh crore and the order book 28% to ₹7.40 lakh crore.",
+          "sourceId": "lt-ar26",
+          "pageOrSection": "PDF p. 10"
+        },
+        {
+          "claim": "Q1 FY27 group order inflow grew 14% to ₹1,080 billion.",
+          "sourceId": "lt-call",
+          "pageOrSection": "PDF p. 4"
+        }
+      ],
+      "bear": [
+        {
+          "claim": "Reported consolidated PAT grew 7.0%, well below the 18% recurring PAT growth the company highlights.",
+          "sourceId": "lt-ar26",
+          "pageOrSection": "PDF pp. 10, 46"
+        },
+        {
+          "claim": "Domestic order inflow grew only 1% in Q1 FY27, versus 27% internationally.",
+          "sourceId": "lt-call",
+          "pageOrSection": "PDF p. 4"
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Group order inflows were a record ₹4.36 lakh crore (+22%); the order book reached ₹7.40 lakh crore (+28%), 52% international; revenue grew 12% to ₹2.86 lakh crore.",
+          "sourceId": "lt-ar26",
+          "pageOrSection": "Chairman's message, PDF p. 10",
+          "excerpt": "Group order inflows were a record ₹4.36 lakh crore (+22%); the order book reached ₹7.40 lakh crore (+28%), 52% international; revenue grew 12% to ₹2.86 lakh crore.",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "Consolidated PAT was ₹16,084 crore, up 7.0% from ₹15,037 crore.",
+          "sourceId": "lt-ar26",
+          "pageOrSection": "Directors' Report, PDF p. 46",
+          "excerpt": "Consolidated PAT was ₹16,084 crore, up 7.0% from ₹15,037 crore.",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "Q1 FY27 group order inflows were ₹1,080 billion, up 14%; international inflows grew 27% and domestic 1%.",
+          "sourceId": "lt-call",
+          "pageOrSection": "Opening remarks, PDF p. 4",
+          "excerpt": "Q1 FY27 group order inflows were ₹1,080 billion, up 14%; international inflows grew 27% and domestic 1%.",
+          "excerptType": "paraphrase"
+        }
+      ],
+      "watchItems": [
+        "Domestic order momentum",
+        "Execution of the international (GCC) backlog",
+        "Reported versus recurring PAT"
+      ],
+      "sources": [
+        {
+          "id": "lt-ar26",
+          "title": "Larsen & Toubro Annual Report 2025-26",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/825f9859-e7f2-4e90-8583-01a38850f795.pdf",
+          "sourceType": "annual_report",
+          "publishedAt": null,
+          "dateLabel": "FY2025-26 report as filed with BSE",
+          "reportingPeriod": "Year ended 2026-03-31",
+          "pageOrSection": "Annual report (BSE filing)",
+          "basis": "Company-reported audited figures; page numbers are PDF pages of the linked BSE file",
+          "supports": [
+            "Order inflow, order book, revenue, recurring and consolidated PAT"
+          ]
+        },
+        {
+          "id": "lt-call",
+          "title": "Larsen & Toubro Q1 FY2027 Earnings Conference Call Transcript",
+          "url": "https://investors.larsentoubro.com/upload/Analysttrans/FY2027AnalysttransL%26T-Earnings-Jul28-2026.pdf",
+          "sourceType": "concall_transcript",
+          "publishedAt": "2026-07-28",
+          "dateLabel": "Call transcript dated 2026-07-28",
+          "reportingPeriod": "Quarter ended 2026-06-30",
+          "pageOrSection": "Earnings-call transcript",
+          "basis": "Management commentary; page numbers are PDF pages of the linked transcript",
+          "supports": [
+            "Q1 FY27 order inflow and domestic versus international mix"
+          ]
+        }
+      ]
+    },
+    {
+      "ticker": "ITC.NS",
+      "name": "ITC",
+      "adHoc": false,
+      "type": "portfolio",
+      "asOf": "FY2025-26",
+      "period": "Year ended 2026-03-31; no earnings-call transcript found for this issuer",
+      "basis": "Company-reported figures; ₹ crore unless stated. Where a document states figures but not the growth rate, the YoY % shown is computed from the two reported years; ₹ million figures are converted to ₹ crore (÷10).",
+      "businessSnapshot": "Diversified company with cigarettes, packaged foods and personal care (FMCG), paperboards and packaging, and agri-business.",
+      "thesis": "FY26 gross revenue grew 10.1% but EBITDA only 4.9% and PAT about 1%, suggesting cost pressure that the company says it offset through pricing and premiumisation.",
+      "metrics": [
+        {
+          "label": "Gross revenue",
+          "value": 80867.49,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "itc-ar26",
+          "pageOrSection": "Directors' Report, PDF p. 70",
+          "changeYoYPct": 10.1,
+          "basis": "As reported; includes amalgamation of Sresta and Wimco",
+          "searchTerms": [
+            "revenue"
+          ]
+        },
+        {
+          "label": "EBITDA",
+          "value": 25208.22,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "itc-ar26",
+          "pageOrSection": "Directors' Report, PDF p. 70",
+          "changeYoYPct": 4.9
+        },
+        {
+          "label": "Profit before exceptional items and tax",
+          "value": 26951.47,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "itc-ar26",
+          "pageOrSection": "Directors' Report, PDF p. 70",
+          "changeYoYPct": 3.7,
+          "searchTerms": [
+            "PBT"
+          ]
+        },
+        {
+          "label": "Profit after tax",
+          "value": 20286.42,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "itc-ar26",
+          "pageOrSection": "Directors' Report, PDF p. 70",
+          "changeYoYPct": 1.0,
+          "basis": "Versus ₹20,093.29 crore",
+          "searchTerms": [
+            "PAT",
+            "profit"
+          ]
+        }
+      ],
+      "narrativeVsNumbers": "Revenue grew 10.1% while EBITDA grew 4.9% and PAT 1.0%. The report says input-cost pressure was progressively mitigated through net revenue management, premiumisation and cost control, and that cigarettes kept growing through premium offerings.",
+      "cashQuality": null,
+      "bull": [
+        {
+          "claim": "FY26 gross revenue grew 10.1% to ₹80,867 crore; the cigarettes segment grew through differentiated and premium offerings.",
+          "sourceId": "itc-ar26",
+          "pageOrSection": "PDF pp. 69-70"
+        }
+      ],
+      "bear": [
+        {
+          "claim": "EBITDA grew only 4.9% and PAT 1.0%, well below revenue growth.",
+          "sourceId": "itc-ar26",
+          "pageOrSection": "PDF p. 70"
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Gross revenue was ₹80,867.49 crore (+10.1%), EBITDA ₹25,208.22 crore (+4.9%), PBT before exceptional items ₹26,951.47 crore (+3.7%), and PAT ₹20,286.42 crore versus ₹20,093.29 crore.",
+          "sourceId": "itc-ar26",
+          "pageOrSection": "Directors' Report, PDF p. 70",
+          "excerpt": "Gross revenue was ₹80,867.49 crore (+10.1%), EBITDA ₹25,208.22 crore (+4.9%), PBT before exceptional items ₹26,951.47 crore (+3.7%), and PAT ₹20,286.42 crore versus ₹20,093.29 crore.",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "The report says cost pressure was progressively mitigated through net revenue management, premiumisation and cost management.",
+          "sourceId": "itc-ar26",
+          "pageOrSection": "Segment review, PDF p. 69",
+          "excerpt": "The report says cost pressure was progressively mitigated through net revenue management, premiumisation and cost management.",
+          "excerptType": "paraphrase"
+        }
+      ],
+      "watchItems": [
+        "Margin recovery after cost pressure",
+        "Cigarette volume versus pricing",
+        "FMCG-others profitability"
+      ],
+      "sources": [
+        {
+          "id": "itc-ar26",
+          "title": "ITC Annual Report 2025-26",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/590b42ae-15c9-44cf-be69-e58053128a6b.pdf",
+          "sourceType": "annual_report",
+          "publishedAt": null,
+          "dateLabel": "FY2025-26 report as filed with BSE",
+          "reportingPeriod": "Year ended 2026-03-31",
+          "pageOrSection": "Annual report (BSE filing)",
+          "basis": "Company-reported audited figures; page numbers are PDF pages of the linked BSE file",
+          "supports": [
+            "Gross revenue, EBITDA, PBT before exceptional items, PAT, segment commentary"
+          ]
+        }
+      ]
+    },
+    {
+      "ticker": "HINDUNILVR.NS",
+      "name": "Hindustan Unilever",
+      "adHoc": false,
+      "type": "portfolio",
+      "asOf": "FY2025-26",
+      "period": "Year ended 2026-03-31; latest call 2026-11-04",
+      "basis": "Company-reported figures; ₹ crore unless stated. Where a document states figures but not the growth rate, the YoY % shown is computed from the two reported years; ₹ million figures are converted to ₹ crore (÷10).",
+      "businessSnapshot": "FMCG company with home care, beauty and wellbeing, personal care, and foods brands.",
+      "thesis": "Growth has re-accelerated: FY26 turnover grew 5%, quarterly underlying sales growth rose from 3% to 7% through the year, and Q2 FY27 hit 15%, the highest in 14 quarters.",
+      "metrics": [
+        {
+          "label": "Turnover",
+          "value": 63763,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "hindunilvr-ar26",
+          "pageOrSection": "Chairman's statement, PDF p. 12",
+          "changeYoYPct": 5,
+          "searchTerms": [
+            "revenue",
+            "sales"
+          ]
+        },
+        {
+          "label": "Underlying volume growth",
+          "value": 4,
+          "unit": "%",
+          "period": "FY26",
+          "sourceId": "hindunilvr-ar26",
+          "pageOrSection": "Chairman's statement, PDF p. 12",
+          "searchTerms": [
+            "UVG",
+            "volume"
+          ]
+        },
+        {
+          "label": "EBITDA margin",
+          "value": 23.6,
+          "unit": "%",
+          "period": "FY26",
+          "sourceId": "hindunilvr-ar26",
+          "pageOrSection": "Chairman's statement, PDF p. 12",
+          "searchTerms": [
+            "margin"
+          ]
+        },
+        {
+          "label": "Profit after tax (continuing business)",
+          "value": 10652,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "hindunilvr-ar26",
+          "pageOrSection": "Chairman's statement, PDF p. 12",
+          "searchTerms": [
+            "PAT",
+            "profit"
+          ]
+        },
+        {
+          "label": "Turnover",
+          "value": 18071,
+          "unit": "₹ crore",
+          "period": "Q2 FY27",
+          "sourceId": "hindunilvr-call",
+          "pageOrSection": "Opening remarks, PDF p. 4",
+          "basis": "USG 15%, UVG 7%",
+          "searchTerms": [
+            "quarter"
+          ]
+        },
+        {
+          "label": "Underlying sales growth",
+          "value": 15,
+          "unit": "%",
+          "period": "Q2 FY27",
+          "sourceId": "hindunilvr-call",
+          "pageOrSection": "Opening remarks, PDF p. 4",
+          "basis": "Highest in 14 quarters",
+          "searchTerms": [
+            "USG",
+            "growth"
+          ]
+        }
+      ],
+      "narrativeVsNumbers": "The annual report shows USG stepping up from 3% in the first half of FY26 to 5% in the December quarter and 7% in the March quarter. In Q2 FY27, USG reached 15% with 7% volume growth; Foods grew 9% with softer mass tea due to inflation.",
+      "cashQuality": null,
+      "bull": [
+        {
+          "claim": "Quarterly USG improved from 3% in H1 FY26 to 7% in the March quarter.",
+          "sourceId": "hindunilvr-ar26",
+          "pageOrSection": "PDF p. 12"
+        },
+        {
+          "claim": "Q2 FY27 USG was 15%, the highest in 14 quarters, with 7% UVG.",
+          "sourceId": "hindunilvr-call",
+          "pageOrSection": "PDF p. 4"
+        }
+      ],
+      "bear": [
+        {
+          "claim": "FY26 turnover grew only 5% with 4% volume growth.",
+          "sourceId": "hindunilvr-ar26",
+          "pageOrSection": "PDF p. 12"
+        },
+        {
+          "claim": "Inflation softened mass tea performance; Foods volume growth was low single digit.",
+          "sourceId": "hindunilvr-call",
+          "pageOrSection": "PDF p. 8"
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "FY26 turnover was ₹63,763 crore, up 5% with 4% UVG; USG improved from 3% in H1 to 5% in the December quarter and 7% in the March quarter.",
+          "sourceId": "hindunilvr-ar26",
+          "pageOrSection": "Chairman's statement, PDF p. 12",
+          "excerpt": "FY26 turnover was ₹63,763 crore, up 5% with 4% UVG; USG improved from 3% in H1 to 5% in the December quarter and 7% in the March quarter.",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "EBITDA margin was 23.6% and PAT from continuing business ₹10,652 crore.",
+          "sourceId": "hindunilvr-ar26",
+          "pageOrSection": "Chairman's statement, PDF p. 12",
+          "excerpt": "EBITDA margin was 23.6% and PAT from continuing business ₹10,652 crore.",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "Q2 FY27 turnover was ₹18,071 crore with 15% USG and 7% UVG.",
+          "sourceId": "hindunilvr-call",
+          "pageOrSection": "Opening remarks, PDF p. 4",
+          "excerpt": "Q2 FY27 turnover was ₹18,071 crore with 15% USG and 7% UVG.",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "Foods delivered 9% USG with low-single-digit volume growth; inflation softened mass tea.",
+          "sourceId": "hindunilvr-call",
+          "pageOrSection": "Segment review, PDF p. 8",
+          "excerpt": "Foods delivered 9% USG with low-single-digit volume growth; inflation softened mass tea.",
+          "excerptType": "paraphrase"
+        }
+      ],
+      "watchItems": [
+        "Whether 15% USG is sustained",
+        "Price versus volume mix",
+        "Margin as inflation rises"
+      ],
+      "sources": [
+        {
+          "id": "hindunilvr-ar26",
+          "title": "Hindustan Unilever Annual Report 2025-26",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/881493e4-75af-4a7f-8c64-9d0886e63f1d.pdf",
+          "sourceType": "annual_report",
+          "publishedAt": "2026-06-02",
+          "dateLabel": "FY2025-26 report; filed with BSE 2026-06-02",
+          "reportingPeriod": "Year ended 2026-03-31",
+          "pageOrSection": "Annual report (BSE filing)",
+          "basis": "Company-reported audited figures; page numbers are PDF pages of the linked BSE file",
+          "supports": [
+            "Turnover, underlying sales and volume growth, EBITDA margin, PAT, dividends"
+          ]
+        },
+        {
+          "id": "hindunilvr-call",
+          "title": "Hindustan Unilever Q2 FY2027 Earnings Call Transcript",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/6d90194e-b9dc-48b0-b48e-3de0d0ef5f6d.pdf",
+          "sourceType": "concall_transcript",
+          "publishedAt": "2026-11-04",
+          "dateLabel": "Call transcript dated 2026-11-04",
+          "reportingPeriod": "Quarter ended 2026-09-30",
+          "pageOrSection": "Earnings-call transcript",
+          "basis": "Management commentary; page numbers are PDF pages of the linked transcript",
+          "supports": [
+            "Q2 FY27 turnover, USG and UVG, segment performance"
+          ]
+        }
+      ]
+    },
+    {
+      "ticker": "BAJAJ-AUTO.NS",
+      "name": "Bajaj Auto",
+      "adHoc": false,
+      "type": "portfolio",
+      "asOf": "FY2025-26",
+      "period": "Year ended 2026-03-31; latest call 2026-11-02",
+      "basis": "Company-reported figures; ₹ crore unless stated. Where a document states figures but not the growth rate, the YoY % shown is computed from the two reported years; ₹ million figures are converted to ₹ crore (÷10).",
+      "businessSnapshot": "Two- and three-wheeler maker with a large export business and a growing electric vehicle range.",
+      "thesis": "FY26 was a record year (revenue +17.4%, PAT +20.5%, margin 20.5%) with all profit returned to shareholders; Q2 FY27 set new records again despite cost and capacity constraints.",
+      "metrics": [
+        {
+          "label": "Revenue from operations",
+          "value": 58732,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "bajaj-auto-ar26",
+          "pageOrSection": "Financial performance, PDF p. 32",
+          "changeYoYPct": 17.4,
+          "searchTerms": [
+            "revenue"
+          ]
+        },
+        {
+          "label": "EBITDA",
+          "value": 12019,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "bajaj-auto-ar26",
+          "pageOrSection": "Financial performance, PDF p. 32",
+          "changeYoYPct": 19.0,
+          "basis": "Margin 20.5%, up 30 bps"
+        },
+        {
+          "label": "Profit before tax",
+          "value": 13072,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "bajaj-auto-ar26",
+          "pageOrSection": "Financial performance, PDF p. 32",
+          "changeYoYPct": 18.3,
+          "searchTerms": [
+            "PBT"
+          ]
+        },
+        {
+          "label": "Profit after tax",
+          "value": 9825,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "bajaj-auto-ar26",
+          "pageOrSection": "Financial performance, PDF p. 32",
+          "changeYoYPct": 20.5,
+          "searchTerms": [
+            "PAT",
+            "profit"
+          ]
+        },
+        {
+          "label": "Surplus cash and equivalents",
+          "value": 18137,
+          "unit": "₹ crore",
+          "period": "2026-03-31",
+          "sourceId": "bajaj-auto-ar26",
+          "pageOrSection": "Financial performance, PDF p. 32",
+          "changeYoYPct": 6.7,
+          "searchTerms": [
+            "cash"
+          ]
+        }
+      ],
+      "narrativeVsNumbers": "All four headline figures were records. In Q2 FY27, volumes passed 15 lakh units and revenue ₹20,000 crore for the first time; management called the environment difficult, with inflation, logistics and capacity constraints in high-end bikes, exports and EVs.",
+      "cashQuality": "Surplus cash rose 6.7% to ₹18,137 crore after ~₹500 crore capex, ₹2,300+ crore of strategic investments and ~₹5,900 crore of dividends; the final dividend plus buyback equals 100% of FY26 PAT (₹9,825 crore).",
+      "bull": [
+        {
+          "claim": "FY26 revenue grew 17.4% and PAT 20.5%, with EBITDA margin up 30 bps to 20.5%.",
+          "sourceId": "bajaj-auto-ar26",
+          "pageOrSection": "PDF p. 32"
+        },
+        {
+          "claim": "Exports rose to about 7.5 lakh units a quarter from 6 lakh last year, and management expects to sustain it.",
+          "sourceId": "bajaj-auto-call",
+          "pageOrSection": "PDF p. 4"
+        }
+      ],
+      "bear": [
+        {
+          "claim": "Management cited inflationary pressures, logistics complexity and capacity limits for high-end bikes, exports and EVs.",
+          "sourceId": "bajaj-auto-call",
+          "pageOrSection": "PDF p. 3"
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Record FY26: revenue ₹58,732 crore (+17.4%), EBITDA ₹12,019 crore (+19.0%), PBT ₹13,072 crore (+18.3%), PAT ₹9,825 crore (+20.5%).",
+          "sourceId": "bajaj-auto-ar26",
+          "pageOrSection": "Financial performance, PDF p. 32",
+          "excerpt": "Record FY26: revenue ₹58,732 crore (+17.4%), EBITDA ₹12,019 crore (+19.0%), PBT ₹13,072 crore (+18.3%), PAT ₹9,825 crore (+20.5%).",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "The Board recommended a ₹150 final dividend and a buyback; combined payout of ₹9,825 crore equals 100% of PAT.",
+          "sourceId": "bajaj-auto-ar26",
+          "pageOrSection": "Financial performance, PDF p. 32",
+          "excerpt": "The Board recommended a ₹150 final dividend and a buyback; combined payout of ₹9,825 crore equals 100% of PAT.",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "Q2 FY27 volumes exceeded 15 lakh units, revenue ₹20,000 crore, EBITDA ₹4,000 crore and PAT ₹3,000 crore, all firsts.",
+          "sourceId": "bajaj-auto-call",
+          "pageOrSection": "CFO remarks, PDF p. 7",
+          "excerpt": "Q2 FY27 volumes exceeded 15 lakh units, revenue ₹20,000 crore, EBITDA ₹4,000 crore and PAT ₹3,000 crore, all firsts.",
+          "excerptType": "paraphrase"
+        }
+      ],
+      "watchItems": [
+        "Domestic two-wheeler demand after the festive season",
+        "Export run-rate",
+        "Margin under input-cost inflation"
+      ],
+      "sources": [
+        {
+          "id": "bajaj-auto-ar26",
+          "title": "Bajaj Auto Annual Report 2025-26",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/5cfa2fc3-ea76-452d-a3a9-71d3c9bf5ad6.pdf",
+          "sourceType": "annual_report",
+          "publishedAt": "2026-06-25",
+          "dateLabel": "FY2025-26 report; filed with BSE 2026-06-25",
+          "reportingPeriod": "Year ended 2026-03-31",
+          "pageOrSection": "Annual report (BSE filing)",
+          "basis": "Company-reported audited figures; page numbers are PDF pages of the linked BSE file",
+          "supports": [
+            "Revenue, EBITDA and margin, PBT, PAT, surplus cash, dividend and buyback"
+          ]
+        },
+        {
+          "id": "bajaj-auto-call",
+          "title": "Bajaj Auto Q2 FY2027 Earnings Call Transcript",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/c7171a79-5c93-47e1-b324-9056d5abea0e.pdf",
+          "sourceType": "concall_transcript",
+          "publishedAt": "2026-11-02",
+          "dateLabel": "Call transcript dated 2026-11-02",
+          "reportingPeriod": "Quarter ended 2026-09-30",
+          "pageOrSection": "Earnings-call transcript",
+          "basis": "Management commentary; page numbers are PDF pages of the linked transcript",
+          "supports": [
+            "Q2 FY27 record volumes, revenue, EBITDA and PAT; exports; cost pressures"
+          ]
+        }
+      ]
+    },
+    {
+      "ticker": "MARUTI.NS",
+      "name": "Maruti Suzuki India",
+      "adHoc": false,
+      "type": "portfolio",
+      "asOf": "FY2025-26",
+      "period": "Year ended 2026-03-31; latest call 2026-10-27",
+      "basis": "Company-reported figures; ₹ crore unless stated. Where a document states figures but not the growth rate, the YoY % shown is computed from the two reported years; ₹ million figures are converted to ₹ crore (÷10).",
+      "businessSnapshot": "Passenger-car maker selling in India and exporting; management says it exported more cars than all other Indian car makers combined in H1 FY27.",
+      "thesis": "FY26 income grew strongly but PBT fell 2.8%; volumes have since surged, with a record 6.97 lakh units in Q2 FY27 (+26.5%) and about 2 lakh pending orders.",
+      "metrics": [
+        {
+          "label": "Total income",
+          "value": 187658,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "maruti-ar26",
+          "pageOrSection": "Board's Report financial results, PDF p. 114",
+          "changeYoYPct": 18.8,
+          "basis": "Standalone; reported as ₹1,876,580 million; FY25 restated",
+          "searchTerms": [
+            "revenue",
+            "income"
+          ]
+        },
+        {
+          "label": "Profit before tax",
+          "value": 18862.9,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "maruti-ar26",
+          "pageOrSection": "Board's Report financial results, PDF p. 114",
+          "changeYoYPct": -2.8,
+          "basis": "Standalone; reported as ₹188,629 million",
+          "searchTerms": [
+            "PBT"
+          ]
+        },
+        {
+          "label": "Profit after tax",
+          "value": 14445.4,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "maruti-ar26",
+          "pageOrSection": "Board's Report financial results, PDF p. 114",
+          "changeYoYPct": 1.0,
+          "basis": "Standalone; reported as ₹144,454 million",
+          "searchTerms": [
+            "PAT",
+            "profit"
+          ]
+        },
+        {
+          "label": "Total sales volume",
+          "value": 696654,
+          "unit": "units",
+          "period": "Q2 FY27",
+          "sourceId": "maruti-call",
+          "pageOrSection": "Opening remarks, PDF p. 3",
+          "changeYoYPct": 26.5,
+          "basis": "Domestic plus exports; highest ever quarter",
+          "searchTerms": [
+            "volume",
+            "units",
+            "quarter"
+          ]
+        },
+        {
+          "label": "Export volume",
+          "value": 108119,
+          "unit": "units",
+          "period": "Q2 FY27",
+          "sourceId": "maruti-call",
+          "pageOrSection": "Opening remarks, PDF p. 3",
+          "changeYoYPct": -2,
+          "basis": "Logistics disruption",
+          "searchTerms": [
+            "exports"
+          ]
+        }
+      ],
+      "narrativeVsNumbers": "Total income rose 18.8% in FY26 but PBT fell 2.8% and PAT rose 1.0%, so margins compressed. Q2 FY27 volumes jumped 26.5% on new capacity, and management said cost controls added about 0.8% to operating margin while commodities need watching in H2.",
+      "cashQuality": null,
+      "bull": [
+        {
+          "claim": "Q2 FY27 sales volume was a record 696,654 units, up 26.5%, with pending orders around 2 lakh units.",
+          "sourceId": "maruti-call",
+          "pageOrSection": "PDF p. 3"
+        }
+      ],
+      "bear": [
+        {
+          "claim": "FY26 standalone PBT fell to ₹188,629 million from ₹194,127 million despite higher income.",
+          "sourceId": "maruti-ar26",
+          "pageOrSection": "PDF p. 114"
+        },
+        {
+          "claim": "Q2 FY27 exports fell about 2% on logistics disruption; management gives no guidance and flagged commodity risk in H2.",
+          "sourceId": "maruti-call",
+          "pageOrSection": "PDF pp. 3, 8"
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Standalone total income was ₹1,876,580 million versus ₹1,579,326 million; PBT ₹188,629 million versus ₹194,127 million; PAT ₹144,454 million versus ₹142,976 million (FY25 restated).",
+          "sourceId": "maruti-ar26",
+          "pageOrSection": "Board's Report financial results, PDF p. 114",
+          "excerpt": "Standalone total income was ₹1,876,580 million versus ₹1,579,326 million; PBT ₹188,629 million versus ₹194,127 million; PAT ₹144,454 million versus ₹142,976 million (FY25 restated).",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "Q2 FY27 total volume was a record 696,654 units, up 26.5%; pending orders were about 2 lakh units; exports were 108,119 units, down about 2%.",
+          "sourceId": "maruti-call",
+          "pageOrSection": "Opening remarks, PDF p. 3",
+          "excerpt": "Q2 FY27 total volume was a record 696,654 units, up 26.5%; pending orders were about 2 lakh units; exports were 108,119 units, down about 2%.",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "Management said cost controls lifted operating performance by about 0.8% and that commodities need watching in H2; it does not give guidance.",
+          "sourceId": "maruti-call",
+          "pageOrSection": "Q&A, PDF p. 8",
+          "excerpt": "Management said cost controls lifted operating performance by about 0.8% and that commodities need watching in H2; it does not give guidance.",
+          "excerptType": "paraphrase"
+        }
+      ],
+      "watchItems": [
+        "Margin recovery as volumes rise",
+        "Commodity costs in H2 FY27",
+        "Export logistics"
+      ],
+      "sources": [
+        {
+          "id": "maruti-ar26",
+          "title": "Maruti Suzuki India Annual Report 2025-26",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/09d38ee6-9c30-4892-b483-8d7c34697a7a.pdf",
+          "sourceType": "annual_report",
+          "publishedAt": "2026-08-08",
+          "dateLabel": "FY2025-26 report; filed with BSE 2026-08-08",
+          "reportingPeriod": "Year ended 2026-03-31",
+          "pageOrSection": "Annual report (BSE filing)",
+          "basis": "Company-reported audited figures; page numbers are PDF pages of the linked BSE file",
+          "supports": [
+            "Standalone total income, PBT, PAT and dividend"
+          ]
+        },
+        {
+          "id": "maruti-call",
+          "title": "Maruti Suzuki Q2 FY2027 Earnings Conference Call Transcript",
+          "url": "https://www.marutisuzuki.com/content/dam/arena-eds/corporate/pdf/company-reports/2026-2027/Transcript_earnings_call_Maruti_Suzuki_Q2_FY_27.pdf",
+          "sourceType": "concall_transcript",
+          "publishedAt": "2026-10-27",
+          "dateLabel": "Call transcript dated 2026-10-27",
+          "reportingPeriod": "Quarter ended 2026-09-30",
+          "pageOrSection": "Earnings-call transcript",
+          "basis": "Management commentary; page numbers are PDF pages of the linked transcript",
+          "supports": [
+            "Q2 FY27 volumes, pending orders, exports, cost control, commodities"
+          ]
+        }
+      ]
+    },
+    {
+      "ticker": "SUNPHARMA.NS",
+      "name": "Sun Pharmaceutical Industries",
+      "adHoc": false,
+      "type": "portfolio",
+      "asOf": "FY2025-26",
+      "period": "Year ended 2026-03-31; latest call 2026-11-04",
+      "basis": "Company-reported figures; ₹ crore unless stated. Where a document states figures but not the growth rate, the YoY % shown is computed from the two reported years; ₹ million figures are converted to ₹ crore (÷10).",
+      "businessSnapshot": "Pharmaceutical company (ranked first in India by market share on the Q2 FY27 call) with generics in India and emerging markets plus a global specialty (innovative) business.",
+      "thesis": "FY26 consolidated revenue grew 11.2% and pre-exceptional PBT 13.8%, but a ₹1,307 crore exceptional item held PAT growth to 5.3%; India sales grew 17.3% in Q2 FY27.",
+      "metrics": [
+        {
+          "label": "Revenue from operations",
+          "value": 58462.0,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "sunpharma-ar26",
+          "pageOrSection": "Board's Report financial highlights, PDF p. 49",
+          "changeYoYPct": 11.2,
+          "basis": "Consolidated; reported as ₹584,620.4 million",
+          "searchTerms": [
+            "revenue",
+            "sales"
+          ]
+        },
+        {
+          "label": "Profit before exceptional item and tax",
+          "value": 16426.4,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "sunpharma-ar26",
+          "pageOrSection": "Board's Report financial highlights, PDF p. 49",
+          "changeYoYPct": 13.8,
+          "basis": "Consolidated",
+          "searchTerms": [
+            "PBT"
+          ]
+        },
+        {
+          "label": "Exceptional item",
+          "value": 1307.5,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "sunpharma-ar26",
+          "pageOrSection": "Board's Report financial highlights, PDF p. 49",
+          "basis": "Consolidated",
+          "searchTerms": [
+            "exceptional"
+          ]
+        },
+        {
+          "label": "Profit after tax",
+          "value": 11564.5,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "sunpharma-ar26",
+          "pageOrSection": "Board's Report financial highlights, PDF p. 49",
+          "changeYoYPct": 5.3,
+          "basis": "Consolidated",
+          "searchTerms": [
+            "PAT",
+            "profit"
+          ]
+        },
+        {
+          "label": "India market share",
+          "value": 8.6,
+          "unit": "%",
+          "period": "Q2 FY27",
+          "sourceId": "sunpharma-call",
+          "pageOrSection": "Opening remarks, PDF p. 5",
+          "basis": "Rank 1; versus 8.3% a year earlier",
+          "searchTerms": [
+            "India",
+            "market share"
+          ]
+        },
+        {
+          "label": "R&D spend",
+          "value": 4.8,
+          "unit": "% of sales",
+          "period": "Q2 FY27",
+          "sourceId": "sunpharma-call",
+          "pageOrSection": "Opening remarks, PDF p. 6",
+          "basis": "₹7,784 million; 32.4% on innovative R&D",
+          "searchTerms": [
+            "R&D"
+          ]
+        }
+      ],
+      "narrativeVsNumbers": "Consolidated revenue grew 11.2% and pre-exceptional PBT 13.8%, but PAT grew 5.3% after a ₹13,074.8 million exceptional item. The standalone entity's revenue fell 9.7%, so growth came from subsidiaries. In Q2 FY27, India sales grew 17.3% and R&D spend ran below plan.",
+      "cashQuality": null,
+      "bull": [
+        {
+          "claim": "Consolidated revenue grew 11.2% and pre-exceptional PBT 13.8% in FY26.",
+          "sourceId": "sunpharma-ar26",
+          "pageOrSection": "PDF p. 49"
+        },
+        {
+          "claim": "Q2 FY27 India sales grew 17.3% and market share rose to 8.6% from 8.3%.",
+          "sourceId": "sunpharma-call",
+          "pageOrSection": "PDF p. 5"
+        }
+      ],
+      "bear": [
+        {
+          "claim": "A ₹1,307 crore exceptional item cut PAT growth to 5.3%; standalone revenue fell to ₹207,546 million from ₹229,774 million.",
+          "sourceId": "sunpharma-ar26",
+          "pageOrSection": "PDF p. 49"
+        },
+        {
+          "claim": "R&D spend was tracking below plan, with management expecting H2 to catch up, which may weigh on H2 margins.",
+          "sourceId": "sunpharma-call",
+          "pageOrSection": "PDF p. 6"
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Consolidated revenue was ₹584,620.4 million versus ₹525,784.4 million; pre-exceptional PBT ₹164,263.6 million versus ₹144,299.8 million; exceptional item ₹13,074.8 million; PAT ₹115,645.2 million versus ₹109,801.0 million.",
+          "sourceId": "sunpharma-ar26",
+          "pageOrSection": "Board's Report financial highlights, PDF p. 49",
+          "excerpt": "Consolidated revenue was ₹584,620.4 million versus ₹525,784.4 million; pre-exceptional PBT ₹164,263.6 million versus ₹144,299.8 million; exceptional item ₹13,074.8 million; PAT ₹115,645.2 million versus ₹109,801.0 million.",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "Q2 FY27 India sales grew 17.3% and made up 34.5% of consolidated sales; Sun ranks first with 8.6% market share.",
+          "sourceId": "sunpharma-call",
+          "pageOrSection": "Opening remarks, PDF p. 5",
+          "excerpt": "Q2 FY27 India sales grew 17.3% and made up 34.5% of consolidated sales; Sun ranks first with 8.6% market share.",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "Q2 FY27 R&D was ₹7,784 million or 4.8% of sales, below the intended level, with a catch-up expected in H2.",
+          "sourceId": "sunpharma-call",
+          "pageOrSection": "Opening remarks, PDF p. 6",
+          "excerpt": "Q2 FY27 R&D was ₹7,784 million or 4.8% of sales, below the intended level, with a catch-up expected in H2.",
+          "excerptType": "paraphrase"
+        }
+      ],
+      "watchItems": [
+        "Specialty launch ramp-up",
+        "R&D catch-up and margin in H2",
+        "Nature of the FY26 exceptional item"
+      ],
+      "sources": [
+        {
+          "id": "sunpharma-ar26",
+          "title": "Sun Pharmaceutical Industries Annual Report 2025-26",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/cb65dea5-416a-4f98-95e2-0b58761b7442.pdf",
+          "sourceType": "annual_report",
+          "publishedAt": null,
+          "dateLabel": "FY2025-26 report as filed with BSE",
+          "reportingPeriod": "Year ended 2026-03-31",
+          "pageOrSection": "Annual report (BSE filing)",
+          "basis": "Company-reported audited figures; page numbers are PDF pages of the linked BSE file",
+          "supports": [
+            "Consolidated and standalone revenue, PBT, exceptional items and PAT"
+          ]
+        },
+        {
+          "id": "sunpharma-call",
+          "title": "Sun Pharmaceutical Q2 FY2027 Earnings Call Transcript",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/fe431adc-0e1a-48ee-9c2b-b6e39cba04e4.pdf",
+          "sourceType": "concall_transcript",
+          "publishedAt": "2026-11-04",
+          "dateLabel": "Call transcript dated 2026-11-04",
+          "reportingPeriod": "Quarter ended 2026-09-30",
+          "pageOrSection": "Earnings-call transcript",
+          "basis": "Management commentary; page numbers are PDF pages of the linked transcript",
+          "supports": [
+            "Q2 FY27 India sales and market share, specialty launches, R&D spend"
+          ]
+        }
+      ]
+    },
+    {
+      "ticker": "NTPC.NS",
+      "name": "NTPC",
+      "adHoc": false,
+      "type": "portfolio",
+      "asOf": "FY2025-26",
+      "period": "Year ended 2026-03-31; latest call 2026-10-31",
+      "basis": "Company-reported figures; ₹ crore unless stated. Where a document states figures but not the growth rate, the YoY % shown is computed from the two reported years; ₹ million figures are converted to ₹ crore (÷10).",
+      "businessSnapshot": "Government-owned power generator, mainly thermal, with a fast-growing renewables arm (NGEL).",
+      "thesis": "FY26 consolidated PAT hit a record ₹27,546 crore (+15%) and group capacity grew 11.5%, while standalone revenue fell 2.7% on lower fuel costs; renewable guidance was cut on transmission delays.",
+      "metrics": [
+        {
+          "label": "Consolidated profit after tax",
+          "value": 27545.76,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "ntpc-ar26",
+          "pageOrSection": "MD&A, PDF pp. 75-76",
+          "changeYoYPct": 15.0,
+          "basis": "Consolidated; highest ever",
+          "searchTerms": [
+            "PAT",
+            "profit"
+          ]
+        },
+        {
+          "label": "Standalone profit after tax",
+          "value": 23162,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "ntpc-ar26",
+          "pageOrSection": "Chairman's message, PDF p. 11",
+          "changeYoYPct": 18,
+          "basis": "Standalone"
+        },
+        {
+          "label": "Revenue from operations",
+          "value": 165493.74,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "ntpc-ar26",
+          "pageOrSection": "Key financial highlights, PDF p. 74",
+          "changeYoYPct": -2.67,
+          "basis": "Standalone",
+          "searchTerms": [
+            "revenue"
+          ]
+        },
+        {
+          "label": "Fuel cost",
+          "value": 88605.04,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "ntpc-ar26",
+          "pageOrSection": "Key financial highlights, PDF p. 74",
+          "changeYoYPct": -8.71,
+          "basis": "Standalone",
+          "searchTerms": [
+            "fuel",
+            "coal"
+          ]
+        },
+        {
+          "label": "Group installed capacity",
+          "value": 89108,
+          "unit": "MW",
+          "period": "2026-03-31",
+          "sourceId": "ntpc-ar26",
+          "pageOrSection": "MD&A, PDF p. 75",
+          "changeYoYPct": 11.48,
+          "basis": "Group",
+          "searchTerms": [
+            "capacity",
+            "MW"
+          ]
+        }
+      ],
+      "narrativeVsNumbers": "Standalone revenue fell 2.67% as fuel costs fell 8.71%, while consolidated PAT rose 15%. On the Q2 FY27 call, management noted India power demand grew about 15% in H1, but renewable additions guidance was cut because of transmission constraints.",
+      "cashQuality": null,
+      "bull": [
+        {
+          "claim": "Consolidated PAT reached a record ₹27,546 crore, up 15%, and group capacity rose 11.48% to 89,108 MW.",
+          "sourceId": "ntpc-ar26",
+          "pageOrSection": "PDF pp. 11, 75"
+        },
+        {
+          "claim": "India power demand grew about 15% in H1 FY27, with October up 21%.",
+          "sourceId": "ntpc-call",
+          "pageOrSection": "PDF p. 3"
+        }
+      ],
+      "bear": [
+        {
+          "claim": "Profit from group companies fell 2.78% because FY25 included one-time revenue at RGPPL.",
+          "sourceId": "ntpc-ar26",
+          "pageOrSection": "PDF p. 76"
+        },
+        {
+          "claim": "Renewable capacity guidance was cut because of transmission constraints.",
+          "sourceId": "ntpc-call",
+          "pageOrSection": "PDF p. 14"
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Consolidated PAT rose 15% from ₹23,953.15 crore to ₹27,545.76 crore; profit attributable to group companies fell 2.78%.",
+          "sourceId": "ntpc-ar26",
+          "pageOrSection": "MD&A, PDF p. 76",
+          "excerpt": "Consolidated PAT rose 15% from ₹23,953.15 crore to ₹27,545.76 crore; profit attributable to group companies fell 2.78%.",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "Standalone revenue was ₹1,65,493.74 crore versus ₹1,70,037.37 crore (-2.67%); fuel cost fell 8.71% to ₹88,605.04 crore.",
+          "sourceId": "ntpc-ar26",
+          "pageOrSection": "Key financial highlights, PDF p. 74",
+          "excerpt": "Standalone revenue was ₹1,65,493.74 crore versus ₹1,70,037.37 crore (-2.67%); fuel cost fell 8.71% to ₹88,605.04 crore.",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "India recorded about 11% generation growth and 15% power demand growth in H1 FY27.",
+          "sourceId": "ntpc-call",
+          "pageOrSection": "Opening remarks, PDF p. 3",
+          "excerpt": "India recorded about 11% generation growth and 15% power demand growth in H1 FY27.",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "An analyst noted renewable guidance had been cut because transmission was a challenge.",
+          "sourceId": "ntpc-call",
+          "pageOrSection": "Q&A, PDF p. 14",
+          "excerpt": "An analyst noted renewable guidance had been cut because transmission was a challenge.",
+          "excerptType": "paraphrase"
+        }
+      ],
+      "watchItems": [
+        "Renewable additions versus transmission",
+        "Thermal plant load factor with demand growth",
+        "FY28 target of about 9.6 GW additions"
+      ],
+      "sources": [
+        {
+          "id": "ntpc-ar26",
+          "title": "NTPC Annual Report 2025-26",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/dbc69766-f1e1-4ecc-9fa9-7599477167db.pdf",
+          "sourceType": "annual_report",
+          "publishedAt": null,
+          "dateLabel": "FY2025-26 report as filed with BSE",
+          "reportingPeriod": "Year ended 2026-03-31",
+          "pageOrSection": "Annual report (BSE filing)",
+          "basis": "Company-reported audited figures; page numbers are PDF pages of the linked BSE file",
+          "supports": [
+            "Consolidated and standalone PAT, standalone revenue and costs, group installed capacity"
+          ]
+        },
+        {
+          "id": "ntpc-call",
+          "title": "NTPC Q2 FY2027 Conference Call with Analysts & Investors — Transcript",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/4d962dc4-6133-4998-8d2e-9fa5fec441f5.pdf",
+          "sourceType": "concall_transcript",
+          "publishedAt": "2026-10-31",
+          "dateLabel": "Call transcript dated 2026-10-31",
+          "reportingPeriod": "Quarter ended 2026-09-30",
+          "pageOrSection": "Earnings-call transcript",
+          "basis": "Management commentary; page numbers are PDF pages of the linked transcript",
+          "supports": [
+            "Q2 FY27 power demand, renewable capacity guidance, transmission constraints"
+          ]
+        }
+      ]
+    },
+    {
+      "ticker": "TATAPOWER.NS",
+      "name": "Tata Power",
+      "adHoc": false,
+      "type": "portfolio",
+      "asOf": "FY2025-26",
+      "period": "Year ended 2026-03-31; latest call 2026-07-31",
+      "basis": "Company-reported figures; ₹ crore unless stated. Where a document states figures but not the growth rate, the YoY % shown is computed from the two reported years; ₹ million figures are converted to ₹ crore (÷10).",
+      "businessSnapshot": "Integrated power company covering generation (thermal, hydro, solar, wind), transmission and distribution, plus solar manufacturing and EV charging.",
+      "thesis": "FY26 revenue dipped 1.3% but EBITDA grew 11.2% and PAT 7.2%; higher interest costs absorbed part of the gain. Q1 FY27 PAT rose 11% on strong summer demand.",
+      "metrics": [
+        {
+          "label": "Revenue from operations",
+          "value": 63681,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "tatapower-ar26",
+          "pageOrSection": "Board's Report financial results, PDF p. 100",
+          "changeYoYPct": -1.3,
+          "basis": "Consolidated",
+          "searchTerms": [
+            "revenue"
+          ]
+        },
+        {
+          "label": "EBITDA",
+          "value": 16090,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "tatapower-ar26",
+          "pageOrSection": "Board's Report financial results, PDF p. 100",
+          "changeYoYPct": 11.2,
+          "basis": "Consolidated"
+        },
+        {
+          "label": "Finance cost",
+          "value": 5257,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "tatapower-ar26",
+          "pageOrSection": "Board's Report financial results, PDF p. 100",
+          "changeYoYPct": 11.8,
+          "basis": "Consolidated",
+          "searchTerms": [
+            "interest",
+            "debt"
+          ]
+        },
+        {
+          "label": "Net profit after tax",
+          "value": 5118,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "tatapower-ar26",
+          "pageOrSection": "Board's Report financial results, PDF p. 100",
+          "changeYoYPct": 7.2,
+          "basis": "Consolidated",
+          "searchTerms": [
+            "PAT",
+            "profit"
+          ]
+        },
+        {
+          "label": "Profit after tax",
+          "value": 1401,
+          "unit": "₹ crore",
+          "period": "Q1 FY27",
+          "sourceId": "tatapower-call",
+          "pageOrSection": "CEO remarks, PDF p. 3",
+          "changeYoYPct": 11,
+          "basis": "Management-reported; EBITDA ₹4,249 crore (+8%)",
+          "searchTerms": [
+            "quarter"
+          ]
+        }
+      ],
+      "narrativeVsNumbers": "EBITDA grew 11.2% on slightly lower revenue, but finance costs rose 11.8% and depreciation 16.9%, so PBT grew 5.0%. In Q1 FY27, management credited a long, dry summer and industrial demand for higher consumption.",
+      "cashQuality": null,
+      "bull": [
+        {
+          "claim": "FY26 consolidated EBITDA grew 11.2% to ₹16,090 crore and PAT 7.2% to ₹5,118 crore.",
+          "sourceId": "tatapower-ar26",
+          "pageOrSection": "PDF p. 100"
+        },
+        {
+          "claim": "Q1 FY27 PAT grew 11% to ₹1,401 crore and EBITDA 8% to ₹4,249 crore.",
+          "sourceId": "tatapower-call",
+          "pageOrSection": "PDF p. 3"
+        }
+      ],
+      "bear": [
+        {
+          "claim": "Finance costs rose to ₹5,257 crore from ₹4,702 crore, and standalone PAT fell to ₹1,125 crore from ₹3,133 crore.",
+          "sourceId": "tatapower-ar26",
+          "pageOrSection": "PDF p. 100"
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Consolidated revenue ₹63,681 crore versus ₹64,502 crore; EBITDA ₹16,090 crore versus ₹14,468 crore; finance cost ₹5,257 crore versus ₹4,702 crore; PBT ₹6,636 crore versus ₹6,320 crore; PAT ₹5,118 crore versus ₹4,775 crore.",
+          "sourceId": "tatapower-ar26",
+          "pageOrSection": "Board's Report financial results, PDF p. 100",
+          "excerpt": "Consolidated revenue ₹63,681 crore versus ₹64,502 crore; EBITDA ₹16,090 crore versus ₹14,468 crore; finance cost ₹5,257 crore versus ₹4,702 crore; PBT ₹6,636 crore versus ₹6,320 crore; PAT ₹5,118 crore versus ₹4,775 crore.",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "Q1 FY27 PAT was ₹1,401 crore (+11%) and EBITDA ₹4,249 crore (+8%).",
+          "sourceId": "tatapower-call",
+          "pageOrSection": "CEO remarks, PDF p. 3",
+          "excerpt": "Q1 FY27 PAT was ₹1,401 crore (+11%) and EBITDA ₹4,249 crore (+8%).",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "Management linked higher consumption to a long summer with little rain and to industrial demand.",
+          "sourceId": "tatapower-call",
+          "pageOrSection": "CEO remarks, PDF p. 3",
+          "excerpt": "Management linked higher consumption to a long summer with little rain and to industrial demand.",
+          "excerptType": "paraphrase"
+        }
+      ],
+      "watchItems": [
+        "Interest cost versus EBITDA growth",
+        "Renewables and solar manufacturing ramp-up",
+        "Standalone profit decline"
+      ],
+      "sources": [
+        {
+          "id": "tatapower-ar26",
+          "title": "Tata Power Annual Report 2025-26",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/a5491ca0-092d-4f99-a329-c62579cc6ef2.pdf",
+          "sourceType": "annual_report",
+          "publishedAt": "2026-06-10",
+          "dateLabel": "FY2025-26 report; filed with BSE 2026-06-10",
+          "reportingPeriod": "Year ended 2026-03-31",
+          "pageOrSection": "Annual report (BSE filing)",
+          "basis": "Company-reported audited figures; page numbers are PDF pages of the linked BSE file",
+          "supports": [
+            "Consolidated and standalone revenue, EBITDA, finance cost, PBT and PAT"
+          ]
+        },
+        {
+          "id": "tatapower-call",
+          "title": "Tata Power Q1 FY2027 Earnings Call Transcript",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/f2eec946-af3f-4579-8a6b-1483aa6f7312.pdf",
+          "sourceType": "concall_transcript",
+          "publishedAt": "2026-07-31",
+          "dateLabel": "Call transcript dated 2026-07-31",
+          "reportingPeriod": "Quarter ended 2026-06-30",
+          "pageOrSection": "Earnings-call transcript",
+          "basis": "Management commentary; page numbers are PDF pages of the linked transcript",
+          "supports": [
+            "Q1 FY27 PAT and EBITDA growth, power demand"
+          ]
+        }
+      ]
+    },
+    {
+      "ticker": "ASIANPAINT.NS",
+      "name": "Asian Paints",
+      "adHoc": false,
+      "type": "portfolio",
+      "asOf": "FY2025-26",
+      "period": "Year ended 2026-03-31; latest call 2026-11-03",
+      "basis": "Company-reported figures; ₹ crore unless stated. Where a document states figures but not the growth rate, the YoY % shown is computed from the two reported years; ₹ million figures are converted to ₹ crore (÷10).",
+      "businessSnapshot": "Paints company with decorative and industrial coatings, home décor, and international operations.",
+      "thesis": "FY26 revenue grew only 5% but EBITDA rose 12.8% and PBT 17.6%; in Q2 FY27 decorative value growth (14.5%) ran well ahead of volume (6.4%) because of price increases.",
+      "metrics": [
+        {
+          "label": "Revenue from operations",
+          "value": 35583.54,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "asianpaint-ar26",
+          "pageOrSection": "Board's Report financial results, PDF p. 110",
+          "changeYoYPct": 4.95,
+          "basis": "Consolidated",
+          "searchTerms": [
+            "revenue"
+          ]
+        },
+        {
+          "label": "EBITDA",
+          "value": 7419.72,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "asianpaint-ar26",
+          "pageOrSection": "Board's Report financial results, PDF p. 110",
+          "changeYoYPct": 12.78,
+          "basis": "Consolidated"
+        },
+        {
+          "label": "Profit before tax",
+          "value": 6003.44,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "asianpaint-ar26",
+          "pageOrSection": "Board's Report financial results, PDF p. 110",
+          "changeYoYPct": 17.64,
+          "basis": "Consolidated",
+          "searchTerms": [
+            "PBT",
+            "profit"
+          ]
+        },
+        {
+          "label": "Decorative volume growth",
+          "value": 6.4,
+          "unit": "%",
+          "period": "Q2 FY27",
+          "sourceId": "asianpaint-call",
+          "pageOrSection": "Management remarks, PDF p. 14",
+          "basis": "Value growth 14.5%",
+          "searchTerms": [
+            "volume",
+            "decorative"
+          ]
+        }
+      ],
+      "narrativeVsNumbers": "EBITDA grew more than twice as fast as revenue in FY26, and lower exceptional charges (₹157.6 crore versus ₹363.1 crore) lifted PBT growth to 17.6%. In Q2 FY27, decorative value growth of 14.5% was well above 6.4% volume growth, which management linked to price increases.",
+      "cashQuality": null,
+      "bull": [
+        {
+          "claim": "FY26 consolidated EBITDA grew 12.78% and PBT 17.64% on revenue growth of 4.95%.",
+          "sourceId": "asianpaint-ar26",
+          "pageOrSection": "PDF p. 110"
+        },
+        {
+          "claim": "Q2 FY27 decorative volume grew 6.4% and value 14.5%.",
+          "sourceId": "asianpaint-call",
+          "pageOrSection": "PDF p. 14"
+        }
+      ],
+      "bear": [
+        {
+          "claim": "Revenue grew under 5% in FY26.",
+          "sourceId": "asianpaint-ar26",
+          "pageOrSection": "PDF p. 110"
+        },
+        {
+          "claim": "Much of Q2 FY27 value growth came from price increases rather than volume.",
+          "sourceId": "asianpaint-call",
+          "pageOrSection": "PDF p. 14"
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "Consolidated revenue ₹35,583.54 crore versus ₹33,905.62 crore (+4.95%); EBITDA ₹7,419.72 crore (+12.78%); PBT ₹6,003.44 crore (+17.64%).",
+          "sourceId": "asianpaint-ar26",
+          "pageOrSection": "Board's Report financial results, PDF p. 110",
+          "excerpt": "Consolidated revenue ₹35,583.54 crore versus ₹33,905.62 crore (+4.95%); EBITDA ₹7,419.72 crore (+12.78%); PBT ₹6,003.44 crore (+17.64%).",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "Decorative volume growth was 6.4% and value growth 14.5% in Q2 FY27, with price increases contributing.",
+          "sourceId": "asianpaint-call",
+          "pageOrSection": "Management remarks, PDF p. 14",
+          "excerpt": "Decorative volume growth was 6.4% and value growth 14.5% in Q2 FY27, with price increases contributing.",
+          "excerptType": "paraphrase"
+        }
+      ],
+      "watchItems": [
+        "Volume growth after price increases",
+        "Competitive intensity in decorative paints",
+        "Raw-material costs"
+      ],
+      "sources": [
+        {
+          "id": "asianpaint-ar26",
+          "title": "Asian Paints Annual Report 2025-26",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/aeefecce-2626-4370-9455-c7c6dd94d670.pdf",
+          "sourceType": "annual_report",
+          "publishedAt": "2026-06-12",
+          "dateLabel": "FY2025-26 report; filed with BSE 2026-06-12",
+          "reportingPeriod": "Year ended 2026-03-31",
+          "pageOrSection": "Annual report (BSE filing)",
+          "basis": "Company-reported audited figures; page numbers are PDF pages of the linked BSE file",
+          "supports": [
+            "Standalone and consolidated revenue, EBITDA, PBT and exceptional items"
+          ]
+        },
+        {
+          "id": "asianpaint-call",
+          "title": "Asian Paints Q2 FY2027 Earnings Call Transcript",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/ee7e6efe-1f9b-4b5e-bff7-1da18902ffeb.pdf",
+          "sourceType": "concall_transcript",
+          "publishedAt": "2026-11-03",
+          "dateLabel": "Call transcript dated 2026-11-03",
+          "reportingPeriod": "Quarter ended 2026-09-30",
+          "pageOrSection": "Earnings-call transcript",
+          "basis": "Management commentary; page numbers are PDF pages of the linked transcript",
+          "supports": [
+            "Q2 FY27 decorative volume and value growth, price increases, new capacity"
+          ]
+        }
+      ]
+    },
+    {
+      "ticker": "HINDALCO.NS",
+      "name": "Hindalco Industries",
+      "adHoc": false,
+      "type": "portfolio",
+      "asOf": "FY2025-26",
+      "period": "Year ended 2026-03-31; latest call 2026-11-12",
+      "basis": "Company-reported figures; ₹ crore unless stated. Where a document states figures but not the growth rate, the YoY % shown is computed from the two reported years; ₹ million figures are converted to ₹ crore (÷10).",
+      "businessSnapshot": "Aluminium and copper producer with Indian smelting and downstream operations and Novelis, a global aluminium rolling and recycling business.",
+      "thesis": "FY26 revenue hit a record ₹2,74,944 crore (+15%) and EBITDA ₹38,097 crore (+7%) despite the Novelis Oswego fire; Q2 FY27 EBITDA jumped 52%, though part of copper's gain was one-time.",
+      "metrics": [
+        {
+          "label": "Revenue",
+          "value": 274944,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "hindalco-ar26",
+          "pageOrSection": "Financial performance highlights, PDF p. 63",
+          "changeYoYPct": 15,
+          "basis": "Consolidated; record",
+          "searchTerms": [
+            "revenue"
+          ]
+        },
+        {
+          "label": "EBITDA",
+          "value": 38097,
+          "unit": "₹ crore",
+          "period": "FY26",
+          "sourceId": "hindalco-ar26",
+          "pageOrSection": "Financial performance highlights, PDF p. 63",
+          "changeYoYPct": 7,
+          "basis": "Consolidated; record"
+        },
+        {
+          "label": "Consolidated EBITDA",
+          "value": 13869,
+          "unit": "₹ crore",
+          "period": "Q2 FY27",
+          "sourceId": "hindalco-call",
+          "pageOrSection": "Results remarks, PDF p. 6",
+          "changeYoYPct": 52,
+          "basis": "Management-reported",
+          "searchTerms": [
+            "quarter"
+          ]
+        },
+        {
+          "label": "Consolidated profit after tax",
+          "value": 7533,
+          "unit": "₹ crore",
+          "period": "Q2 FY27",
+          "sourceId": "hindalco-call",
+          "pageOrSection": "Results remarks, PDF p. 6",
+          "changeYoYPct": 59,
+          "basis": "Management-reported",
+          "searchTerms": [
+            "PAT",
+            "profit"
+          ]
+        },
+        {
+          "label": "Copper EBITDA",
+          "value": 1673,
+          "unit": "₹ crore",
+          "period": "Q2 FY27",
+          "sourceId": "hindalco-call",
+          "pageOrSection": "Results remarks, PDF p. 7",
+          "changeYoYPct": 164,
+          "basis": "Record; includes one-time gains",
+          "searchTerms": [
+            "copper"
+          ]
+        }
+      ],
+      "narrativeVsNumbers": "FY26 EBITDA grew 7% against 15% revenue growth because the Oswego fire interrupted Novelis shipments and US tariffs rose; the company expects the Oswego hot mills back earlier than end-Q1 FY27. In Q2 FY27, consolidated EBITDA rose 52% and India business EBITDA 66%.",
+      "cashQuality": null,
+      "bull": [
+        {
+          "claim": "FY26 consolidated revenue (+15%) and EBITDA (+7%) were records, led by India operations.",
+          "sourceId": "hindalco-ar26",
+          "pageOrSection": "PDF p. 63"
+        },
+        {
+          "claim": "Q2 FY27 consolidated EBITDA rose 52% to ₹13,869 crore and PAT 59% to ₹7,533 crore.",
+          "sourceId": "hindalco-call",
+          "pageOrSection": "PDF p. 6"
+        }
+      ],
+      "bear": [
+        {
+          "claim": "The Oswego fire and higher US tariffs hurt Novelis shipments and FY26 margins.",
+          "sourceId": "hindalco-ar26",
+          "pageOrSection": "PDF p. 63"
+        },
+        {
+          "claim": "Q2 copper EBITDA included one-time gains, and management flagged geopolitical, commodity and trade headwinds.",
+          "sourceId": "hindalco-call",
+          "pageOrSection": "PDF pp. 5, 7"
+        }
+      ],
+      "evidence": [
+        {
+          "claim": "FY26 consolidated revenue was ₹2,74,944 crore (+15%) and EBITDA a record ₹38,097 crore (+7%); the Oswego fire and US tariffs affected Novelis.",
+          "sourceId": "hindalco-ar26",
+          "pageOrSection": "Financial performance highlights, PDF p. 63",
+          "excerpt": "FY26 consolidated revenue was ₹2,74,944 crore (+15%) and EBITDA a record ₹38,097 crore (+7%); the Oswego fire and US tariffs affected Novelis.",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "Q2 FY27 consolidated EBITDA rose 52% to ₹13,869 crore and PAT 59% to ₹7,533 crore; India business EBITDA rose 66% to ₹9,011 crore.",
+          "sourceId": "hindalco-call",
+          "pageOrSection": "Results remarks, PDF p. 6",
+          "excerpt": "Q2 FY27 consolidated EBITDA rose 52% to ₹13,869 crore and PAT 59% to ₹7,533 crore; India business EBITDA rose 66% to ₹9,011 crore.",
+          "excerptType": "paraphrase"
+        },
+        {
+          "claim": "Copper EBITDA reached a record ₹1,673 crore, helped by by-product realisations and some one-time gains.",
+          "sourceId": "hindalco-call",
+          "pageOrSection": "Results remarks, PDF p. 7",
+          "excerpt": "Copper EBITDA reached a record ₹1,673 crore, helped by by-product realisations and some one-time gains.",
+          "excerptType": "paraphrase"
+        }
+      ],
+      "watchItems": [
+        "Novelis recovery after Oswego",
+        "Aluminium prices and US tariffs",
+        "Copper earnings without one-time gains"
+      ],
+      "sources": [
+        {
+          "id": "hindalco-ar26",
+          "title": "Hindalco Industries Annual Report 2025-26",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/bb3b7080-855f-4cde-b688-d97575a72f3f.pdf",
+          "sourceType": "annual_report",
+          "publishedAt": null,
+          "dateLabel": "FY2025-26 report as filed with BSE",
+          "reportingPeriod": "Year ended 2026-03-31",
+          "pageOrSection": "Annual report (BSE filing)",
+          "basis": "Company-reported audited figures; page numbers are PDF pages of the linked BSE file",
+          "supports": [
+            "Consolidated revenue and EBITDA, Novelis Oswego fire and US tariffs"
+          ]
+        },
+        {
+          "id": "hindalco-call",
+          "title": "Hindalco Industries Q2 FY2027 Earnings Call Transcript",
+          "url": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/0aa25d27-af53-48a8-bef6-dbfe01cd85a1.pdf",
+          "sourceType": "concall_transcript",
+          "publishedAt": "2026-11-12",
+          "dateLabel": "Call transcript dated 2026-11-12",
+          "reportingPeriod": "Quarter ended 2026-09-30",
+          "pageOrSection": "Earnings-call transcript",
+          "basis": "Management commentary; page numbers are PDF pages of the linked transcript",
+          "supports": [
+            "Q2 FY27 consolidated EBITDA and PAT, India business, copper, macro headwinds"
+          ]
+        }
+      ]
+    },
     {
       "ticker": "BAJFINANCE.NS",
       "name": "Bajaj Finance",

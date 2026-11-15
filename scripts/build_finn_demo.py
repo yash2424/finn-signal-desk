@@ -3,6 +3,10 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
+import sys
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from portfolio_briefs import build as build_portfolio_briefs  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "app" / "data"
@@ -344,6 +348,8 @@ briefs = [
     },
 ]
 
+briefs = build_portfolio_briefs() + briefs
+
 portfolio_rows = [
     {"ticker": ticker + ".NS", "name": name, "exchange": "NSE", "series": "EQ", "sector": sector}
     for ticker, name, sector in portfolio
@@ -352,12 +358,12 @@ portfolio_rows = [
 payload = {
     "meta": {
         "asOf": "2026-11-13",
-        "snapshotLabel": "NSE close · 13 Nov 2026; issuer research and filing examples are FY25 archive",
-        "coverage": "18 NSE EQ portfolio names, 21 available EOD sessions, 3 ad-hoc Pull briefs outside the portfolio, and 3 historical issuer results signals. This is a cited demo snapshot, not a live filing feed.",
+        "snapshotLabel": "NSE close · 13 Nov 2026; watchlist research from FY26 annual reports and latest calls",
+        "coverage": "18 NSE EQ portfolio names with cited Pull briefs from FY2025-26 annual reports and the latest earnings calls, 21 available EOD sessions, 3 ad-hoc FY25 Pull briefs outside the portfolio, and 3 historical issuer results signals. This is a cited demo snapshot, not a live filing feed.",
         "updatedAt": "2026-11-15",
         "marketSource": "NSE India CM-UDiFF Common Bhavcopy Final (zip); exact per-session URLs are attached to each quote.",
         "marketMethod": "Close, prior close and traded volume are read from NSE EQ rows; changePct=(close/previous close-1)*100; avg20VolumeShares is the arithmetic mean of the prior 20 available EQ sessions.",
-        "historicalDisclosure": "Issuer results signals and Pull briefs are from FY25 publications dated Apr–May 2025. Their dates are preserved and are not presented as Nov 2026 news.",
+        "historicalDisclosure": "Watchlist Pull briefs use FY2025-26 annual reports and earnings calls held Jul–Nov 2026. The three ad-hoc briefs and the Push results signals are from FY25 publications dated Apr–May 2025; all dates are preserved.",
         "defaultThresholds": {"priceMovePct": 2.0, "volumeMultiple": 1.5},
         "researchMethod": "Pull briefs link only issuer annual reports and management earnings-call transcripts. Historical Push result signals use issuer results releases; no broker notes or news sources are used.",
     },

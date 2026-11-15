@@ -49,6 +49,15 @@ The task coordinator cannot reliably report its own model identity. The assigned
 - **Data corrections:** Dr Reddy's operating cash flow had been taken from the standalone statement but labeled consolidated. It now shows the consolidated Ind AS figures (₹4,642.8 crore FY25, ₹4,543.3 crore FY24; printed p. 351, PDF p. 177). Accounting-basis labels were corrected from IFRS to Ind AS, PBT is cited to the KPI summary basis (₹7,678.4 crore), and Titan bull/bear citations were split to their exact pages.
 - **Regression check:** `scripts/qa_links_retrieval.cjs` (Playwright) passes: 19 coverage states, 9 source modals, AUM relevance, unsupported-query handling, and the Dr Reddy's page citation. The report is saved in `submission/QA/link-retrieval-audit.json`.
 
+### 15 November 2026 — Full watchlist coverage and live research (third pass, Claude Code)
+
+- **Trigger:** A human review found that every watchlist company opened a "coverage unavailable" screen with landing-page links, and asked for actual documents, full briefs for all 18 companies, and on-demand research for other companies.
+- **Documents:** Located each company's FY2025-26 annual report and latest earnings-call transcript through Screener's document list, which links to BSE filings. Downloaded all 35 PDFs (ITC had no transcript) and checked each cover page for the right company, year and quarter.
+- **Briefs:** Wrote `scripts/portfolio_briefs.py` with 18 cited briefs: reported figures, a two-sided view, evidence notes and items to monitor. Every citation names a PDF page. An automated check confirmed 291 numbers against the cited page text. The 10 that did not match verbatim were computed growth rates or ₹ million to ₹ crore conversions, and were recomputed by hand. Claims drawn from general knowledge rather than the documents were removed.
+- **Page links:** Source buttons now open PDFs at the cited page (`url#page=N`), so a figure lands on its table.
+- **Live research:** Symbols outside the snapshot get an optional panel that calls Claude (`claude-opus-5-5`) from the browser with the visitor's own API key. Web search and fetch are restricted to BSE, NSE and Screener, and the panel returns a cited overview plus follow-up Q&A. The panel is lazy-loaded so the main bundle stays small. The error path was tested with an invalid key; a successful run was not tested because no API key was available in the build environment.
+- **Regression check:** `scripts/qa_links_retrieval.cjs` was updated and passes: 18 watchlist briefs with no search-engine links, the live panel for unknown symbols, 44 source modals, 75 claim citations with page-anchored links, and the earlier retrieval checks.
+
 ## Validation and release
 
 - **Data validation:** 18 portfolios, 18 quote records, three historical Push filing examples, three ad-hoc Pull briefs, and six issuer annual-report/transcript source records are included. The latest NSE quotes are dated 13 November 2026. The 378-row/21-session CSV remains local and is excluded from the public release.

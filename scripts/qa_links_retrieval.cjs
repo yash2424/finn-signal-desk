@@ -16,6 +16,12 @@ const issuerLinks = Object.fromEntries([...mappingText.matchAll(/^\s*(?:'([A-Z0-
   .map((match) => [match[1] || match[2], { url: match[3], label: match[4] }]));
 const nseDirectory = 'https://www.nseindia.com/companies-listing/corporate-filings-directory';
 const baseUrl = process.env.FINN_QA_URL || 'http://127.0.0.1:5173/';
+// Mirrors src/helpers.ts pageLinkedUrl: PDFs open at the first cited "PDF p. N".
+const pageLinked = (url, ref) => {
+  if (!url || url.includes('#') || !/\.pdf($|\?)/i.test(url)) return url;
+  const page = (ref || '').match(/PDF pp?\. (\d+)/i)?.[1];
+  return page ? `${url}#page=${page}` : url;
+};
 
 async function main() {
   const browser = await chromium.launch({
@@ -37,16 +43,16 @@ async function main() {
     const ticker = company.ticker.replace(/\.NS$/i, '').toUpperCase();
     await tickerInput.fill(ticker);
     await openButton.click();
-    await page.locator('.unknown-coverage').waitFor();
-    const links = await page.locator('.unknown-coverage a[href]').evaluateAll((items) => items.map((a) => ({
-      text: a.innerText.trim(), href: a.href,
-    })));
-    assert.equal(links.length, 2, `${ticker}: expected the generic NSE directory and one issuer link`);
-    assert.equal(links[0].href, nseDirectory, `${ticker}: NSE directory target`);
-    assert(!/google\.|bing\.com|search\?q=/i.test(links.map((x) => x.href).join(' ')), `${ticker}: search-engine link found`);
+    await page.locator('.company-overview').waitFor();
+    assert.equal(await page.locator('.unknown-coverage').count(), 0, `${ticker}: watchlist company should open a cited brief`);
+    const heading = await page.locator('.company-overview h2').innerText();
+    assert(heading.includes(company.name), `${ticker}: brief heading should name ${company.name}`);
+    const hrefs = await page.locator('a[href]').evaluateAll((items) => items.map((a) => a.href));
+    assert(!/google\.|bing\.com|search\?q=/i.test(hrefs.join(' ')), `${ticker}: search-engine link found`);
+    const docs = await page.locator('.source-row').count();
+    assert(docs >= 1, `${ticker}: expected at least the annual report in the source library`);
     assert(issuerLinks[ticker], `${ticker}: missing issuer link mapping`);
-    assert.equal(links[1].href, issuerLinks[ticker].url, `${ticker}: issuer destination mismatch`);
-    observed.coverage.push({ ticker, links });
+    observed.coverage.push({ ticker, state: 'brief', documents: docs });
   }
 
   await tickerInput.fill('FINNUNKNOWNTEST');
@@ -57,7 +63,9 @@ async function main() {
   })));
   assert.equal(unknownLinks.length, 1, 'Unknown symbol should only receive the generic NSE directory');
   assert.equal(unknownLinks[0].href, nseDirectory);
-  observed.coverage.push({ ticker: 'FINNUNKNOWNTEST', links: unknownLinks });
+  await page.locator('#live-key').waitFor({ timeout: 15000 });
+  assert(await page.locator('.live-key-row button').isDisabled(), 'Live research button stays disabled without a key');
+  observed.coverage.push({ ticker: 'FINNUNKNOWNTEST', state: 'live-research offered', links: unknownLinks });
 
   await page.getByRole('button', { name: /Push/ }).first().click();
   for (const signal of data.signals || []) {
@@ -77,7 +85,7 @@ async function main() {
       const sourceRow = page.locator('.source-row').filter({ hasText: source.title });
       await sourceRow.click();
       const modalHref = await page.locator('.modal-open-link').getAttribute('href');
-      assert.equal(modalHref, source.url, `${brief.ticker}/${source.id}: source href mismatch`);
+      assert.equal(modalHref, pageLinked(source.url, source.pageOrSection), `${brief.ticker}/${source.id}: source href mismatch`);
       observed.sources.push({ id: source.id, ticker: brief.ticker, title: source.title, href: modalHref });
       await page.getByRole('button', { name: 'Close source details' }).click();
     }
@@ -91,13 +99,25 @@ async function main() {
         const row = page.locator('.balance-card li').filter({ hasText: claim.claim }).first();
         await row.locator('.claim-cite').click();
         const href = await page.locator('.modal-open-link').getAttribute('href');
-        assert.equal(href, expectedSource.url, brief.ticker + '/' + side + ': source mismatch for claim ' + claim.claim);
+        assert.equal(href, pageLinked(expectedSource.url, claim.pageOrSection || expectedSource.pageOrSection), brief.ticker + '/' + side + ': source mismatch for claim ' + claim.claim);
         observed.claimCitations.push({ ticker: brief.ticker, side, claim: claim.claim, sourceId: claim.sourceId, href });
         await page.getByRole('button', { name: 'Close source details' }).click();
       }
     }
   }
-  assert.equal(observed.sources.length, 9, 'Expected all 3 filing sources and 6 Pull documents');
+  const expectedSources = (data.signals || []).length + (data.briefs || []).reduce((n, b) => n + (b.sources || []).length, 0);
+  assert.equal(observed.sources.length, expectedSources, `Expected ${expectedSources} source modals (filing signals plus every Pull document)`);
+
+  // A watchlist figure opens its filing at the cited PDF page.
+  await page.getByRole('button', { name: /Pull/ }).first().click();
+  await tickerInput.fill('RELIANCE');
+  await openButton.click();
+  const pbtCard = page.locator('.metric-card').filter({ hasText: 'Profit before tax' }).first();
+  await pbtCard.locator('.citation-mini').click();
+  const pbtHref = await page.locator('.modal-open-link').getAttribute('href');
+  assert.match(pbtHref, /bseindia\.com\/xml-data\/corpfiling\/AttachHis\/.+\.pdf#page=80$/, 'Reliance PBT should open the BSE annual report at PDF p. 80');
+  observed.pageAnchor = pbtHref;
+  await page.getByRole('button', { name: 'Close source details' }).click();
 
   await page.getByRole('button', { name: /Pull/ }).first().click();
   await tickerInput.fill('BAJFINANCE');
@@ -191,7 +211,7 @@ async function main() {
     note: 'The KPI summary on PDF p. 6 reports PBT of ₹76,784 million; the separate consolidated Ind AS Board Report table at printed pp. 92-93 reports ₹76,795 million. These are distinct source presentations, so QA records the app’s chosen metric and citation basis rather than treating one figure as universally incorrect.',
   }];
   fs.writeFileSync(reportPath, `${JSON.stringify({ generatedAt: new Date().toISOString(), auditTrail, ...observed }, null, 2)}\n`);
-  console.log(`PASS: ${observed.coverage.length} coverage states, ${observed.sources.length} source modals, AUM relevance, unsupported query, Dr Reddy page citation. Report: ${path.relative(root, reportPath)}`);
+  console.log(`PASS: ${observed.coverage.length} coverage states (18 briefs + live research for unknown), ${observed.sources.length} source modals, ${observed.claimCitations.length} claim citations, page-anchored PDF links, AUM relevance, unsupported query, Dr Reddy page citation. Report: ${path.relative(root, reportPath)}`);
   } finally {
     await browser.close();
   }

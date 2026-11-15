@@ -23,4 +23,11 @@ export const numberFrom = (record: Record<string, unknown> | undefined, keys: st
   }
   return undefined
 }
+/** Open a PDF at the first cited "PDF p. N" page; other URLs are returned unchanged. */
+export const pageLinkedUrl = (url?: string, pageOrSection?: string) => {
+  const safe = safeUrl(url)
+  if (!safe || safe.includes('#') || !/\.pdf($|\?)/i.test(safe)) return safe
+  const page = pageOrSection?.match(/PDF pp?\. (\d+)/i)?.[1]
+  return page ? `${safe}#page=${page}` : safe
+}
 export const NSE_DIRECTORY_URL = 'https://www.nseindia.com/companies-listing/corporate-filings-directory'

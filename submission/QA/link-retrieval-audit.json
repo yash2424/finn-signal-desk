@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T16:51:37.446Z",
+  "generatedAt": "2026-11-15T17:21:02.416Z",
   "auditTrail": [
     {
       "issue": "An earlier snapshot labeled the FY25/FY24 standalone operating cash flow values (₹4,225 crore/₹3,449.7 crore) as consolidated.",
@@ -9,244 +9,101 @@
       "note": "The KPI summary on PDF p. 6 reports PBT of ₹76,784 million; the separate consolidated Ind AS Board Report table at printed pp. 92-93 reports ₹76,795 million. These are distinct source presentations, so QA records the app’s chosen metric and citation basis rather than treating one figure as universally incorrect."
     }
   ],
-  "baseUrl": "https://yash2424.github.io/finn-signal-desk/",
+  "baseUrl": "http://localhost:5174/",
   "coverage": [
     {
       "ticker": "RELIANCE",
-      "links": [
-        {
-          "text": "Open NSE corporate-filings directory",
-          "href": "https://www.nseindia.com/companies-listing/corporate-filings-directory"
-        },
-        {
-          "text": "Open Reliance Industries · Investor relations & filings",
-          "href": "https://www.ril.com/investors/investor-relations"
-        }
-      ]
+      "state": "brief",
+      "documents": 2
     },
     {
       "ticker": "HDFCBANK",
-      "links": [
-        {
-          "text": "Open NSE corporate-filings directory",
-          "href": "https://www.nseindia.com/companies-listing/corporate-filings-directory"
-        },
-        {
-          "text": "Open HDFC Bank · Investor relations",
-          "href": "https://www.hdfc.bank.in/about-us/investor-relations"
-        }
-      ]
+      "state": "brief",
+      "documents": 2
     },
     {
       "ticker": "ICICIBANK",
-      "links": [
-        {
-          "text": "Open NSE corporate-filings directory",
-          "href": "https://www.nseindia.com/companies-listing/corporate-filings-directory"
-        },
-        {
-          "text": "Open ICICI Bank · Investor relations",
-          "href": "https://www.icici.bank.in/about-us/invest-relations"
-        }
-      ]
+      "state": "brief",
+      "documents": 2
     },
     {
       "ticker": "SBIN",
-      "links": [
-        {
-          "text": "Open NSE corporate-filings directory",
-          "href": "https://www.nseindia.com/companies-listing/corporate-filings-directory"
-        },
-        {
-          "text": "Open State Bank of India · Investor relations",
-          "href": "https://sbi.bank.in/web/investor-relations/investor-relations"
-        }
-      ]
+      "state": "brief",
+      "documents": 2
     },
     {
       "ticker": "TCS",
-      "links": [
-        {
-          "text": "Open NSE corporate-filings directory",
-          "href": "https://www.nseindia.com/companies-listing/corporate-filings-directory"
-        },
-        {
-          "text": "Open Tata Consultancy Services · Investor relations",
-          "href": "https://www.tcs.com/investor-relations"
-        }
-      ]
+      "state": "brief",
+      "documents": 2
     },
     {
       "ticker": "INFY",
-      "links": [
-        {
-          "text": "Open NSE corporate-filings directory",
-          "href": "https://www.nseindia.com/companies-listing/corporate-filings-directory"
-        },
-        {
-          "text": "Open Infosys · Investor relations",
-          "href": "https://www.infosys.com/Investors/"
-        }
-      ]
+      "state": "brief",
+      "documents": 2
     },
     {
       "ticker": "WIPRO",
-      "links": [
-        {
-          "text": "Open NSE corporate-filings directory",
-          "href": "https://www.nseindia.com/companies-listing/corporate-filings-directory"
-        },
-        {
-          "text": "Open Wipro · Investor relations",
-          "href": "https://www.wipro.com/investors/"
-        }
-      ]
+      "state": "brief",
+      "documents": 2
     },
     {
       "ticker": "BHARTIARTL",
-      "links": [
-        {
-          "text": "Open NSE corporate-filings directory",
-          "href": "https://www.nseindia.com/companies-listing/corporate-filings-directory"
-        },
-        {
-          "text": "Open Bharti Airtel · Annual results",
-          "href": "https://www.airtel.in/about-bharti/equity/results/annual-results"
-        }
-      ]
+      "state": "brief",
+      "documents": 2
     },
     {
       "ticker": "LT",
-      "links": [
-        {
-          "text": "Open NSE corporate-filings directory",
-          "href": "https://www.nseindia.com/companies-listing/corporate-filings-directory"
-        },
-        {
-          "text": "Open Larsen & Toubro · Investor relations",
-          "href": "https://investors.larsentoubro.com/"
-        }
-      ]
+      "state": "brief",
+      "documents": 2
     },
     {
       "ticker": "ITC",
-      "links": [
-        {
-          "text": "Open NSE corporate-filings directory",
-          "href": "https://www.nseindia.com/companies-listing/corporate-filings-directory"
-        },
-        {
-          "text": "Open ITC · Investor relations",
-          "href": "https://itcportal.com/investors.html"
-        }
-      ]
+      "state": "brief",
+      "documents": 1
     },
     {
       "ticker": "HINDUNILVR",
-      "links": [
-        {
-          "text": "Open NSE corporate-filings directory",
-          "href": "https://www.nseindia.com/companies-listing/corporate-filings-directory"
-        },
-        {
-          "text": "Open Hindustan Unilever · Annual reports & performance",
-          "href": "https://www.hul.co.in/investors/annual-reports-and-performance-highlights/"
-        }
-      ]
+      "state": "brief",
+      "documents": 2
     },
     {
       "ticker": "BAJAJ-AUTO",
-      "links": [
-        {
-          "text": "Open NSE corporate-filings directory",
-          "href": "https://www.nseindia.com/companies-listing/corporate-filings-directory"
-        },
-        {
-          "text": "Open Bajaj Auto · Financial & operating performance",
-          "href": "https://www.bajajauto.com/investors/financial-and-operational-performance"
-        }
-      ]
+      "state": "brief",
+      "documents": 2
     },
     {
       "ticker": "MARUTI",
-      "links": [
-        {
-          "text": "Open NSE corporate-filings directory",
-          "href": "https://www.nseindia.com/companies-listing/corporate-filings-directory"
-        },
-        {
-          "text": "Open Maruti Suzuki India · Company reports",
-          "href": "https://www.marutisuzuki.com/corporate/investors/company-reports"
-        }
-      ]
+      "state": "brief",
+      "documents": 2
     },
     {
       "ticker": "SUNPHARMA",
-      "links": [
-        {
-          "text": "Open NSE corporate-filings directory",
-          "href": "https://www.nseindia.com/companies-listing/corporate-filings-directory"
-        },
-        {
-          "text": "Open Sun Pharmaceutical Industries · Investor relations",
-          "href": "https://sunpharma.com/investors/"
-        }
-      ]
+      "state": "brief",
+      "documents": 2
     },
     {
       "ticker": "NTPC",
-      "links": [
-        {
-          "text": "Open NSE corporate-filings directory",
-          "href": "https://www.nseindia.com/companies-listing/corporate-filings-directory"
-        },
-        {
-          "text": "Open NTPC · Annual reports",
-          "href": "https://ntpc.co.in/investors/financial-performance/annual-reports"
-        }
-      ]
+      "state": "brief",
+      "documents": 2
     },
     {
       "ticker": "TATAPOWER",
-      "links": [
-        {
-          "text": "Open NSE corporate-filings directory",
-          "href": "https://www.nseindia.com/companies-listing/corporate-filings-directory"
-        },
-        {
-          "text": "Open Tata Power · Investor resource center",
-          "href": "https://www.tatapower.com/investor-resource-center"
-        }
-      ]
+      "state": "brief",
+      "documents": 2
     },
     {
       "ticker": "ASIANPAINT",
-      "links": [
-        {
-          "text": "Open NSE corporate-filings directory",
-          "href": "https://www.nseindia.com/companies-listing/corporate-filings-directory"
-        },
-        {
-          "text": "Open Asian Paints · Investor relations, results & reports",
-          "href": "https://www.asianpaints.com/more/investors/investors-landing-page.html"
-        }
-      ]
+      "state": "brief",
+      "documents": 2
     },
     {
       "ticker": "HINDALCO",
-      "links": [
-        {
-          "text": "Open NSE corporate-filings directory",
-          "href": "https://www.nseindia.com/companies-listing/corporate-filings-directory"
-        },
-        {
-          "text": "Open Hindalco Industries · Investor relations",
-          "href": "https://www.hindalco.com/investors"
-        }
-      ]
+      "state": "brief",
+      "documents": 2
     },
     {
       "ticker": "FINNUNKNOWNTEST",
+      "state": "live-research offered",
       "links": [
         {
           "text": "Open NSE corporate-filings directory",
@@ -272,6 +129,216 @@
       "href": "https://www.tcs.com/who-we-are/newsroom/press-release/tcs-financial-results-q4-fy-2025"
     },
     {
+      "id": "reliance-ar26",
+      "ticker": "RELIANCE.NS",
+      "title": "Reliance Industries Annual Report 2025-26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/cc08294f-ec68-4f15-aaa4-c14a3c4bdfb2.pdf"
+    },
+    {
+      "id": "reliance-call",
+      "ticker": "RELIANCE.NS",
+      "title": "Reliance Industries Q2 FY2026-27 Media & Analyst Meet Transcript",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/8e997741-4d35-4188-933a-cf020fb9c816.pdf"
+    },
+    {
+      "id": "hdfcbank-ar26",
+      "ticker": "HDFCBANK.NS",
+      "title": "HDFC Bank Annual Report 2025-26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/7d621500-082a-4342-b98d-ba677d3890c5.pdf"
+    },
+    {
+      "id": "hdfcbank-call",
+      "ticker": "HDFCBANK.NS",
+      "title": "HDFC Bank Q2 FY2027 Earnings Call Transcript",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/d7e45614-ae12-4bb9-b92d-623b3a63f166.pdf"
+    },
+    {
+      "id": "icicibank-ar26",
+      "ticker": "ICICIBANK.NS",
+      "title": "ICICI Bank Annual Report 2025-26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/01c30537-c969-4503-bbae-a07d51eb09a5.pdf"
+    },
+    {
+      "id": "icicibank-call",
+      "ticker": "ICICIBANK.NS",
+      "title": "ICICI Bank Q1 FY2027 Earnings Call Transcript",
+      "href": "https://www.icici.bank.in/content/dam/icicibank/india/managed-assets/docs/about-us/2027/transcript-for-earnings-call-held-on-july-18-2026.pdf"
+    },
+    {
+      "id": "sbin-ar26",
+      "ticker": "SBIN.NS",
+      "title": "State Bank of India Annual Report 2025-26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/faa17496-838f-432d-a39f-32d82156799c.pdf"
+    },
+    {
+      "id": "sbin-call",
+      "ticker": "SBIN.NS",
+      "title": "State Bank of India Q2 FY2027 Analyst Meet Transcript",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/91e92b69-f201-4d3b-9060-9f75feee9a58.pdf"
+    },
+    {
+      "id": "tcs-ar26",
+      "ticker": "TCS.NS",
+      "title": "Tata Consultancy Services Annual Report 2025-26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/ad42e748-d73c-4c79-8c52-bcf1b1399bc1.pdf"
+    },
+    {
+      "id": "tcs-call",
+      "ticker": "TCS.NS",
+      "title": "TCS Q2 FY2027 Earnings Call Transcript",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/7dc14216-f892-46f1-bf82-5c7b387a83b9.pdf"
+    },
+    {
+      "id": "infy-ar26",
+      "ticker": "INFY.NS",
+      "title": "Infosys Annual Report 2025-26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/19dd605c-2b6b-4084-8dca-9d578a3eb7a0.pdf"
+    },
+    {
+      "id": "infy-call",
+      "ticker": "INFY.NS",
+      "title": "Infosys Q2 FY2027 Press Conference and Earnings Call Transcripts",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/7982fc61-7765-4981-ab3d-6aec36ba2137.pdf"
+    },
+    {
+      "id": "wipro-ar26",
+      "ticker": "WIPRO.NS",
+      "title": "Wipro Annual Report 2025-26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/d4ffaa08-a47a-487b-b136-eb4f26c1bace.pdf"
+    },
+    {
+      "id": "wipro-call",
+      "ticker": "WIPRO.NS",
+      "title": "Wipro Q2 FY2027 Earnings Call Transcript",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/6b741bc5-7ed0-4223-900a-412aaf529820.pdf"
+    },
+    {
+      "id": "bhartiartl-ar26",
+      "ticker": "BHARTIARTL.NS",
+      "title": "Bharti Airtel Annual Report 2025-26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/f8f6a174-8601-4747-9d0d-bd6b85fe53fc.pdf"
+    },
+    {
+      "id": "bhartiartl-call",
+      "ticker": "BHARTIARTL.NS",
+      "title": "Bharti Airtel Q2 FY2027 Earnings Call Transcript",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/1ff3e14f-7e97-4074-89c7-049408721c5e.pdf"
+    },
+    {
+      "id": "lt-ar26",
+      "ticker": "LT.NS",
+      "title": "Larsen & Toubro Annual Report 2025-26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/825f9859-e7f2-4e90-8583-01a38850f795.pdf"
+    },
+    {
+      "id": "lt-call",
+      "ticker": "LT.NS",
+      "title": "Larsen & Toubro Q1 FY2027 Earnings Conference Call Transcript",
+      "href": "https://investors.larsentoubro.com/upload/Analysttrans/FY2027AnalysttransL%26T-Earnings-Jul28-2026.pdf"
+    },
+    {
+      "id": "itc-ar26",
+      "ticker": "ITC.NS",
+      "title": "ITC Annual Report 2025-26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/590b42ae-15c9-44cf-be69-e58053128a6b.pdf"
+    },
+    {
+      "id": "hindunilvr-ar26",
+      "ticker": "HINDUNILVR.NS",
+      "title": "Hindustan Unilever Annual Report 2025-26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/881493e4-75af-4a7f-8c64-9d0886e63f1d.pdf"
+    },
+    {
+      "id": "hindunilvr-call",
+      "ticker": "HINDUNILVR.NS",
+      "title": "Hindustan Unilever Q2 FY2027 Earnings Call Transcript",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/6d90194e-b9dc-48b0-b48e-3de0d0ef5f6d.pdf"
+    },
+    {
+      "id": "bajaj-auto-ar26",
+      "ticker": "BAJAJ-AUTO.NS",
+      "title": "Bajaj Auto Annual Report 2025-26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/5cfa2fc3-ea76-452d-a3a9-71d3c9bf5ad6.pdf"
+    },
+    {
+      "id": "bajaj-auto-call",
+      "ticker": "BAJAJ-AUTO.NS",
+      "title": "Bajaj Auto Q2 FY2027 Earnings Call Transcript",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/c7171a79-5c93-47e1-b324-9056d5abea0e.pdf"
+    },
+    {
+      "id": "maruti-ar26",
+      "ticker": "MARUTI.NS",
+      "title": "Maruti Suzuki India Annual Report 2025-26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/09d38ee6-9c30-4892-b483-8d7c34697a7a.pdf"
+    },
+    {
+      "id": "maruti-call",
+      "ticker": "MARUTI.NS",
+      "title": "Maruti Suzuki Q2 FY2027 Earnings Conference Call Transcript",
+      "href": "https://www.marutisuzuki.com/content/dam/arena-eds/corporate/pdf/company-reports/2026-2027/Transcript_earnings_call_Maruti_Suzuki_Q2_FY_27.pdf"
+    },
+    {
+      "id": "sunpharma-ar26",
+      "ticker": "SUNPHARMA.NS",
+      "title": "Sun Pharmaceutical Industries Annual Report 2025-26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/cb65dea5-416a-4f98-95e2-0b58761b7442.pdf"
+    },
+    {
+      "id": "sunpharma-call",
+      "ticker": "SUNPHARMA.NS",
+      "title": "Sun Pharmaceutical Q2 FY2027 Earnings Call Transcript",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/fe431adc-0e1a-48ee-9c2b-b6e39cba04e4.pdf"
+    },
+    {
+      "id": "ntpc-ar26",
+      "ticker": "NTPC.NS",
+      "title": "NTPC Annual Report 2025-26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/dbc69766-f1e1-4ecc-9fa9-7599477167db.pdf"
+    },
+    {
+      "id": "ntpc-call",
+      "ticker": "NTPC.NS",
+      "title": "NTPC Q2 FY2027 Conference Call with Analysts & Investors — Transcript",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/4d962dc4-6133-4998-8d2e-9fa5fec441f5.pdf"
+    },
+    {
+      "id": "tatapower-ar26",
+      "ticker": "TATAPOWER.NS",
+      "title": "Tata Power Annual Report 2025-26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/a5491ca0-092d-4f99-a329-c62579cc6ef2.pdf"
+    },
+    {
+      "id": "tatapower-call",
+      "ticker": "TATAPOWER.NS",
+      "title": "Tata Power Q1 FY2027 Earnings Call Transcript",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/f2eec946-af3f-4579-8a6b-1483aa6f7312.pdf"
+    },
+    {
+      "id": "asianpaint-ar26",
+      "ticker": "ASIANPAINT.NS",
+      "title": "Asian Paints Annual Report 2025-26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/aeefecce-2626-4370-9455-c7c6dd94d670.pdf"
+    },
+    {
+      "id": "asianpaint-call",
+      "ticker": "ASIANPAINT.NS",
+      "title": "Asian Paints Q2 FY2027 Earnings Call Transcript",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/ee7e6efe-1f9b-4b5e-bff7-1da18902ffeb.pdf"
+    },
+    {
+      "id": "hindalco-ar26",
+      "ticker": "HINDALCO.NS",
+      "title": "Hindalco Industries Annual Report 2025-26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/bb3b7080-855f-4cde-b688-d97575a72f3f.pdf"
+    },
+    {
+      "id": "hindalco-call",
+      "ticker": "HINDALCO.NS",
+      "title": "Hindalco Industries Q2 FY2027 Earnings Call Transcript",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/0aa25d27-af53-48a8-bef6-dbfe01cd85a1.pdf"
+    },
+    {
       "id": "bfl-ar25",
       "ticker": "BAJFINANCE.NS",
       "title": "Bajaj Finance Limited Annual Report 2024-25 — Chairman's Letter",
@@ -287,28 +354,497 @@
       "id": "titan-ar25",
       "ticker": "TITAN.NS",
       "title": "Titan Company Limited Annual Report 2024-25",
-      "href": "https://www.titancompany.in/sites/default/files/2025-06/Titan%20AR%202024-25%20AR.pdf"
+      "href": "https://www.titancompany.in/sites/default/files/2025-06/Titan%20AR%202024-25%20AR.pdf#page=121"
     },
     {
       "id": "titan-call-q4fy25",
       "ticker": "TITAN.NS",
       "title": "Titan Company Limited Q4 & FY'25 Earnings Conference Call Transcript",
-      "href": "https://www.titancompany.in/sites/default/files/2025-05/SEinvestorcalltranscriptQ4_0.pdf"
+      "href": "https://www.titancompany.in/sites/default/files/2025-05/SEinvestorcalltranscriptQ4_0.pdf#page=3"
     },
     {
       "id": "dr-ar25",
       "ticker": "DRREDDY.NS",
       "title": "Dr. Reddy's Laboratories Integrated Annual Report FY 2024-25",
-      "href": "https://www.drreddys.com/cms/cms/sites/default/files/2025-06/Integrated%20Annual%20Report%202024-25.pdf"
+      "href": "https://www.drreddys.com/cms/cms/sites/default/files/2025-06/Integrated%20Annual%20Report%202024-25.pdf#page=6"
     },
     {
       "id": "dr-call-q4fy25",
       "ticker": "DRREDDY.NS",
       "title": "Dr. Reddy's Q4 and Full Year FY25 Earnings Conference Call Transcript",
-      "href": "https://www.drreddys.com/cms/cms/sites/default/files/2025-05/DRL_Q4FY25%20Earnings%20Call%20Transcript_9May2025.pdf"
+      "href": "https://www.drreddys.com/cms/cms/sites/default/files/2025-05/DRL_Q4FY25%20Earnings%20Call%20Transcript_9May2025.pdf#page=2"
     }
   ],
   "claimCitations": [
+    {
+      "ticker": "RELIANCE.NS",
+      "side": "bull",
+      "claim": "FY26 EBITDA rose 13.4% to ₹2,07,911 crore and PAT 17.8% to ₹95,754 crore, led by Digital Services and O2C.",
+      "sourceId": "reliance-ar26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/cc08294f-ec68-4f15-aaa4-c14a3c4bdfb2.pdf#page=44"
+    },
+    {
+      "ticker": "RELIANCE.NS",
+      "side": "bull",
+      "claim": "Q2 FY27 consolidated EBITDA was a record ₹62,409 crore, up 24% year on year, with PAT up 34%.",
+      "sourceId": "reliance-call",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/8e997741-4d35-4188-933a-cf020fb9c816.pdf#page=3"
+    },
+    {
+      "ticker": "RELIANCE.NS",
+      "side": "bear",
+      "claim": "Retail EBITDA margin fell to 8.2% from 8.6% in FY26.",
+      "sourceId": "reliance-ar26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/cc08294f-ec68-4f15-aaa4-c14a3c4bdfb2.pdf#page=46"
+    },
+    {
+      "ticker": "RELIANCE.NS",
+      "side": "bear",
+      "claim": "Management cited currency depreciation, a monsoon deficit and food inflation weighing on discretionary demand, and margin pressure from matching quick-commerce prices.",
+      "sourceId": "reliance-call",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/8e997741-4d35-4188-933a-cf020fb9c816.pdf#page=7"
+    },
+    {
+      "ticker": "HDFCBANK.NS",
+      "side": "bull",
+      "claim": "Gross NPA ratio improved to 1.15% from 1.33%, and cost-to-income fell to 38.0% from 40.5%.",
+      "sourceId": "hdfcbank-ar26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/7d621500-082a-4342-b98d-ba677d3890c5.pdf#page=69"
+    },
+    {
+      "ticker": "HDFCBANK.NS",
+      "side": "bull",
+      "claim": "Q2 FY27 deposits grew 18.8% year on year, about 4 points of it from a special FCNR(B) window; CASA grew about 10.8%.",
+      "sourceId": "hdfcbank-call",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/d7e45614-ae12-4bb9-b92d-623b3a63f166.pdf#page=3"
+    },
+    {
+      "ticker": "HDFCBANK.NS",
+      "side": "bear",
+      "claim": "Net interest income grew only 4.9% in FY26, much slower than net revenues, which were lifted by other income.",
+      "sourceId": "hdfcbank-ar26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/7d621500-082a-4342-b98d-ba677d3890c5.pdf#page=259"
+    },
+    {
+      "ticker": "HDFCBANK.NS",
+      "side": "bear",
+      "claim": "Management said margins had absorbed faster asset repricing and a lag in funding costs; a new leader is yet to set out strategy.",
+      "sourceId": "hdfcbank-call",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/d7e45614-ae12-4bb9-b92d-623b3a63f166.pdf#page=5"
+    },
+    {
+      "ticker": "ICICIBANK.NS",
+      "side": "bull",
+      "claim": "NII grew 8.5% to ₹880.75 billion with NIM stable at 4.32%.",
+      "sourceId": "icicibank-ar26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/01c30537-c969-4503-bbae-a07d51eb09a5.pdf#page=218"
+    },
+    {
+      "ticker": "ICICIBANK.NS",
+      "side": "bull",
+      "claim": "Q1 FY27 PAT grew 15.9% to ₹148.05 billion and deposits 14.0% year on year.",
+      "sourceId": "icicibank-call",
+      "href": "https://www.icici.bank.in/content/dam/icicibank/india/managed-assets/docs/about-us/2027/transcript-for-earnings-call-held-on-july-18-2026.pdf#page=3"
+    },
+    {
+      "ticker": "ICICIBANK.NS",
+      "side": "bear",
+      "claim": "FY26 standalone PAT grew 6.2%, slower than NII.",
+      "sourceId": "icicibank-ar26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/01c30537-c969-4503-bbae-a07d51eb09a5.pdf#page=218"
+    },
+    {
+      "ticker": "ICICIBANK.NS",
+      "side": "bear",
+      "claim": "The credit-card portfolio declined 1.9% year on year and 1.7% sequentially in Q1 FY27.",
+      "sourceId": "icicibank-call",
+      "href": "https://www.icici.bank.in/content/dam/icicibank/india/managed-assets/docs/about-us/2027/transcript-for-earnings-call-held-on-july-18-2026.pdf#page=5"
+    },
+    {
+      "ticker": "SBIN.NS",
+      "side": "bull",
+      "claim": "FY26 net profit rose 12.88% to ₹80,032 crore; RoA improved to 1.12% and RoE was 18.57%.",
+      "sourceId": "sbin-ar26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/faa17496-838f-432d-a39f-32d82156799c.pdf#page=18"
+    },
+    {
+      "ticker": "SBIN.NS",
+      "side": "bull",
+      "claim": "Q2 FY27 net profit was ₹23,038 crore and domestic NIM improved to 3.11%; H1 RoE was 18.68%.",
+      "sourceId": "sbin-call",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/91e92b69-f201-4d3b-9060-9f75feee9a58.pdf#page=5"
+    },
+    {
+      "ticker": "SBIN.NS",
+      "side": "bear",
+      "claim": "Net interest income grew only 4.08% in FY26.",
+      "sourceId": "sbin-ar26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/faa17496-838f-432d-a39f-32d82156799c.pdf#page=18"
+    },
+    {
+      "ticker": "SBIN.NS",
+      "side": "bear",
+      "claim": "Q2 FY27 operating profit growth slowed to 7.28% year on year.",
+      "sourceId": "sbin-call",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/91e92b69-f201-4d3b-9060-9f75feee9a58.pdf#page=5"
+    },
+    {
+      "ticker": "TCS.NS",
+      "side": "bull",
+      "claim": "FY26 operating margin of 25.0% and net margin of 19.8% were the highest in four years; net income grew 8.8%.",
+      "sourceId": "tcs-ar26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/ad42e748-d73c-4c79-8c52-bcf1b1399bc1.pdf#page=9"
+    },
+    {
+      "ticker": "TCS.NS",
+      "side": "bull",
+      "claim": "All international markets grew sequentially in Q2 FY27, led by the UK at 3.5%.",
+      "sourceId": "tcs-call",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/7dc14216-f892-46f1-bf82-5c7b387a83b9.pdf#page=3"
+    },
+    {
+      "ticker": "TCS.NS",
+      "side": "bear",
+      "claim": "FY26 revenue grew only 4.6%.",
+      "sourceId": "tcs-ar26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/ad42e748-d73c-4c79-8c52-bcf1b1399bc1.pdf#page=9"
+    },
+    {
+      "ticker": "TCS.NS",
+      "side": "bear",
+      "claim": "Management described the environment as selective and uneven, and cited bench and subcontractor costs as headwinds; it gives no guidance.",
+      "sourceId": "tcs-call",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/7dc14216-f892-46f1-bf82-5c7b387a83b9.pdf#page=3"
+    },
+    {
+      "ticker": "INFY.NS",
+      "side": "bull",
+      "claim": "FY26 consolidated revenue grew 9.6% to ₹1,78,650 crore.",
+      "sourceId": "infy-ar26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/19dd605c-2b6b-4084-8dca-9d578a3eb7a0.pdf#page=34"
+    },
+    {
+      "ticker": "INFY.NS",
+      "side": "bull",
+      "claim": "Q2 FY27 operating margin was stable at 21% with free cash flow of US$928 million.",
+      "sourceId": "infy-call",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/7982fc61-7765-4981-ab3d-6aec36ba2137.pdf#page=4"
+    },
+    {
+      "ticker": "INFY.NS",
+      "side": "bear",
+      "claim": "PBT grew only 6.3% after a ₹1,289 crore labour-code exceptional charge.",
+      "sourceId": "infy-ar26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/19dd605c-2b6b-4084-8dca-9d578a3eb7a0.pdf#page=34"
+    },
+    {
+      "ticker": "INFY.NS",
+      "side": "bear",
+      "claim": "FY27 revenue guidance is 1%-2% in constant currency; management saw weakness in retail and hi-tech.",
+      "sourceId": "infy-call",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/7982fc61-7765-4981-ab3d-6aec36ba2137.pdf#page=4"
+    },
+    {
+      "ticker": "WIPRO.NS",
+      "side": "bull",
+      "claim": "Q2 FY27 operating margin improved 0.5 points to 16.5%, and three of four market units grew sequentially.",
+      "sourceId": "wipro-call",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/6b741bc5-7ed0-4223-900a-412aaf529820.pdf#page=4"
+    },
+    {
+      "ticker": "WIPRO.NS",
+      "side": "bull",
+      "claim": "Standalone net profit grew 11.15% in FY26.",
+      "sourceId": "wipro-ar26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/d4ffaa08-a47a-487b-b136-eb4f26c1bace.pdf#page=109"
+    },
+    {
+      "ticker": "WIPRO.NS",
+      "side": "bear",
+      "claim": "Consolidated net profit grew only 0.36% in FY26 on 3.97% sales growth.",
+      "sourceId": "wipro-ar26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/d4ffaa08-a47a-487b-b136-eb4f26c1bace.pdf#page=109"
+    },
+    {
+      "ticker": "WIPRO.NS",
+      "side": "bear",
+      "claim": "Q3 FY27 guidance is -1.5% to +0.5% sequential growth; US healthcare is affected by policy changes.",
+      "sourceId": "wipro-call",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/6b741bc5-7ed0-4223-900a-412aaf529820.pdf#page=4"
+    },
+    {
+      "ticker": "BHARTIARTL.NS",
+      "side": "bull",
+      "claim": "FY26 consolidated revenue grew 16.2% and EBITDAaL 15.7%; India ARPU rose ₹12 to ₹257.",
+      "sourceId": "bhartiartl-ar26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/f8f6a174-8601-4747-9d0d-bd6b85fe53fc.pdf#page=4"
+    },
+    {
+      "ticker": "BHARTIARTL.NS",
+      "side": "bull",
+      "claim": "Q2 FY27 revenue grew 4% sequentially, Africa 6.7% in constant currency, with a 51.7% EBITDAaL margin.",
+      "sourceId": "bhartiartl-call",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/1ff3e14f-7e97-4074-89c7-049408721c5e.pdf#page=3"
+    },
+    {
+      "ticker": "BHARTIARTL.NS",
+      "side": "bear",
+      "claim": "Reported PBT grew only 2.1% because FY25 included exceptional gains; tax expense rose sharply to ₹11,350 crore.",
+      "sourceId": "bhartiartl-ar26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/f8f6a174-8601-4747-9d0d-bd6b85fe53fc.pdf#page=91"
+    },
+    {
+      "ticker": "BHARTIARTL.NS",
+      "side": "bear",
+      "claim": "Management said cost pressures are building and growth funding depends on its War on Waste cost programme.",
+      "sourceId": "bhartiartl-call",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/1ff3e14f-7e97-4074-89c7-049408721c5e.pdf#page=5"
+    },
+    {
+      "ticker": "LT.NS",
+      "side": "bull",
+      "claim": "FY26 order inflow rose 22% to ₹4.36 lakh crore and the order book 28% to ₹7.40 lakh crore.",
+      "sourceId": "lt-ar26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/825f9859-e7f2-4e90-8583-01a38850f795.pdf#page=10"
+    },
+    {
+      "ticker": "LT.NS",
+      "side": "bull",
+      "claim": "Q1 FY27 group order inflow grew 14% to ₹1,080 billion.",
+      "sourceId": "lt-call",
+      "href": "https://investors.larsentoubro.com/upload/Analysttrans/FY2027AnalysttransL%26T-Earnings-Jul28-2026.pdf#page=4"
+    },
+    {
+      "ticker": "LT.NS",
+      "side": "bear",
+      "claim": "Reported consolidated PAT grew 7.0%, well below the 18% recurring PAT growth the company highlights.",
+      "sourceId": "lt-ar26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/825f9859-e7f2-4e90-8583-01a38850f795.pdf#page=10"
+    },
+    {
+      "ticker": "LT.NS",
+      "side": "bear",
+      "claim": "Domestic order inflow grew only 1% in Q1 FY27, versus 27% internationally.",
+      "sourceId": "lt-call",
+      "href": "https://investors.larsentoubro.com/upload/Analysttrans/FY2027AnalysttransL%26T-Earnings-Jul28-2026.pdf#page=4"
+    },
+    {
+      "ticker": "ITC.NS",
+      "side": "bull",
+      "claim": "FY26 gross revenue grew 10.1% to ₹80,867 crore; the cigarettes segment grew through differentiated and premium offerings.",
+      "sourceId": "itc-ar26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/590b42ae-15c9-44cf-be69-e58053128a6b.pdf#page=69"
+    },
+    {
+      "ticker": "ITC.NS",
+      "side": "bear",
+      "claim": "EBITDA grew only 4.9% and PAT 1.0%, well below revenue growth.",
+      "sourceId": "itc-ar26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/590b42ae-15c9-44cf-be69-e58053128a6b.pdf#page=70"
+    },
+    {
+      "ticker": "HINDUNILVR.NS",
+      "side": "bull",
+      "claim": "Quarterly USG improved from 3% in H1 FY26 to 7% in the March quarter.",
+      "sourceId": "hindunilvr-ar26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/881493e4-75af-4a7f-8c64-9d0886e63f1d.pdf#page=12"
+    },
+    {
+      "ticker": "HINDUNILVR.NS",
+      "side": "bull",
+      "claim": "Q2 FY27 USG was 15%, the highest in 14 quarters, with 7% UVG.",
+      "sourceId": "hindunilvr-call",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/6d90194e-b9dc-48b0-b48e-3de0d0ef5f6d.pdf#page=4"
+    },
+    {
+      "ticker": "HINDUNILVR.NS",
+      "side": "bear",
+      "claim": "FY26 turnover grew only 5% with 4% volume growth.",
+      "sourceId": "hindunilvr-ar26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/881493e4-75af-4a7f-8c64-9d0886e63f1d.pdf#page=12"
+    },
+    {
+      "ticker": "HINDUNILVR.NS",
+      "side": "bear",
+      "claim": "Inflation softened mass tea performance; Foods volume growth was low single digit.",
+      "sourceId": "hindunilvr-call",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/6d90194e-b9dc-48b0-b48e-3de0d0ef5f6d.pdf#page=8"
+    },
+    {
+      "ticker": "BAJAJ-AUTO.NS",
+      "side": "bull",
+      "claim": "FY26 revenue grew 17.4% and PAT 20.5%, with EBITDA margin up 30 bps to 20.5%.",
+      "sourceId": "bajaj-auto-ar26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/5cfa2fc3-ea76-452d-a3a9-71d3c9bf5ad6.pdf#page=32"
+    },
+    {
+      "ticker": "BAJAJ-AUTO.NS",
+      "side": "bull",
+      "claim": "Exports rose to about 7.5 lakh units a quarter from 6 lakh last year, and management expects to sustain it.",
+      "sourceId": "bajaj-auto-call",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/c7171a79-5c93-47e1-b324-9056d5abea0e.pdf#page=4"
+    },
+    {
+      "ticker": "BAJAJ-AUTO.NS",
+      "side": "bear",
+      "claim": "Management cited inflationary pressures, logistics complexity and capacity limits for high-end bikes, exports and EVs.",
+      "sourceId": "bajaj-auto-call",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/c7171a79-5c93-47e1-b324-9056d5abea0e.pdf#page=3"
+    },
+    {
+      "ticker": "MARUTI.NS",
+      "side": "bull",
+      "claim": "Q2 FY27 sales volume was a record 696,654 units, up 26.5%, with pending orders around 2 lakh units.",
+      "sourceId": "maruti-call",
+      "href": "https://www.marutisuzuki.com/content/dam/arena-eds/corporate/pdf/company-reports/2026-2027/Transcript_earnings_call_Maruti_Suzuki_Q2_FY_27.pdf#page=3"
+    },
+    {
+      "ticker": "MARUTI.NS",
+      "side": "bear",
+      "claim": "FY26 standalone PBT fell to ₹188,629 million from ₹194,127 million despite higher income.",
+      "sourceId": "maruti-ar26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/09d38ee6-9c30-4892-b483-8d7c34697a7a.pdf#page=114"
+    },
+    {
+      "ticker": "MARUTI.NS",
+      "side": "bear",
+      "claim": "Q2 FY27 exports fell about 2% on logistics disruption; management gives no guidance and flagged commodity risk in H2.",
+      "sourceId": "maruti-call",
+      "href": "https://www.marutisuzuki.com/content/dam/arena-eds/corporate/pdf/company-reports/2026-2027/Transcript_earnings_call_Maruti_Suzuki_Q2_FY_27.pdf#page=3"
+    },
+    {
+      "ticker": "SUNPHARMA.NS",
+      "side": "bull",
+      "claim": "Consolidated revenue grew 11.2% and pre-exceptional PBT 13.8% in FY26.",
+      "sourceId": "sunpharma-ar26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/cb65dea5-416a-4f98-95e2-0b58761b7442.pdf#page=49"
+    },
+    {
+      "ticker": "SUNPHARMA.NS",
+      "side": "bull",
+      "claim": "Q2 FY27 India sales grew 17.3% and market share rose to 8.6% from 8.3%.",
+      "sourceId": "sunpharma-call",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/fe431adc-0e1a-48ee-9c2b-b6e39cba04e4.pdf#page=5"
+    },
+    {
+      "ticker": "SUNPHARMA.NS",
+      "side": "bear",
+      "claim": "A ₹1,307 crore exceptional item cut PAT growth to 5.3%; standalone revenue fell to ₹207,546 million from ₹229,774 million.",
+      "sourceId": "sunpharma-ar26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/cb65dea5-416a-4f98-95e2-0b58761b7442.pdf#page=49"
+    },
+    {
+      "ticker": "SUNPHARMA.NS",
+      "side": "bear",
+      "claim": "R&D spend was tracking below plan, with management expecting H2 to catch up, which may weigh on H2 margins.",
+      "sourceId": "sunpharma-call",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/fe431adc-0e1a-48ee-9c2b-b6e39cba04e4.pdf#page=6"
+    },
+    {
+      "ticker": "NTPC.NS",
+      "side": "bull",
+      "claim": "Consolidated PAT reached a record ₹27,546 crore, up 15%, and group capacity rose 11.48% to 89,108 MW.",
+      "sourceId": "ntpc-ar26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/dbc69766-f1e1-4ecc-9fa9-7599477167db.pdf#page=11"
+    },
+    {
+      "ticker": "NTPC.NS",
+      "side": "bull",
+      "claim": "India power demand grew about 15% in H1 FY27, with October up 21%.",
+      "sourceId": "ntpc-call",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/4d962dc4-6133-4998-8d2e-9fa5fec441f5.pdf#page=3"
+    },
+    {
+      "ticker": "NTPC.NS",
+      "side": "bear",
+      "claim": "Profit from group companies fell 2.78% because FY25 included one-time revenue at RGPPL.",
+      "sourceId": "ntpc-ar26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/dbc69766-f1e1-4ecc-9fa9-7599477167db.pdf#page=76"
+    },
+    {
+      "ticker": "NTPC.NS",
+      "side": "bear",
+      "claim": "Renewable capacity guidance was cut because of transmission constraints.",
+      "sourceId": "ntpc-call",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/4d962dc4-6133-4998-8d2e-9fa5fec441f5.pdf#page=14"
+    },
+    {
+      "ticker": "TATAPOWER.NS",
+      "side": "bull",
+      "claim": "FY26 consolidated EBITDA grew 11.2% to ₹16,090 crore and PAT 7.2% to ₹5,118 crore.",
+      "sourceId": "tatapower-ar26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/a5491ca0-092d-4f99-a329-c62579cc6ef2.pdf#page=100"
+    },
+    {
+      "ticker": "TATAPOWER.NS",
+      "side": "bull",
+      "claim": "Q1 FY27 PAT grew 11% to ₹1,401 crore and EBITDA 8% to ₹4,249 crore.",
+      "sourceId": "tatapower-call",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/f2eec946-af3f-4579-8a6b-1483aa6f7312.pdf#page=3"
+    },
+    {
+      "ticker": "TATAPOWER.NS",
+      "side": "bear",
+      "claim": "Finance costs rose to ₹5,257 crore from ₹4,702 crore, and standalone PAT fell to ₹1,125 crore from ₹3,133 crore.",
+      "sourceId": "tatapower-ar26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/a5491ca0-092d-4f99-a329-c62579cc6ef2.pdf#page=100"
+    },
+    {
+      "ticker": "ASIANPAINT.NS",
+      "side": "bull",
+      "claim": "FY26 consolidated EBITDA grew 12.78% and PBT 17.64% on revenue growth of 4.95%.",
+      "sourceId": "asianpaint-ar26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/aeefecce-2626-4370-9455-c7c6dd94d670.pdf#page=110"
+    },
+    {
+      "ticker": "ASIANPAINT.NS",
+      "side": "bull",
+      "claim": "Q2 FY27 decorative volume grew 6.4% and value 14.5%.",
+      "sourceId": "asianpaint-call",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/ee7e6efe-1f9b-4b5e-bff7-1da18902ffeb.pdf#page=14"
+    },
+    {
+      "ticker": "ASIANPAINT.NS",
+      "side": "bear",
+      "claim": "Revenue grew under 5% in FY26.",
+      "sourceId": "asianpaint-ar26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/aeefecce-2626-4370-9455-c7c6dd94d670.pdf#page=110"
+    },
+    {
+      "ticker": "ASIANPAINT.NS",
+      "side": "bear",
+      "claim": "Much of Q2 FY27 value growth came from price increases rather than volume.",
+      "sourceId": "asianpaint-call",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/ee7e6efe-1f9b-4b5e-bff7-1da18902ffeb.pdf#page=14"
+    },
+    {
+      "ticker": "HINDALCO.NS",
+      "side": "bull",
+      "claim": "FY26 consolidated revenue (+15%) and EBITDA (+7%) were records, led by India operations.",
+      "sourceId": "hindalco-ar26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/bb3b7080-855f-4cde-b688-d97575a72f3f.pdf#page=63"
+    },
+    {
+      "ticker": "HINDALCO.NS",
+      "side": "bull",
+      "claim": "Q2 FY27 consolidated EBITDA rose 52% to ₹13,869 crore and PAT 59% to ₹7,533 crore.",
+      "sourceId": "hindalco-call",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/0aa25d27-af53-48a8-bef6-dbfe01cd85a1.pdf#page=6"
+    },
+    {
+      "ticker": "HINDALCO.NS",
+      "side": "bear",
+      "claim": "The Oswego fire and higher US tariffs hurt Novelis shipments and FY26 margins.",
+      "sourceId": "hindalco-ar26",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/bb3b7080-855f-4cde-b688-d97575a72f3f.pdf#page=63"
+    },
+    {
+      "ticker": "HINDALCO.NS",
+      "side": "bear",
+      "claim": "Q2 copper EBITDA included one-time gains, and management flagged geopolitical, commodity and trade headwinds.",
+      "sourceId": "hindalco-call",
+      "href": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/0aa25d27-af53-48a8-bef6-dbfe01cd85a1.pdf#page=5"
+    },
     {
       "ticker": "BAJFINANCE.NS",
       "side": "bull",
@@ -328,42 +864,42 @@
       "side": "bull",
       "claim": "FY25 consolidated revenue rose 18.4%; the issuer EBITDA-equivalent line item rose 6.1%, while consolidated PBT fell 1.9% and PAT fell 4.6%. Standalone jewellery revenue excluding bullion was ₹46,571 crore.",
       "sourceId": "titan-ar25",
-      "href": "https://www.titancompany.in/sites/default/files/2025-06/Titan%20AR%202024-25%20AR.pdf"
+      "href": "https://www.titancompany.in/sites/default/files/2025-06/Titan%20AR%202024-25%20AR.pdf#page=121"
     },
     {
       "ticker": "TITAN.NS",
       "side": "bull",
       "claim": "Management continued to target high-double-digit jewellery growth.",
       "sourceId": "titan-call-q4fy25",
-      "href": "https://www.titancompany.in/sites/default/files/2025-05/SEinvestorcalltranscriptQ4_0.pdf"
+      "href": "https://www.titancompany.in/sites/default/files/2025-05/SEinvestorcalltranscriptQ4_0.pdf#page=6"
     },
     {
       "ticker": "TITAN.NS",
       "side": "bear",
       "claim": "Consolidated PBT fell 1.9% and PAT fell 4.6% in FY25.",
       "sourceId": "titan-ar25",
-      "href": "https://www.titancompany.in/sites/default/files/2025-06/Titan%20AR%202024-25%20AR.pdf"
+      "href": "https://www.titancompany.in/sites/default/files/2025-06/Titan%20AR%202024-25%20AR.pdf#page=121"
     },
     {
       "ticker": "TITAN.NS",
       "side": "bear",
       "claim": "Management described pressure in lower jewellery price bands amid gold-price uncertainty.",
       "sourceId": "titan-call-q4fy25",
-      "href": "https://www.titancompany.in/sites/default/files/2025-05/SEinvestorcalltranscriptQ4_0.pdf"
+      "href": "https://www.titancompany.in/sites/default/files/2025-05/SEinvestorcalltranscriptQ4_0.pdf#page=3"
     },
     {
       "ticker": "DRREDDY.NS",
       "side": "bull",
       "claim": "FY25 revenue grew 17%, EBITDA margin was 28.3%, RoCE was 27.7%, and consolidated operating cash flow increased year over year.",
       "sourceId": "dr-ar25",
-      "href": "https://www.drreddys.com/cms/cms/sites/default/files/2025-06/Integrated%20Annual%20Report%202024-25.pdf"
+      "href": "https://www.drreddys.com/cms/cms/sites/default/files/2025-06/Integrated%20Annual%20Report%202024-25.pdf#page=45"
     },
     {
       "ticker": "DRREDDY.NS",
       "side": "bear",
       "claim": "PAT attributable to equity holders rose only 2%; the annual report says all three internal scorecard pillars were below plan.",
       "sourceId": "dr-ar25",
-      "href": "https://www.drreddys.com/cms/cms/sites/default/files/2025-06/Integrated%20Annual%20Report%202024-25.pdf"
+      "href": "https://www.drreddys.com/cms/cms/sites/default/files/2025-06/Integrated%20Annual%20Report%202024-25.pdf#page=6"
     }
   ],
   "queries": {
@@ -415,8 +951,9 @@
     ]
   },
   "pageErrors": [],
+  "pageAnchor": "https://www.bseindia.com/xml-data/corpfiling/AttachHis/cc08294f-ec68-4f15-aaa4-c14a3c4bdfb2.pdf#page=80",
   "topicModal": "SOURCE DETAIL\nANNUAL REPORT\nBajaj Finance Limited Annual Report 2024-25 — Chairman's Letter\nBajaj Finance\nFY2024-25; exact page publication date is not stated on this section page\n·\nChairman's Letter, FY2025 performance highlights\nSOURCE-INDEX TOPIC · NOT DOCUMENT TEXT\n\nAUM, customer franchise, net total income, pre-impairment operating profit, provisions, PAT, RoA and RoE\n\nThis matched topic is an index label associated with the cited source, not text quoted from the document.\nOpen original source\nPRIMARY-SOURCE GROUNDING\nClose",
   "figureModal": "SOURCE DETAIL\nANNUAL REPORT\nBajaj Finance Limited Annual Report 2024-25 — Chairman's Letter\nBajaj Finance\nFY2024-25; exact page publication date is not stated on this section page\n·\nChairman's Letter, FY2025 performance highlights\nREPORTED FIGURE\n\nReported figure: Loan-loss provisions 7,966 ₹ crore · FY25 · +72% YoY\n\nThis is a reported figure from the cited source. The displayed basis and period are part of the match; confirm the original document for full context.\nOpen original source\nPRIMARY-SOURCE GROUNDING\nClose",
-  "drReddyCashflow": "SOURCE DETAIL\nANNUAL REPORT\nDr. Reddy's Laboratories Integrated Annual Report FY 2024-25\nDr. Reddy's Laboratories\nFY2024-25 report; financial statements dated 2025-05-09; publication date not stated on source PDF\n·\nConsolidated Ind AS Statement of Cash Flows, printed p. 351 (PDF p. 177)\nRESEARCH PARAPHRASE · NOT A DIRECT QUOTE\n\nThe consolidated Ind AS cash-flow statement reports ₹46,428 million (₹4,642.8 crore) of operating cash flow in FY25 and ₹45,433 million (₹4,543.3 crore) in FY24.\n\nThis is a research paraphrase, not a direct quote. Confirm its context in the original document.\nOpen original source\nPRIMARY-SOURCE GROUNDING\nClose",
+  "drReddyCashflow": "SOURCE DETAIL\nANNUAL REPORT\nDr. Reddy's Laboratories Integrated Annual Report FY 2024-25\nDr. Reddy's Laboratories\nFY2024-25 report; financial statements dated 2025-05-09; publication date not stated on source PDF\n·\nConsolidated Ind AS Statement of Cash Flows, printed p. 351 (PDF p. 177)\nRESEARCH PARAPHRASE · NOT A DIRECT QUOTE\n\nThe consolidated Ind AS cash-flow statement reports ₹46,428 million (₹4,642.8 crore) of operating cash flow in FY25 and ₹45,433 million (₹4,543.3 crore) in FY24.\n\nThis is a research paraphrase, not a direct quote. Confirm its context in the original document.\nOpen document at PDF p. 177\nPRIMARY-SOURCE GROUNDING\nClose",
   "marketDataModal": "SOURCE DETAIL\nMARKET DATA\nNSE CM-UDiFF full-market EOD Bhavcopy\nObservation row · TATAPOWER.NS\n13 Nov 2026\nThis is the official NSE CM-UDiFF full-market session file used for the observation. It contains many securities and is not a ticker-specific document link.\nOpen original source\nPRIMARY-SOURCE GROUNDING\nClose"
 }

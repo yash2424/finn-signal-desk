@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react'
 import { ExternalLink, FileText, Info, ShieldCheck, X } from 'lucide-react'
 import type { Source } from './types'
-import { formatDate, safeUrl, sectionName, sourceLabel } from './helpers'
+import { formatDate, pageLinkedUrl, sectionName, sourceLabel } from './helpers'
 import './styles.css'
 
 export default function SourceModal({ source, onClose }: { source: Source; onClose: () => void }) {
@@ -49,7 +49,7 @@ export default function SourceModal({ source, onClose }: { source: Source; onClo
       <div className="modal-source-meta"><span>{formatDate(source.publishedAt) === 'Date not supplied' ? source.dateLabel || 'Date not supplied' : formatDate(source.publishedAt)}</span>{sectionName(source) && <><i>·</i><span>{sectionName(source)}</span></>}</div>
       {detail && (detailType === 'excerpt' ? <blockquote className="modal-excerpt">“{detail}”</blockquote> : <div className="modal-paraphrase"><span>{detailType === 'topic' ? 'SOURCE-INDEX TOPIC · NOT DOCUMENT TEXT' : detailType === 'figure' ? 'REPORTED FIGURE' : 'RESEARCH PARAPHRASE · NOT A DIRECT QUOTE'}</span><p>{detail}</p></div>)}
       <div className="modal-source-note"><Info size={14} />{sourceNote}</div>
-      {safeUrl(source.url) ? <a className="primary-button modal-open-link" href={safeUrl(source.url)} target="_blank" rel="noreferrer">Open original source <ExternalLink size={14} /></a> : <div className="source-unavailable">A direct source URL wasn’t provided in this snapshot.</div>}
+      {pageLinkedUrl(source.url, sectionName(source)) ? <a className="primary-button modal-open-link" href={pageLinkedUrl(source.url, sectionName(source))} target="_blank" rel="noreferrer">{/PDF pp?\. \d+/i.test(sectionName(source) ?? '') && /\.pdf/i.test(source.url ?? '') ? `Open document at ${sectionName(source)?.match(/PDF pp?\. \d+/i)?.[0]}` : 'Open original source'} <ExternalLink size={14} /></a> : <div className="source-unavailable">A direct source URL wasn’t provided in this snapshot.</div>}
     </>}
     <div className="modal-footer"><span><ShieldCheck size={14} />PRIMARY-SOURCE GROUNDING</span><button onClick={onClose}>Close</button></div>
   </section></div>
