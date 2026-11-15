@@ -2,7 +2,7 @@ import { useEffect, useState, type FormEvent, type ReactNode } from 'react'
 import { ArrowUpRight, ExternalLink, KeyRound, Loader2, Search, ShieldCheck, Sparkles } from 'lucide-react'
 import { askLiveResearch, describeError, LIVE_MODEL, startLiveResearch, type LiveCitation, type LiveSession } from './liveResearchApi'
 
-const KEY_STORE = 'finn-anthropic-key'
+const KEY_STORE = 'finn-gemini-key'
 const readKey = () => { try { return sessionStorage.getItem(KEY_STORE) ?? '' } catch { return '' } }
 const saveKey = (value: string) => { try { if (value) sessionStorage.setItem(KEY_STORE, value); else sessionStorage.removeItem(KEY_STORE) } catch { /* storage unavailable */ } }
 
@@ -50,15 +50,16 @@ export default function LiveResearch({ symbol }: { symbol: string }) {
   }
 
   return <section className="live-research">
-    <div className="live-head"><span className="live-icon"><Sparkles size={16} /></span><div><div className="section-kicker">LIVE RESEARCH · OPTIONAL</div><h3>Research {symbol} from its filings</h3><p>Claude searches BSE and NSE filings for this company, reads its latest annual report and earnings call, and writes a cited overview. You can then ask follow-up questions.</p></div></div>
+    <div className="live-head"><span className="live-icon"><Sparkles size={16} /></span><div><div className="section-kicker">LIVE RESEARCH · OPTIONAL</div><h3>Research {symbol} from its filings</h3><p>Google Gemini finds this company’s latest annual report and earnings-call transcript (BSE filings, located through its Screener page), reads them, and writes an overview where each figure links to its page in the PDF. You can then ask follow-up questions.</p></div></div>
     {!session && <form className="live-key-form" onSubmit={begin}>
-      <label htmlFor="live-key"><KeyRound size={13} /> Your Anthropic API key</label>
-      <div className="live-key-row"><input id="live-key" type="password" autoComplete="off" spellCheck={false} placeholder="sk-ant-…" value={apiKey} onChange={(e) => setApiKey(e.target.value)} /><button className="primary-button" type="submit" disabled={busy || !apiKey.trim()}>{busy ? <Loader2 size={15} className="spin" /> : <Search size={15} />}<span>Research {symbol}</span></button></div>
-      <small>The key stays in this browser tab (session storage) and is sent only to api.anthropic.com. Each run uses {LIVE_MODEL} with web search and costs API credit.</small>
+      <label htmlFor="live-key"><KeyRound size={13} /> Your Google Gemini API key <a className="live-key-help" href="https://aistudio.google.com/apikey" target="_blank" rel="noreferrer">Get a free key <ExternalLink size={11} /></a></label>
+      <div className="live-key-row"><input id="live-key" type="password" autoComplete="off" spellCheck={false} placeholder="AIza…" value={apiKey} onChange={(e) => setApiKey(e.target.value)} /><button className="primary-button" type="submit" disabled={busy || !apiKey.trim()}>{busy ? <Loader2 size={15} className="spin" /> : <Search size={15} />}<span>Research {symbol}</span></button></div>
+      <small>The key stays in this browser tab (session storage) and is sent only to generativelanguage.googleapis.com. Each run makes 2–3 requests to {LIVE_MODEL}; it is designed to work on a free-tier key. On the free tier Google may use requests to improve its products.</small>
     </form>}
     {busy && <div className="live-status"><Loader2 size={14} className="spin" />{status}</div>}
     {error && <div className="input-error">{error}</div>}
     {session && <div className="live-thread">
+      {session.docs.basis === 'screener' && <div className="live-basis-warning">Gemini could not reach this company’s annual report or call transcript, so this answer uses Screener’s compiled company page only. Treat figures as unverified until you check the filings.</div>}
       {session.turns.map((turn, i) => turn.role === 'user'
         ? <div key={i} className="live-question"><span>YOU ASKED</span><p>{turn.text}</p></div>
         : <article key={i} className="live-answer"><Prose text={turn.text} /><Citations items={turn.citations} /></article>)}

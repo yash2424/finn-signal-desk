@@ -58,6 +58,12 @@ The task coordinator cannot reliably report its own model identity. The assigned
 - **Live research:** Symbols outside the snapshot get an optional panel that calls Claude (`claude-opus-5-5`) from the browser with the visitor's own API key. Web search and fetch are restricted to BSE, NSE and Screener, and the panel returns a cited overview plus follow-up Q&A. The panel is lazy-loaded so the main bundle stays small. The error path was tested with an invalid key; a successful run was not tested because no API key was available in the build environment.
 - **Regression check:** `scripts/qa_links_retrieval.cjs` was updated and passes: 18 watchlist briefs with no search-engine links, the live panel for unknown symbols, 44 source modals, 75 claim citations with page-anchored links, and the earlier retrieval checks.
 
+### 15 November 2026 — Live research moved to Google Gemini
+
+- **Trigger:** The user asked to use a Google Gemini API key instead of an Anthropic key.
+- **Change:** `src/liveResearchApi.ts` now calls the Gemini `generateContent` endpoint (`gemini-3.8-flash`) with the URL-context tool. It reads the company's Screener page to find its latest BSE annual report and transcript, then reads those PDFs. Google Search grounding is a fallback only, because Google's pricing page lists it as unavailable on the free tier. The model tags figures with PDF pages, and the app turns the tags into links that open each PDF at the cited page. The Anthropic SDK was removed, which cut the lazy-loaded panel from 393 KB to 13 KB.
+- **Testing:** An invalid key returns Gemini's `API_KEY_INVALID` error in the browser, which confirms the endpoint is reachable from the page. A successful run was not tested because no Gemini key was available in the build environment.
+
 ## Validation and release
 
 - **Data validation:** 18 portfolios, 18 quote records, three historical Push filing examples, three ad-hoc Pull briefs, and six issuer annual-report/transcript source records are included. The latest NSE quotes are dated 13 November 2026. The 378-row/21-session CSV remains local and is excluded from the public release.

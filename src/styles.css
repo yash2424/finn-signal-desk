@@ -634,3 +634,5 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   .live-key-row { flex-direction: column; }
   .live-key-row button { justify-content: center; min-height: 44px; }
 }
+.live-key-help { display: inline-flex; gap: 3px; align-items: center; margin-left: auto; color: var(--link); text-transform: none; letter-spacing: 0; font: 600 12px var(--sans); }
+.live-basis-warning { padding: 10px 12px; border: 1px solid #e1d4b7; border-radius: 5px; background: #f7f0e1; color: var(--amber-ink); font-size: 13px; line-height: 1.45; }

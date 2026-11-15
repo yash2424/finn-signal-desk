@@ -3,7 +3,7 @@
 A mobile-first investment research prototype with two workflows:
 
 - **Push** collects dated issuer filing examples and NSE end-of-day price/volume observations. Users can filter by company, attention level, snapshot window, and locally saved move/volume thresholds.
-- **Pull** opens a cited brief for every watchlist company: reported figures, a two-sided research view, and a deterministic search across the included evidence. Every figure and claim opens its source PDF at the cited page. Any other NSE symbol can be researched live (overview plus follow-up questions) with the visitor's own Anthropic API key.
+- **Pull** opens a cited brief for every watchlist company: reported figures, a two-sided research view, and a deterministic search across the included evidence. Every figure and claim opens its source PDF at the cited page. Any other NSE symbol can be researched live (overview plus follow-up questions) with the visitor's own Google Gemini API key.
 
 The default snapshot is dated **13 Nov 2026**. Its EOD observations use the NSE CM-UDiFF Common Bhavcopy close and the prior 20 available NSE EQ sessions for relative volume. Filing examples preserve their original **Apr–May 2025** publication dates. Pull covers all 18 watchlist companies with briefs built from each company's FY2025-26 annual report and its latest earnings-call transcript (calls held Jul–Nov 2026; ITC has no transcript, so its brief uses the annual report only), plus three FY25 on-demand briefs outside the watchlist (Bajaj Finance, Titan Company, and Dr Reddy’s).
 
@@ -30,13 +30,19 @@ Vite uses relative asset paths so the build works on a GitHub Pages project site
 1. In **Push**, open **Digest rules** and change the price-move or volume-vs-average slider. These filters are saved in browser-local storage and apply to the dated snapshot.
 2. Change the window from **All snapshot dates** to **24h**, **7d**, or **30d**. Windows are anchored to 13 Nov 2026. The three filing examples are FY25 records, so shorter windows leave only matching market observations.
 3. Switch to **Pull** and open any watchlist company (for example `HDFCBANK` or `RELIANCE`). Click **Source** on a figure: the filing opens at the cited PDF page. Search a term such as `deposits` or `margin`; results are labeled paraphrases, reported figures, or source topics.
-4. Enter a symbol outside the snapshot (for example `TRENT`). With an Anthropic API key, **Research** produces a cited overview from BSE/NSE filings, and you can ask follow-up questions.
+4. Enter a symbol outside the snapshot (for example `TRENT`). With a Google Gemini API key, **Research** produces an overview from the company's latest BSE filings with page-linked citations, and you can ask follow-up questions.
 
 Search over the bundled briefs is deterministic and local: it removes common question words, matches whole words against included report/transcript notes, topic labels, and reported figures, and returns up to five ranked matches. It does not call a language model. No answer is generated when the index cannot support a query.
 
 ### Live research for other companies
 
-For symbols outside the snapshot, `src/liveResearchApi.ts` calls Claude (`claude-opus-5-5`) directly from the browser with the visitor's own API key, because the site is static and has no server to hold one. The key is kept in session storage for that tab and sent only to `api.anthropic.com`. Claude may only use web search and web fetch on `bseindia.com`, `nseindia.com` and `screener.in`, is told to rely only on annual reports, results filings and call transcripts, and returns citations that link to the filing (at the cited page for PDFs). Server-side refusal fallbacks (`fallbacks: "default"`) are enabled. Each run costs API credit; answers are model-generated and should be checked against the cited documents.
+For symbols outside the snapshot, `src/liveResearchApi.ts` calls Google Gemini (`gemini-3.8-flash`, `generateContent`) directly from the browser with the visitor's own Gemini API key, because the site is static and has no server to hold one. The key is kept in session storage for that tab and sent only to `generativelanguage.googleapis.com`.
+
+1. Gemini reads the company's Screener page with the URL-context tool and returns the links to its latest annual report and earnings-call transcript (BSE PDFs). If it finds none, it tries Google Search grounding, which works only on keys with billing enabled.
+2. Gemini reads those PDFs with the URL-context tool and writes an overview. It tags each figure with `[AR p. N]` or `[CALL p. N]`, and the app turns each tag into a numbered link that opens the PDF at that page. Follow-up questions re-send the same documents.
+3. If no filing can be reached, the answer is shown with a warning that it uses Screener's compiled page only.
+
+Get a key at [aistudio.google.com/apikey](https://aistudio.google.com/apikey). The design avoids Google Search so it can run on a free key. On the free tier, Google may use requests to improve its products. Page numbers are reported by the model and should be checked in the document.
 
 ## Data and behavior
 
